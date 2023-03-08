@@ -8,12 +8,13 @@ interface Props{
     onPress:()=>void
 }
 
-const BotonJudicial = ({titulo,icono}:Props) => {
+const BotonJudicial = ({titulo,icono, onPress}:Props) => {
   return (
     <Col xs="6" sm="6" style={style.principal}>
       <TouchableOpacity 
         activeOpacity={0.7}
         style={style.btnCategoria}
+        onPress={onPress}
       >
         <Image
             source={require('../assets/img/whatsapp.png')}

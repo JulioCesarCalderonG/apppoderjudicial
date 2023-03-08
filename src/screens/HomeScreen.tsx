@@ -1,14 +1,13 @@
-import { StackScreenProps } from '@react-navigation/stack';
-import React from 'react';
+import React,{useEffect} from 'react';
 import {
   Image,
-  ImageBackground,
   StyleSheet,
   Text,
   View,
   TouchableOpacity,
 } from 'react-native';
-interface Props extends StackScreenProps<any, any> { };
+import { DrawerScreenProps } from '@react-navigation/drawer';
+interface Props extends DrawerScreenProps<any, any> { };
 export const Home = ({navigation}:Props) => {
   return (
     <View style={style.container}>
@@ -28,14 +27,14 @@ export const Home = ({navigation}:Props) => {
         <TouchableOpacity
           style={{...style.btn, ...style.btnJudiciales}}
           activeOpacity={0.7}
-          onPress={()=>navigation.navigate('ModuloJudicial')}
+          onPress={()=>navigation.navigate('StackJudiciales')}
           >
           <Text style={style.btnText}>Servicios Judiciales</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{...style.btn, ...style.btnTransparencia}}
           activeOpacity={0.7}
-          onPress={()=>navigation.navigate('ModuloTransparencia')}
+          onPress={()=>navigation.navigate('StackTransparencia')}
           >
           <Text style={style.btnText}>Transparencia</Text>
         </TouchableOpacity>

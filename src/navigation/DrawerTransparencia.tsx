@@ -1,19 +1,24 @@
 import React from 'react';
-import {
-  createDrawerNavigator
 
-} from '@react-navigation/drawer';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Home } from '../screens/HomeScreen';
 import TransparenciaScreen from '../screens/TransparenciaScreen';
 
-const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
 
-const DrawerTransparencia = () => {
+const StackTransparencia = ()=> {
   return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="Transparencia" component={TransparenciaScreen} />
-    </Drawer.Navigator>
+    <Stack.Navigator
+        
+        screenOptions={{
+           headerShown:false
+            
+        }}
+        initialRouteName="Transparencia"
+    >
+      <Stack.Screen name="Transparencia" component={TransparenciaScreen}  />
+    </Stack.Navigator>
   );
 }
 
-
-export default DrawerTransparencia;
+export default StackTransparencia;
