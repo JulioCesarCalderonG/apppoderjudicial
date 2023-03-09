@@ -17,7 +17,7 @@ const BotonJudicial = ({titulo,icono, onPress}:Props) => {
         onPress={onPress}
       >
         <Image
-            source={require('../assets/img/whatsapp.png')}
+            source={require(`../assets/img/iconos/${icono}.png`)}
             style={style.imgIcon}
         />
         <Text style={style.textBtn}>{titulo}</Text>

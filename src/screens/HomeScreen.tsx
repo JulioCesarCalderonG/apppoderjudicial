@@ -25,12 +25,12 @@ export const Home = ({navigation}:Props) => {
             <Icon 
               name='menu'
               style={{
-                fontSize:30
-                
+                fontSize:35,
+                color:'white'
               }}
              />
           </TouchableOpacity>
-          <Text style={{fontWeight:'bold', fontSize:16}}> CSJ Ucayali</Text>
+          <Text style={{fontWeight:'bold', fontSize:16, color:'white'}}> CSJ Ucayali</Text>
         </View>
       ),
       drawerPosition: 'left',
