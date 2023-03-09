@@ -22,22 +22,22 @@ const MenuDrawer = (props: DrawerContentComponentProps) => {
             >
                 <View style={styles.drawerContent}>
                     <View style={styles.userInfoSection}>
-                        <View style={{ flexDirection: 'row', marginTop: 15 }}>
+                        <View style={{ flexDirection: 'row', marginTop: 15, alignItems:'center' }}>
                             <Avatar.Image
                                 source={require('../assets/img/pj.jpg')}
                                 size={50}
                             />
                             <View style={{ marginLeft: 15, flexDirection: 'column' }}>
-                                <Title style={styles.title}>C.S.J. Ucayali</Title>
+                                <Title style={styles.title}>BIENVENIDO</Title>
                             </View>
                         </View>
 
-                        <View>
+                        <View style={{marginTop:15}}>
                             <View >
-                                <Paragraph>PODER JUDICIAL DEL PERU</Paragraph>
+                                <Paragraph style={{fontWeight:'500', color:'white'}}>PODER JUDICIAL DEL PERU</Paragraph>
                             </View>
                             <View >
-                                <Caption>Corte Superior de Justicia de Ucayali</Caption>
+                                <Caption style={{fontWeight:'500', color:'white'}}>Corte Superior de Justicia de Ucayali</Caption>
                             </View>
                         </View>
                     </View>
@@ -76,6 +76,17 @@ const MenuDrawer = (props: DrawerContentComponentProps) => {
                             label="Transparencia"
                             onPress={() => { props.navigation.navigate('StackTransparencia') }}
                         />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Icon
+                                    name="send-outline"
+                                    color={color}
+                                    size={size}
+                                />
+                            )}
+                            label="Modulo Usuario"
+                            onPress={() => { props.navigation.navigate('StackTransparencia') }}
+                        />
                     </View>
 
                 </View>
@@ -96,11 +107,15 @@ const styles = StyleSheet.create({
     },
     userInfoSection: {
         paddingLeft: 20,
+        backgroundColor:'#960b28',
+        height:150,
+        marginTop:-10
     },
     title: {
         fontSize: 16,
         marginTop: 3,
         fontWeight: 'bold',
+        color:'white'
     },
     drawerSection: {
         marginTop: 15,

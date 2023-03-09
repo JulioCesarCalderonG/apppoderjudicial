@@ -11,7 +11,7 @@ const StackTransparencia = ()=> {
     <Stack.Navigator
         
         screenOptions={{
-           headerShown:false
+           headerShown:true
             
         }}
         initialRouteName="Transparencia"

@@ -1,8 +1,9 @@
 import { DrawerScreenProps } from '@react-navigation/drawer';
 import React from 'react'
 import { View, Text } from 'react-native';
+import { StackScreenProps } from '@react-navigation/stack';
 
-interface Props extends DrawerScreenProps<any, any> {};
+interface Props extends StackScreenProps<any, any> {};
 
 const LinkJudicialesScreen = ({navigation,route}:Props) => {
   return (

@@ -5,21 +5,48 @@ import {
   Text,
   View,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import { DrawerScreenProps } from '@react-navigation/drawer';
+import { drawerStyle } from '../style/DrawerMenuStyle';
+import Icon from 'react-native-vector-icons/Ionicons';
 interface Props extends DrawerScreenProps<any, any> { };
 export const Home = ({navigation}:Props) => {
+  useEffect(() => {
+    navigation.setOptions({
+      header: () => (
+        <View
+          style={drawerStyle.container}>
+          <TouchableOpacity
+            onPress={() => navigation.toggleDrawer()}
+            style={{
+              marginLeft: 10,
+            }}>
+            <Icon 
+              name='menu'
+              style={{
+                fontSize:30
+                
+              }}
+             />
+          </TouchableOpacity>
+          <Text style={{fontWeight:'bold', fontSize:16}}> CSJ Ucayali</Text>
+        </View>
+      ),
+      drawerPosition: 'left',
+    });
+  }, []);
   return (
-    <View style={style.container}>
-      <View style={style.barra}>
-        <Text style={style.textBarra}>BIENVENIDO</Text>
-      </View>
-      {/* <ImageBackground source={require('../assets/img/shipibo4.png')} resizeMode="cover" style={{width:'100%',height:800, justifyContent:'center',alignItems:'center'}}>
-      </ImageBackground> */}
+    
+      <ImageBackground source={require('../assets/img/shipibo-2.png')} resizeMode="cover" style={style.container}>
+      
+      <View style={style.contentImage}>
       <Image 
-        source={require('../assets/img/csjuc2.jpg')}
+        source={require('../assets/img/imagen-pj.png')}
         style={style.imagePrincipal}
+        resizeMode="stretch"
       />
+      </View>
       <Image source={require('../assets/img/pj2.png')} style={style.imageSecundaria} />
       <Text style={style.titulo}>PODER JUDICIAL DEL PERÚ</Text>
       <Text style={style.subTitulo}>Corte Superior de Justicia de Ucayali</Text>
@@ -40,8 +67,7 @@ export const Home = ({navigation}:Props) => {
         </TouchableOpacity>
         
       </View>
-      
-    </View>
+      </ImageBackground>
   );
 };
 
@@ -51,6 +77,8 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'white',
+    marginBottom:-120,
+    marginTop:-120
   },
   barra:{
     width:'100%',
@@ -71,11 +99,15 @@ const style = StyleSheet.create({
   opciones: {
     flexDirection: 'row',
   },
+  contentImage:{
+    width:'100%',
+  },
   imagePrincipal: {
     width: '100%',
-    height: 300,
+    height: 200,
     marginBottom: 30,
-    marginTop:-250
+    marginTop:-220,
+    
   },
   imageSecundaria:{
     width: 100,

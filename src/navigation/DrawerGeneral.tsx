@@ -1,7 +1,7 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import MenuDrawer from "../components/MenuDrawer";
 import { Home } from "../screens/HomeScreen";
-import StackTransparencia from "./DrawerTransparencia";
+import StackTransparencia from "./StackTransparencia";
 import StackJudiciales from "./StackJudiciales";
 
 
@@ -21,12 +21,18 @@ const DrawerGeneral = () => {
       drawerLabelStyle: { marginLeft: -25 },
       drawerActiveBackgroundColor: '#05923d',
       drawerActiveTintColor: 'black',
+
     }}
+    
     initialRouteName="Home"
     >
       <Drawer.Screen name="Home" component={Home} />
-      <Drawer.Screen name="StackJudiciales" component={StackJudiciales} />
-      <Drawer.Screen name="StackTransparencia" component={StackTransparencia} />
+      <Drawer.Screen name="StackJudiciales" options={{
+        headerShown:false
+      }} component={StackJudiciales} />
+      <Drawer.Screen name="StackTransparencia" options={{
+        headerShown:false
+      }} component={StackTransparencia} />
     </Drawer.Navigator>
   );
 }
