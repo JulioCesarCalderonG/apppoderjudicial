@@ -19,13 +19,12 @@ const StackJudiciales = ()=> {
         
         screenOptions={{
            headerShown:true
-            
         }}
         initialRouteName="Judiciales"
     >
       <Stack.Screen name="Judiciales" component={JudicialesScreen}  />
       <Stack.Screen name="LinkJudiciales" options={{
-        headerShown:false
+        headerShown:true
       }} component={LinkJudicialesScreen}  />
     </Stack.Navigator>
   );

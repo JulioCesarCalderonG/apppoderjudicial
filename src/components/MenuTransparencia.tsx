@@ -14,7 +14,7 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const MenuDrawer = (props: DrawerContentComponentProps) => {
+const MenuTransparencia = (props: DrawerContentComponentProps) => {
     return (
         <View style={{ flex: 1 }}>
             <DrawerContentScrollView
@@ -62,30 +62,8 @@ const MenuDrawer = (props: DrawerContentComponentProps) => {
                                     size={size}
                                 />
                             )}
-                            label="Servicios Judiciales"
-                            onPress={() => { props.navigation.navigate('StackJudiciales') }}
-                        />
-                        <DrawerItem
-                            icon={({ color, size }) => (
-                                <Icon
-                                    name="send-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Transparencia"
-                            onPress={() => { props.navigation.navigate('StackTransparencia') }}
-                        />
-                        <DrawerItem
-                            icon={({ color, size }) => (
-                                <Icon
-                                    name="send-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Modulo Usuario"
-                            onPress={() => { props.navigation.navigate('StackTransparencia') }}
+                            label="Geolocalizacion"
+                            onPress={() => { props.navigation.navigate('LinkTransparencia',{link:''}) }}
                         />
                     </View>
 
@@ -99,7 +77,7 @@ const MenuDrawer = (props: DrawerContentComponentProps) => {
     )
 }
 
-export default MenuDrawer;
+export default MenuTransparencia;
 
 const styles = StyleSheet.create({
     drawerContent: {

@@ -59,7 +59,7 @@ const JudicialesScreen = ({ navigation }: Props) => {
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/certificadohomonimia/Ucayali'})}}
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
@@ -68,11 +68,24 @@ const JudicialesScreen = ({ navigation }: Props) => {
               <Text style={style.textBtn}>EMISIÓN DE CERTIFICADO DE HOMONIMIA</Text>
             </TouchableOpacity>
           </Col>
+          <Col xs="6" sm="6" style={{...style.principal}}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/seguimientocertificadohomonimia/Ucayali'})}}
+            >
+              <Image
+                source={require('../assets/img/iconos/papellupa.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>SEGIMIENTO DE CERTIFICADO DE HOMONIMIA</Text>
+            </TouchableOpacity>
+          </Col>
           <Col xs="6" sm="6" style={style.principal}>
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/certificadodam/Ucayali'})}}
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
@@ -85,20 +98,46 @@ const JudicialesScreen = ({ navigation }: Props) => {
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/seguimientocertificadodam/Ucayali'})}}
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
                 style={style.imgIcon}
               />
-              <Text style={style.textBtn}>HABILITACIÓN DE ARANCELES JUDICIALES</Text>
+              <Text style={style.textBtn}>SEGUIMIENTO DE CERTIFICADO DE DEUDORES ALIMENTARIOS MOROSOS</Text>
             </TouchableOpacity>
           </Col>
           <Col xs="6" sm="6" style={style.principal}>
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/certificadohaj/Ucayali'})}}
+            >
+              <Image
+                source={require('../assets/img/iconos/papellupa.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>SOLICITUD DE HABILITACIÓN DE ARANCELES JUDICIALES</Text>
+            </TouchableOpacity>
+          </Col>
+          <Col xs="6" sm="6" style={style.principal}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/seguimientocertificadohaj/Ucayali'})}}
+            >
+              <Image
+                source={require('../assets/img/iconos/papellupa.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>SEGUIMIENTO DE SOLICITUD DE HABILITACIÓN DE ARANCELES JUDICIALES</Text>
+            </TouchableOpacity>
+          </Col>
+          <Col xs="6" sm="6" style={style.principal}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/antecedentespe/Ucayali'})}}
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
@@ -111,7 +150,20 @@ const JudicialesScreen = ({ navigation }: Props) => {
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/seguimientoantecedentespe/Ucayali'})}}
+            >
+              <Image
+                source={require('../assets/img/iconos/papellupa.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>SEGUIMIENTO DE CERTIFICADO DE ANTECEDENTES PENALES PARA EXTRANJEROS</Text>
+            </TouchableOpacity>
+          </Col>
+          <Col xs="6" sm="6" style={style.principal}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://cape.pj.gob.pe/cape/'})}}
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
@@ -124,11 +176,12 @@ const JudicialesScreen = ({ navigation }: Props) => {
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://casillas.pj.gob.pe/redam/#/'})}}
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
                 style={style.imgIcon}
+                
               />
               <Text style={style.textBtn}>CONSULTA DE DEUDOR ALIMENTARIO MOROSO</Text>
             </TouchableOpacity>
@@ -137,7 +190,7 @@ const JudicialesScreen = ({ navigation }: Props) => {
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://casillas.pj.gob.pe/cap/'})}}  
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
@@ -150,7 +203,7 @@ const JudicialesScreen = ({ navigation }: Props) => {
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})}}  
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
@@ -163,7 +216,7 @@ const JudicialesScreen = ({ navigation }: Props) => {
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://apps.pj.gob.pe/cejSupremo/'})}}  
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}
@@ -176,7 +229,7 @@ const JudicialesScreen = ({ navigation }: Props) => {
             <TouchableOpacity
               activeOpacity={0.7}
               style={style.btnCategoria}
-              onPress={()=>{}}
+              onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://cej.pj.gob.pe/cej/forms/busquedaform.html'})}} 
             >
               <Image
                 source={require('../assets/img/iconos/papellupa.png')}

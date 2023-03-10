@@ -10,9 +10,11 @@ import {
 import { DrawerScreenProps } from '@react-navigation/drawer';
 import { drawerStyle } from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
-interface Props extends DrawerScreenProps<any, any> { };
+import { StackScreenProps } from '@react-navigation/stack';
+//interface Props extends DrawerScreenProps<any, any> { };
+interface Props extends StackScreenProps<any, any> { };
 export const Home = ({navigation}:Props) => {
-  useEffect(() => {
+/*   useEffect(() => {
     navigation.setOptions({
       header: () => (
         <View
@@ -35,7 +37,7 @@ export const Home = ({navigation}:Props) => {
       ),
       drawerPosition: 'left',
     });
-  }, []);
+  }, []); */
   return (
     
       <ImageBackground source={require('../assets/img/shipibo-2.png')} resizeMode="cover" style={style.container}>
@@ -54,14 +56,14 @@ export const Home = ({navigation}:Props) => {
         <TouchableOpacity
           style={{...style.btn, ...style.btnJudiciales}}
           activeOpacity={0.7}
-          onPress={()=>navigation.navigate('StackJudiciales')}
+          onPress={()=>navigation.navigate('DrawerJudicial')}
           >
           <Text style={style.btnText}>Servicios Judiciales</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{...style.btn, ...style.btnTransparencia}}
           activeOpacity={0.7}
-          onPress={()=>navigation.navigate('StackTransparencia')}
+          onPress={()=>navigation.navigate('DrawerTransparencia')}
           >
           <Text style={style.btnText}>Transparencia</Text>
         </TouchableOpacity>

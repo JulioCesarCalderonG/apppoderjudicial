@@ -1,17 +1,17 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import MenuDrawer from "../components/MenuDrawer";
+import MenuDrawer from "../components/MenuJudiciales";
 import { Home } from "../screens/HomeScreen";
 import StackTransparencia from "./StackTransparencia";
 import StackJudiciales from "./StackJudiciales";
 
 
-export type RootStackParams = {
+export type RootDrawerParams = {
     Home: undefined,
     StackJudiciales:undefined,
     StackTransparencia:undefined
   }
 
-const Drawer = createDrawerNavigator<RootStackParams>();
+const Drawer = createDrawerNavigator<RootDrawerParams>();
 
 const DrawerGeneral = () => {
   return (
@@ -26,13 +26,13 @@ const DrawerGeneral = () => {
     
     initialRouteName="Home"
     >
-      <Drawer.Screen name="Home" component={Home} />
+      {/* <Drawer.Screen name="Home" component={Home} />
       <Drawer.Screen name="StackJudiciales" options={{
         headerShown:false
       }} component={StackJudiciales} />
       <Drawer.Screen name="StackTransparencia" options={{
         headerShown:false
-      }} component={StackTransparencia} />
+      }} component={StackTransparencia} /> */}
     </Drawer.Navigator>
   );
 }

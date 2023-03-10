@@ -22,7 +22,6 @@ const TransparenciaScreen = ({navigation}:Props) => {
               style={{
                 fontSize:30,
                 color:'white'
-                
               }}
              />
           </TouchableOpacity>
