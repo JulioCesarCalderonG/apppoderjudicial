@@ -7,9 +7,6 @@ import {
   TouchableOpacity,
   ImageBackground
 } from 'react-native';
-import { DrawerScreenProps } from '@react-navigation/drawer';
-import { drawerStyle } from '../style/DrawerMenuStyle';
-import Icon from 'react-native-vector-icons/Ionicons';
 import { StackScreenProps } from '@react-navigation/stack';
 //interface Props extends DrawerScreenProps<any, any> { };
 interface Props extends StackScreenProps<any, any> { };

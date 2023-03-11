@@ -16,17 +16,19 @@ const Drawer = createDrawerNavigator<RootDrawerParams>();
 const DrawerJudicial = () => {
   return (
     <Drawer.Navigator
-    drawerContent={(props) => <MenuJudiciales {...props} />}
+    
+    drawerContent={(props) => <MenuJudiciales  {...props} />}
     screenOptions={{
       drawerLabelStyle: { marginLeft: -25 },
       drawerActiveBackgroundColor: '#05923d',
       drawerActiveTintColor: 'black',
-
+      unmountOnBlur:true,
+      freezeOnBlur:true
     }}
-    
+    defaultStatus="closed"
     initialRouteName="Judiciales"
     >
-      <Drawer.Screen name="Judiciales" component={JudicialesScreen} />
+      <Drawer.Screen name="Judiciales"  component={JudicialesScreen} />
       <Drawer.Screen name="LinkJudiciales" component={LinkJudicialesScreen} />
     </Drawer.Navigator>
   );
