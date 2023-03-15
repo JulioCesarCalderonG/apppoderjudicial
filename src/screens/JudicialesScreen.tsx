@@ -9,8 +9,7 @@ import {
   ImageBackground,
 } from 'react-native';
 import {DrawerScreenProps} from '@react-navigation/drawer';
-import {Container, Row, Col} from 'react-native-flex-grid';
-import BotonJudicial from '../components/BotonJudicial';
+import {Row, Col} from 'react-native-flex-grid';
 import {drawerStyle} from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
 import LogoComponent from '../components/LogoComponent';
@@ -57,6 +56,96 @@ const JudicialesScreen = ({navigation}: Props) => {
         showsVerticalScrollIndicator={false}
         style={style.containerBtn}>
         <Row style={{}}>
+        <Col xs="6" sm="6" style={style.principal}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={() => {
+                navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/consultayorientacionjuridica/Ucayali',
+                });
+              }}>
+              <Image
+                source={require('../assets/img/icono-transparencia/iconos/consulta.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>
+                CONSULTA Y ORIENTACION VIRTUAL
+              </Text>
+            </TouchableOpacity>
+          </Col>
+          <Col xs="6" sm="6" style={style.principal}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={() => {
+                navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/consultayorientacionjuridicapresencial/Ucayali',
+                });
+              }}>
+              <Image
+                source={require('../assets/img/icono-transparencia/iconos/cita.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>
+                SOLICITA TU CITA PRESENCIAL PARA ORIENTACION JUDICIAL
+              </Text>
+            </TouchableOpacity>
+          </Col>
+          <Col xs="6" sm="6" style={style.principal}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={() => {
+                navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/consultajudicialviaweb/Ucayali',
+                });
+              }}>
+              <Image
+                source={require('../assets/img/icono-transparencia/iconos/solicitud.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>
+                REGISTRO DE SOLICITUDES JUDICIALES
+              </Text>
+            </TouchableOpacity>
+          </Col>
+          <Col xs="6" sm="6" style={style.principal}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={() => {
+                navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/seguimientoconsultajudicialviaweb/Ucayali',
+                });
+              }}>
+              <Image
+                source={require('../assets/img/iconos/papellupa.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>
+                SEGUIMIENTO DE SOLICITUDES JUDICIALES
+              </Text>
+            </TouchableOpacity>
+          </Col>
+          <Col xs="6" sm="6" style={style.principal}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={style.btnCategoria}
+              onPress={() => {
+                navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/calificacionatencionalusuario/Ucayali',
+                });
+              }}>
+              <Image
+                source={require('../assets/img/icono-transparencia/iconos/solicitud.png')}
+                style={style.imgIcon}
+              />
+              <Text style={style.textBtn}>
+                CALIFICACION DE ATENCION AL USUARIO
+              </Text>
+            </TouchableOpacity>
+          </Col>
           <Col xs="6" sm="6" style={{...style.principal}}>
             <TouchableOpacity
               activeOpacity={0.7}
@@ -67,7 +156,7 @@ const JudicialesScreen = ({navigation}: Props) => {
                 });
               }}>
               <Image
-                source={require('../assets/img/iconos/papellupa.png')}
+                source={require('../assets/img/iconos/lapizpapel.png')}
                 style={style.imgIcon}
               />
               <Text style={style.textBtn}>
@@ -103,7 +192,7 @@ const JudicialesScreen = ({navigation}: Props) => {
                 });
               }}>
               <Image
-                source={require('../assets/img/iconos/papellupa.png')}
+                source={require('../assets/img/iconos/lapizpapel.png')}
                 style={style.imgIcon}
               />
               <Text style={style.textBtn}>
@@ -139,7 +228,7 @@ const JudicialesScreen = ({navigation}: Props) => {
                 });
               }}>
               <Image
-                source={require('../assets/img/iconos/papellupa.png')}
+                source={require('../assets/img/iconos/aranceles.png')}
                 style={style.imgIcon}
               />
               <Text style={style.textBtn}>
@@ -175,7 +264,7 @@ const JudicialesScreen = ({navigation}: Props) => {
                 });
               }}>
               <Image
-                source={require('../assets/img/iconos/papellupa.png')}
+                source={require('../assets/img/iconos/juz.png')}
                 style={style.imgIcon}
               />
               <Text style={style.textBtn}>
@@ -212,7 +301,7 @@ const JudicialesScreen = ({navigation}: Props) => {
                 });
               }}>
               <Image
-                source={require('../assets/img/iconos/papellupa.png')}
+                source={require('../assets/img/iconos/juz.png')}
                 style={style.imgIcon}
               />
               <Text style={style.textBtn}>
@@ -248,7 +337,7 @@ const JudicialesScreen = ({navigation}: Props) => {
                 });
               }}>
               <Image
-                source={require('../assets/img/iconos/papellupa.png')}
+                source={require('../assets/img/iconos/expe.png')}
                 style={style.imgIcon}
               />
               <Text style={style.textBtn}>VERIFICACIÓN DE CERTIFICADOS</Text>
@@ -264,7 +353,7 @@ const JudicialesScreen = ({navigation}: Props) => {
                 });
               }}>
               <Image
-                source={require('../assets/img/iconos/papellupa.png')}
+                source={require('../assets/img/iconos/deudo.png')}
                 style={style.imgIcon}
               />
               <Text style={style.textBtn}>DEMANDA DE ALIMENTOS</Text>
@@ -331,7 +420,8 @@ const style = StyleSheet.create({
     textDecorationLine: 'underline',
   },
   containerBtn: {
-    padding: 10,
+    padding: 5,
+    marginBottom:100
   },
   principal: {
     marginBottom: 10,
@@ -342,7 +432,7 @@ const style = StyleSheet.create({
     backgroundColor: '#960b28',
     flexDirection: 'row',
     alignItems: 'center',
-    height: 70,
+    height: 75,
     borderRadius: 5,
     borderColor: '#ccc',
     borderTopWidth: 2,
@@ -363,11 +453,12 @@ const style = StyleSheet.create({
     width: 35,
     height: 35,
     marginLeft: 3,
+    marginRight:3
   },
   textBtn: {
     color: 'white',
     fontSize: 9,
     fontWeight: 'bold',
-    marginRight: 39,
+    marginRight: 40,
   },
 });

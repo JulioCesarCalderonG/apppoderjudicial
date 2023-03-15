@@ -19,13 +19,8 @@ const DrawerJudicial = () => {
     
     drawerContent={(props) => <MenuJudiciales  {...props} />}
     screenOptions={{
-      drawerLabelStyle: { marginLeft: -25 },
-      drawerActiveBackgroundColor: '#05923d',
-      drawerActiveTintColor: 'black',
-      unmountOnBlur:true,
-      freezeOnBlur:true
+      unmountOnBlur:true
     }}
-    defaultStatus="closed"
     initialRouteName="Judiciales"
     >
       <Drawer.Screen name="Judiciales"  component={JudicialesScreen} />

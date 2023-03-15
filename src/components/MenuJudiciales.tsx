@@ -3,7 +3,7 @@ import {
   DrawerContentComponentProps,
   DrawerItem,
 } from '@react-navigation/drawer';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Image} from 'react-native';
 import {Avatar, Title, Caption, Paragraph} from 'react-native-paper';
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -46,7 +46,7 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
           <View style={styles.drawerSection}>
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+                <Icon name="home-sharp" color={color} size={size} style={styles.Icon}/>
               )}
               label="Inicio"
               labelStyle={{
@@ -61,7 +61,7 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+                <Icon name="grid-sharp" color={color} size={size} style={styles.Icon}/>
               )}
               label="Menu Principal"
               labelStyle={{
@@ -76,7 +76,110 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+                <Image
+                source={require('../assets/img/icono-transparencia/iconos_negros/consultante.png')}
+                  style={styles.Icon}
+                />
+              )}
+              label="Consulta y orientacion virutal"
+              labelStyle={{
+                fontSize:12
+              }}
+              style={{
+                width:300,
+              }}
+              onPress={() => {
+                props.navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/consultayorientacionjuridica/Ucayali',
+                });
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Image
+                source={require('../assets/img/icono-transparencia/iconos_negros/calendario.png')}
+                  style={styles.Icon}
+                />
+              )}
+              label="Solicita tu cita presencial"
+              labelStyle={{
+                fontSize:12
+              }}
+              style={{
+                width:300,
+              }}
+              onPress={() => {
+                props.navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/consultayorientacionjuridicapresencial/Ucayali',
+                });
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Image
+                source={require('../assets/img/icono-transparencia/iconos_negros/solicitud.png')}
+                  style={styles.Icon}
+                />
+              )}
+              label="Registro de solicitudes judiciales"
+              labelStyle={{
+                fontSize:12
+              }}
+              style={{
+                width:300,
+              }}
+              onPress={() => {
+                props.navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/consultajudicialviaweb/Ucayali',
+                });
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Image
+                  source={require('../assets/img/iconos-negro/seguimiento.png')}
+                  style={styles.Icon}
+                />
+              )}
+              label="Seguimiento de solicitudes judiciales"
+              labelStyle={{
+                fontSize:12
+              }}
+              style={{
+                width:300,
+              }}
+              onPress={() => {
+                props.navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/seguimientoconsultajudicialviaweb/Ucayali',
+                });
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Image
+                  source={require('../assets/img/icono-transparencia/iconos_negros/calificacion.png')}
+                  style={styles.Icon}
+                />
+              )}
+              label="Calificacion de atencion al usuario"
+              labelStyle={{
+                fontSize:12
+              }}
+              style={{
+                width:300,
+              }}
+              onPress={() => {
+                props.navigation.navigate('LinkJudiciales', {
+                  link: 'https://serjus.pj.gob.pe/calificacionatencionalusuario/Ucayali',
+                });
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Image
+                  source={require('../assets/img/iconos-negro/contrato.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Emision de Homonimia"
               labelStyle={{
@@ -93,7 +196,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/seguimiento.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Seguimiento de Homonimia"
               labelStyle={{
@@ -110,7 +216,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/contrato.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Emision de Deudores Alimentarios"
               labelStyle={{
@@ -127,7 +236,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/seguimiento.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Seguimiento de Deudores Alimentarios"
               labelStyle={{
@@ -144,7 +256,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/impuesto.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Habilitacion de Aranceles"
               labelStyle={{
@@ -161,7 +276,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/seguimiento.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Seguimiento de Aranceles"
               labelStyle={{
@@ -178,7 +296,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/courthouse.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Emision de Antecendentes - E"
               labelStyle={{
@@ -195,7 +316,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/seguimiento.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Seguimiento de Antecendentes - E"
               labelStyle={{
@@ -212,7 +336,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/courthouse.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Emision de Antecendentes - N"
               labelStyle={{
@@ -229,7 +356,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/npl.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Consulta de deudor Alimentario"
               labelStyle={{
@@ -246,7 +376,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/carpeta.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Verificacion de Certificados"
               labelStyle={{
@@ -261,7 +394,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/celda.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Demanda de Alimentos"
               labelStyle={{
@@ -278,7 +414,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/seguimiento.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Consulta de Expedientes J.Supremo"
               labelStyle={{
@@ -295,7 +434,10 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerItem
               icon={({color, size}) => (
-                <Icon name="send-outline" color={color} size={size} style={styles.Icon}/>
+               <Image
+                  source={require('../assets/img/iconos-negro/seguimiento.png')}
+                  style={styles.Icon}
+                />
               )}
               label="Consulta de Expedientes J.Superior"
               labelStyle={{
@@ -350,6 +492,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   Icon:{
-    marginRight:-20
+    marginRight:-20,
+    width:25,
+    height:25
   }
 });

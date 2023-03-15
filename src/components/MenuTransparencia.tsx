@@ -4,7 +4,7 @@ import {
     DrawerItem
 
 } from '@react-navigation/drawer';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Image } from 'react-native';
 import {
     Avatar,
     Title,
@@ -46,9 +46,12 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
                         <DrawerItem
                             icon={({ color, size }) => (
                                 <Icon
-                                    name="send-outline"
+                                    name="home-sharp"
                                     color={color}
                                     size={size}
+                                    style={{
+                                        marginRight:-20
+                                    }}
                                 />
                             )}
                             label="Inicio"
@@ -57,13 +60,122 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
                         <DrawerItem
                             icon={({ color, size }) => (
                                 <Icon
-                                    name="send-outline"
+                                    name="grid-sharp"
                                     color={color}
                                     size={size}
+                                    style={{
+                                        marginRight:-20
+                                    }}
                                 />
                             )}
-                            label="Geolocalizacion"
-                            onPress={() => { props.navigation.navigate('LinkTransparencia',{link:''}) }}
+                            label="Menu Principal"
+                            onPress={() => { props.navigation.navigate('Transparencia') }}
+                        />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Image
+                                source={require('../assets/img/icono-transparencia/iconos_negros/geolocalizacion.png')}
+                                style={styles.Icon}
+                                />
+                            )}
+                            label="Gelocalizacion"
+                            onPress={() => { props.navigation.navigate('Geolocalizacion') }}
+                        />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Image
+                                source={require('../assets/img/icono-transparencia/iconos_negros/tendencia.png')}
+                                style={styles.Icon}
+                                />
+                            )}
+                            label="Estadistica"
+                            onPress={() => {
+                                props.navigation.navigate('LinkTransparencia', {
+                                  link: 'https://cej.pj.gob.pe/cej/forms/busquedaform.html',
+                                });
+                              }}
+                        />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Image
+                                source={require('../assets/img/icono-transparencia/iconos_negros/consultante.png')}
+                                style={styles.Icon}
+                                />
+                            )}
+                            label="Consulta Amigable"
+                            onPress={() => {
+                                props.navigation.navigate('LinkTransparencia', {
+                                  link: 'https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx',
+                                });
+                              }}
+                        />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Image
+                                source={require('../assets/img/icono-transparencia/iconos_negros/directorio.png')}
+                                style={styles.Icon}
+                                />
+                            )}
+                            label="Directorio"
+                            onPress={() => {
+                                props.navigation.navigate('DirectorioGeneral');
+                              }}
+                        />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Image
+                                source={require('../assets/img/icono-transparencia/iconos_negros/documento.png')}
+                                style={styles.Icon}
+                                />
+                            )}
+                            label="Resoluciones"
+                            onPress={() => {
+                                props.navigation.navigate('LinkTransparencia', {
+                                  link: 'https://www.gob.pe/institucion/csjucayali/normas-legales',
+                                });
+                              }}
+                        />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Image
+                                source={require('../assets/img/icono-transparencia/iconos_negros/facebook.png')}
+                                style={styles.Icon}
+                                />
+                            )}
+                            label="Facebook Noticias"
+                            onPress={() => {
+                                props.navigation.navigate('LinkTransparencia', {
+                                  link: 'https://www.facebook.com/CSJUC',
+                                });
+                              }}
+                        />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Image
+                                source={require('../assets/img/icono-transparencia/iconos_negros/desiciones.png')}
+                                style={styles.Icon}
+                                />
+                            )}
+                            label="Decisiones Judiciales"
+                            onPress={() => {
+                                props.navigation.navigate('LinkTransparencia', {
+                                  link: 'https://gestionsij.pj.gob.pe/sentidoFallo-web/#/busqueda',
+                                });
+                              }}
+                        />
+                        <DrawerItem
+                            icon={({ color, size }) => (
+                                <Image
+                                source={require('../assets/img/icono-transparencia/iconos_negros/publico.png')}
+                                style={styles.Icon}
+                                />
+                            )}
+                            label="Programacion de Audiencias"
+                            onPress={() => {
+                                props.navigation.navigate('LinkTransparencia', {
+                                  link: 'https://apps.pj.gob.pe/guiaprogramacion/',
+                                });
+                              }}
                         />
                     </View>
 
@@ -109,5 +221,10 @@ const styles = StyleSheet.create({
         paddingVertical: 12,
         paddingHorizontal: 16,
     },
+    Icon:{
+        marginRight:-20,
+        width:25,
+        height:25
+      }
 });
 
