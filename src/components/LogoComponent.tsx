@@ -11,7 +11,7 @@ const LogoComponent = () => {
             style={styles.logoPrincipal}
         />
         <View style={styles.viewText}>
-        <Text style={styles.title}>PODER JUDICIAL DEL PERU</Text>
+        <Text style={styles.title}>PODER JUDICIAL</Text>
         <Text style={styles.subTitle}>Corte Superior de Justicia de Ucayali</Text>
         </View>
     </View>
@@ -31,23 +31,23 @@ const styles = StyleSheet.create({
         
     },
     logoPrincipal:{
-        width:'17%',
-        height:55
+        width:'15%',
+        height:45
     },
     viewText:{
-        height:60,
+        height:40,
         left:10,
         justifyContent:'center'
     },
     title:{
         color:'black',
         fontWeight:'bold',
-        fontSize:16
+        fontSize:18
     },
     subTitle:{
         color:'black',
         fontWeight:'bold',
-        fontSize:11
+        fontSize:15
     },
     
 });

@@ -68,45 +68,76 @@ const JudicialesScreen = ({ navigation }: Props) => {
             activeOpacity={0.7}
           >
             <Image
-              source={require('../assets/img/icono-judiciales/1-consulta-expediente.png')}
+              source={require('../assets/img/icono-judiciales/1.1-onsultadeexpediente.jpg')}
               style={style.imgServicios}
             />
             <Text style={style.titleServicios}>CONSULTA DE EXPEDIENTES JUDICIALES</Text>
+            <Text style={style.titleServicios}>(No Penales)</Text>
             <Text style={style.textButton}>Clic</Text>
           </TouchableOpacity>
+
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
           >
             <Image
-              source={require('../assets/img/icono-judiciales/1-consulta-expediente.png')}
+              source={require('../assets/img/icono-judiciales/modulo-atencion.png')}
               style={style.imgServicios}
             />
-            <Text style={style.titleServicios}>CONSULTA DE EXPEDIENTES JUDICIALES</Text>
+            <Text style={style.titleServicios}>MÓDULO DE ATENCIÓN AL USUARIO - MAU</Text>
+            <Text style={style.titleServicios}>(Todas las materias)</Text>
             <Text style={style.textButton}>Clic</Text>
           </TouchableOpacity>
+
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
           >
             <Image
-              source={require('../assets/img/icono-judiciales/1-consulta-expediente.png')}
+              source={require('../assets/img/icono-judiciales/3-1-mesadepartes.png')}
               style={style.imgServicios}
             />
-            <Text style={style.titleServicios}>CONSULTA DE EXPEDIENTES JUDICIALES</Text>
+            <Text style={style.titleServicios}>MESA DE PARTES VIRTUAL</Text>
             <Text style={style.textButton}>Clic</Text>
           </TouchableOpacity>
+
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
           >
             <Image
-              source={require('../assets/img/icono-judiciales/1-consulta-expediente.png')}
+              source={require('../assets/img/icono-judiciales/4-emision-certificados.png')}
               style={style.imgServicios}
             />
-            <Text style={style.titleServicios}>CONSULTA DE EXPEDIENTES JUDICIALES</Text>
+            <Text style={style.titleServicios}>EMISIÓN DE CERTIFICADOS Y</Text>
+            <Text style={style.titleServicios}>CONSULTA DE DEPÓSITOS JUDICIALES</Text>
             <Text style={style.textButton}>Clic</Text>
           </TouchableOpacity>
+
+          <TouchableOpacity
+            style={style.viewServicios}
+            activeOpacity={0.7}
+          >
+            <Image
+              source={require('../assets/img/icono-judiciales/5-demanda-alimentos.png')}
+              style={style.imgServicios}
+            />
+            <Text style={style.titleServicios}>DEMANDA DE ALIMENTOS</Text>
+            <Text style={style.textButton}>Clic</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={style.viewServicios}
+            activeOpacity={0.7}
+          >
+            <Image
+              source={require('../assets/img/icono-judiciales/archivo-general.jpg')}
+              style={style.imgServicios}
+            />
+            <Text style={style.titleServicios}>ARCHIVO GENERAL DE EXPEDIENTES</Text>
+            <Text style={style.textButton}>Clic</Text>
+          </TouchableOpacity>
+
         </View>
       </ScrollView>
     </ImageBackground>
@@ -126,9 +157,9 @@ const style = StyleSheet.create({
     textAlign: 'center',
     fontWeight: '700',
     color: 'black',
-    fontSize: 14,
-    marginTop: 20,
-    marginBottom: 20,
+    fontSize: 18,
+    /*marginTop: 20,*/
+    marginBottom: 17,
     textDecorationLine: 'underline',
   },
   containerBtn: {
@@ -164,10 +195,14 @@ const style = StyleSheet.create({
   },
   imgServicios: {
     width: '80%',
-    height: 100
+    height: 130,
+    marginTop: 5,
+    borderRadius: 10
   },
   titleServicios: {
-    color: 'black'
+    color: "#960B28",
+    fontWeight: '700',
+    fontSize: 15
   },
   buttonServicios: {
     backgroundColor: 'red'

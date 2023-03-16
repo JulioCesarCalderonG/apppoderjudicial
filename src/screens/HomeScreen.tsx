@@ -151,7 +151,7 @@ const style = StyleSheet.create({
   btnText: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 13,
+    fontSize: 15,
   },
   mensaje:{
     position:'absolute',
