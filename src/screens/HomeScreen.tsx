@@ -18,7 +18,7 @@ export const Home = ({navigation}: Props) => {
       imageStyle={{opacity: 0.3}}>
       <View style={style.contentImage}>
         <Image
-          source={require('../assets/img/imagen-pj.png')}
+          source={require('../assets/img/portada2.png')}
           style={style.imagePrincipal}
           resizeMode="stretch"
         />
@@ -47,10 +47,12 @@ export const Home = ({navigation}: Props) => {
       </View>
       <View style={style.mensaje}>
         <Text style={style.mensajeText}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-          autem magni possimus labore perferendis sunt explicabo consequatur
-          laborum ullam harum molestiae minima magnam eaque provident, aliquam
-          fugiat asperiores commodi eveniet?
+          Mensaje presidente: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Adipisci autem magni possimus labore perferendis sunt explicabo consequatur
+          laborum ullam harum molestiae minima magnam eaque provident, aliquam fugiat.
+
+          Tullio Bermeo Turchi
+          Gestión 2023-2024.
         </Text>
       </View>
     </ImageBackground>
@@ -92,7 +94,7 @@ const style = StyleSheet.create({
     width: '100%',
     height: 200,
     marginBottom: 30,
-    marginTop: -220,
+    marginTop: -220
   },
   imageSecundaria: {
     width: 100,
@@ -154,11 +156,11 @@ const style = StyleSheet.create({
   mensaje:{
     position:'absolute',
     bottom:150,
-    margin:20,
+    margin:50,
     borderRadius:5,
   },
   mensajeText:{
     color:'black',
-    textAlign:'center'
+    textAlign:'justify',
   }
 });
