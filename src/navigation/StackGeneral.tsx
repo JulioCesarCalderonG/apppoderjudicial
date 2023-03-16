@@ -27,7 +27,7 @@ const StackGeneral = ()=> {
         headerTitle:'CSJ Ucayali',
         headerTitleStyle:{
           color:'white',
-          fontSize:15,
+          fontSize:17,
           fontWeight:'900'
         }
         
