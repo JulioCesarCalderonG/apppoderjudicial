@@ -21,13 +21,16 @@ const StackGeneral = ()=> {
         headerShown:true,
         headerStyle:{
           backgroundColor:'#960b28',
-          height:50
+          height:50,
+          
         },
         headerTitle:'CSJ Ucayali',
         headerTitleStyle:{
           color:'white',
-          fontSize:15
+          fontSize:15,
+          fontWeight:'900'
         }
+        
       }} component={Home}  />
       <Stack.Screen name="DrawerJudicial" component={DrawerJudicial}  />
       <Stack.Screen name="DrawerTransparencia" component={DrawerTransparencia}  />

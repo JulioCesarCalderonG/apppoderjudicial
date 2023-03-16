@@ -1,72 +1,59 @@
-import React,{useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {
   Image,
   StyleSheet,
   Text,
   View,
   TouchableOpacity,
-  ImageBackground
+  ImageBackground,
 } from 'react-native';
-import { StackScreenProps } from '@react-navigation/stack';
-//interface Props extends DrawerScreenProps<any, any> { };
-interface Props extends StackScreenProps<any, any> { };
-export const Home = ({navigation}:Props) => {
-/*   useEffect(() => {
-    navigation.setOptions({
-      header: () => (
-        <View
-          style={drawerStyle.container}>
-          <TouchableOpacity
-            onPress={() => navigation.toggleDrawer()}
-            style={{
-              marginLeft: 10,
-            }}>
-            <Icon 
-              name='menu'
-              style={{
-                fontSize:35,
-                color:'white'
-              }}
-             />
-          </TouchableOpacity>
-          <Text style={{fontWeight:'bold', fontSize:16, color:'white'}}> CSJ Ucayali</Text>
-        </View>
-      ),
-      drawerPosition: 'left',
-    });
-  }, []); */
+import {StackScreenProps} from '@react-navigation/stack';
+interface Props extends StackScreenProps<any, any> {}
+export const Home = ({navigation}: Props) => {
   return (
-    
-      <ImageBackground source={require('../assets/img/shipibo-2.png')} resizeMode="cover" style={style.container}>
-      
+    <ImageBackground
+      source={require('../assets/img/shipibo-2.png')}
+      resizeMode="cover"
+      style={style.container}
+      imageStyle={{opacity: 0.3}}>
       <View style={style.contentImage}>
-      <Image 
-        source={require('../assets/img/imagen-pj.png')}
-        style={style.imagePrincipal}
-        resizeMode="stretch"
-      />
+        <Image
+          source={require('../assets/img/imagen-pj.png')}
+          style={style.imagePrincipal}
+          resizeMode="stretch"
+        />
       </View>
-      <Image source={require('../assets/img/pj2.png')} style={style.imageSecundaria} />
-      <Text style={style.titulo}>PODER JUDICIAL DEL PERÚ</Text>
+      <Image
+        source={require('../assets/img/pj2.png')}
+        style={style.imageSecundaria}
+      />
+      <Text style={style.titulo}>PODER JUDICIAL</Text>
       <Text style={style.subTitulo}>Corte Superior de Justicia de Ucayali</Text>
       <View style={style.opciones}>
+        {/*  Modifica el primer botonm */}
         <TouchableOpacity
-          style={{...style.btn, ...style.btnJudiciales}}
+          style={style.btnJudiciales}
           activeOpacity={0.7}
-          onPress={()=>navigation.navigate('DrawerJudicial')}
-          >
+          onPress={() => navigation.navigate('DrawerJudicial')}>
           <Text style={style.btnText}>Servicios Judiciales</Text>
         </TouchableOpacity>
+        {/* Modifica el segundo boton */}
         <TouchableOpacity
-          style={{...style.btn, ...style.btnTransparencia}}
+          style={style.btnTransparencia}
           activeOpacity={0.7}
-          onPress={()=>navigation.navigate('DrawerTransparencia')}
-          >
+          onPress={() => navigation.navigate('DrawerTransparencia')}>
           <Text style={style.btnText}>Transparencia</Text>
         </TouchableOpacity>
-        
       </View>
-      </ImageBackground>
+      <View style={style.mensaje}>
+        <Text style={style.mensajeText}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          autem magni possimus labore perferendis sunt explicabo consequatur
+          laborum ullam harum molestiae minima magnam eaque provident, aliquam
+          fugiat asperiores commodi eveniet?
+        </Text>
+      </View>
+    </ImageBackground>
   );
 };
 
@@ -76,59 +63,78 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'white',
-    marginBottom:-120,
-    marginTop:-120
+    marginBottom: -120,
+    marginTop: -160,
   },
-  barra:{
-    width:'100%',
-    height:55,
-    backgroundColor:'#960b28',
-    position:'absolute',
-    top:0,
-    flexDirection:'row',
-    justifyContent:'center',
-    alignItems:'center',
-    zIndex:999
+  barra: {
+    width: '100%',
+    height: 55,
+    backgroundColor: '#960b28',
+    position: 'absolute',
+    top: 0,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 999,
   },
-  textBarra:{
-    color:'white',
-    fontSize:18,
-    fontWeight:'bold',
+  textBarra: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   opciones: {
     flexDirection: 'row',
   },
-  contentImage:{
-    width:'100%',
+  contentImage: {
+    width: '100%',
   },
   imagePrincipal: {
     width: '100%',
     height: 200,
     marginBottom: 30,
-    marginTop:-220,
-    
+    marginTop: -220,
   },
-  imageSecundaria:{
+  imageSecundaria: {
     width: 100,
     height: 100,
     marginBottom: 10,
   },
   titulo: {
     color: 'black',
-    fontWeight: 'bold',
-    fontSize: 15,
-    marginBottom: 10,
+    fontWeight: '900',
+    fontSize: 17,
+    marginBottom: 3,
   },
   subTitulo: {
     color: 'black',
-    fontWeight: '400',
-    fontSize: 14,
+    fontWeight: '600',
+    fontSize: 15,
     marginBottom: 20,
   },
-  btn: {
-    padding: 10,
+  btnJudiciales: {
+    marginRight: 10,
+    width: 150,
+    height: 40,
     backgroundColor: '#960b28',
-    borderRadius: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.32,
+    shadowRadius: 5.46,
+    elevation: 9,
+  },
+  btnTransparencia: {
+    width: 150,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#960b28',
+    borderRadius: 10,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -138,16 +144,21 @@ const style = StyleSheet.create({
     shadowRadius: 5.46,
 
     elevation: 9,
-  },
-  btnJudiciales: {
-    marginRight: 10,
-  },
-  btnTransparencia: {
     marginLeft: 10,
   },
   btnText: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 15,
+    fontSize: 13,
   },
+  mensaje:{
+    position:'absolute',
+    bottom:150,
+    margin:20,
+    borderRadius:5,
+  },
+  mensajeText:{
+    color:'black',
+    textAlign:'center'
+  }
 });
