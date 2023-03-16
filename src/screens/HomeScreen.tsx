@@ -18,7 +18,7 @@ export const Home = ({navigation}: Props) => {
       imageStyle={{opacity: 0.3}}>
       <View style={style.contentImage}>
         <Image
-          source={require('../assets/img/fondo/fondo4.jpg')}
+          source={require('../assets/img/imagen-pj.png')}
           style={style.imagePrincipal}
           resizeMode="stretch"
         />
