@@ -1,12 +1,12 @@
 import { DrawerScreenProps } from '@react-navigation/drawer';
 import React,{useEffect} from 'react'
-import { View, Text, TouchableOpacity, ImageBackground, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, ImageBackground, StyleSheet, Image, ScrollView } from 'react-native';
 import { RootDrawerParams } from '../navigation/DrawerJudicial';
 import { drawerStyle } from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
 import LogoComponent from '../components/LogoComponent';
 
-interface Props extends DrawerScreenProps<RootDrawerParams, 'ECCD'> { }
+interface Props extends DrawerScreenProps<RootDrawerParams, 'CEJ'> { }
 
 const EccdjScreen = ({navigation}:Props) => {
   useEffect(() => {
@@ -45,7 +45,107 @@ const EccdjScreen = ({navigation}:Props) => {
       }}
     >
       <LogoComponent/>
-      <Text style={style.titulo}>SERVICIOS JUDICIALES</Text>
+      <Text style={style.titulo}>EMISIÓN DE CERTIFICADOS Y CONSULTA DE DEPÓSITOS JUDICIALES</Text>
+      <ScrollView
+          showsHorizontalScrollIndicator={false}
+          showsVerticalScrollIndicator={false}
+          style={style.containerBtn}>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnCentral}
+            onPress={() => {
+              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+            }}>
+            <View 
+             style={style.viewIcono}
+            >
+            <Image
+              source={require('../assets/img/iconos/hominia.png')}
+              style={style.imgIcon}
+            />
+            </View>
+            <View style={style.viewText}>
+             <Text style={style.textBtn}>HOMONIMIA</Text>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnCentral}
+            onPress={() => {
+              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+            }}>
+            <View 
+             style={style.viewIcono}
+            >
+            <Image
+              source={require('../assets/img/iconos/deudo.png')}
+              style={style.imgIcon}
+            />
+            </View>
+            <View style={style.viewText}>
+             <Text style={style.textBtn}>DEUDOR ALIMENTARIO MOROSO</Text>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnCentral}
+            onPress={() => {
+              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+            }}>
+            <View 
+             style={style.viewIcono}
+            >
+            <Image
+              source={require('../assets/img/iconos/antecedentes.png')}
+              style={style.imgIcon}
+            />
+            </View>
+            <View style={style.viewText}>
+             <Text style={style.textBtn}>ANTECEDENTES PENALES NACIONALES</Text>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnCentral}
+            onPress={() => {
+              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+            }}>
+            <View 
+             style={style.viewIcono}
+            >
+            <Image
+              source={require('../assets/img/iconos/antecedentes.png')}
+              style={style.imgIcon}
+            />
+            </View>
+            <View style={style.viewText}>
+             <Text style={style.textBtn}>ANTECEDENTES PENALES EXTRANJEROS</Text>
+            </View>
+          </TouchableOpacity>
+          
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnCentral}
+            onPress={() => {
+              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+            }}>
+            <View 
+             style={style.viewIcono}
+            >
+            <Image
+              source={require('../assets/img/iconos/antecedentes.png')}
+              style={style.imgIcon}
+            />
+            </View>
+            <View style={style.viewText}>
+             <Text style={style.textBtn}>CONSULTA TU CERTIFICADO DE DEPÓSITO JUDICIAL</Text>
+            </View>
+          </TouchableOpacity>
+
+        </ScrollView>
     </ImageBackground>
 
   )
@@ -67,6 +167,47 @@ const style = StyleSheet.create({
     fontSize: 18,
     /*marginTop: 20,*/
     marginBottom: 17,
-    textDecorationLine: 'underline',
+    textDecorationLine: 'underline'
+  },
+  containerBtn: {
+    marginLeft:30,
+    marginRight:30,
+    marginBottom:100,
+    
+  },
+  btnCentral: {
+    flexDirection:'row',
+    backgroundColor: '#960b28',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 80,
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.23,
+    shadowRadius: 2.62,
+    elevation: 4,
+    marginBottom:10
+  },
+  viewIcono:{
+    width:50,
+    left:-10
+  },
+  imgIcon: {
+    width: '100%',
+    height: 50,
+    marginLeft: 3,
+    marginRight: 5,
+  },
+  viewText:{
+    width:200
+  },
+  textBtn: {
+    color: 'white',
+    fontSize: 14,
+    fontWeight: 'bold',
   },
 });

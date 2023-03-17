@@ -47,7 +47,7 @@ const CejScreen = ({navigation}:Props) => {
       }}
     >
       <LogoComponent/>
-      <Text style={style.titulo}>CONSULTA DE EXPEDIENTE VIRTUAL</Text>
+      <Text style={style.titulo}>CONSULTA DE EXPEDIENTE JUDICIALES</Text>
       <ScrollView
           showsHorizontalScrollIndicator={false}
           showsVerticalScrollIndicator={false}
@@ -62,14 +62,15 @@ const CejScreen = ({navigation}:Props) => {
              style={style.viewIcono}
             >
             <Image
-              source={require('../assets/img/iconos/juz.png')}
+              source={require('../assets/img/iconos/expe.png')}
               style={style.imgIcon}
             />
             </View>
             <View style={style.viewText}>
-             <Text style={style.textBtn}>ORIENTACION JUDICIAL VIRTUAL</Text>
+             <Text style={style.textBtn}>EXPEDIENTES JUDICIALES CORTE SUPERIOR</Text>
             </View>
           </TouchableOpacity>
+
           <TouchableOpacity
             activeOpacity={0.7}
             style={style.btnCentral}
@@ -80,91 +81,17 @@ const CejScreen = ({navigation}:Props) => {
              style={style.viewIcono}
             >
             <Image
-              source={require('../assets/img/iconos/juz.png')}
+              source={require('../assets/img/iconos/expe.png')}
               style={style.imgIcon}
             />
             </View>
             <View style={style.viewText}>
-             <Text style={style.textBtn}>SOLICITA TU CITA PARA LA ORIENTACION JUDICIAL</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>ORIENTACION JUDICIAL VIRTUAL</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>ORIENTACION JUDICIAL VIRTUAL</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>ORIENTACION JUDICIAL VIRTUAL</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>ORIENTACION JUDICIAL VIRTUAL</Text>
+             <Text style={style.textBtn}>EXPEDIENTES JUDICIALES CORTE SUPREMA</Text>
             </View>
           </TouchableOpacity>
 
         </ScrollView>
-      
     </ImageBackground>
-
   )
   //Termina aca
 }
