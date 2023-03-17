@@ -8,6 +8,7 @@ import {
   ImageBackground,
 } from 'react-native';
 import {StackScreenProps} from '@react-navigation/stack';
+import WebView from 'react-native-webview';
 interface Props extends StackScreenProps<any, any> {}
 export const Home = ({navigation}: Props) => {
   return (
@@ -46,14 +47,16 @@ export const Home = ({navigation}: Props) => {
         </TouchableOpacity>
       </View>
       <View style={style.mensaje}>
-        <Text style={style.mensajeText}>
-          Mensaje presidente: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Adipisci autem magni possimus labore perferendis sunt explicabo consequatur
-          laborum ullam harum molestiae minima magnam eaque provident, aliquam fugiat.
-
-          Tullio Bermeo Turchi
-          Gestión 2023-2024.
+        <Text style={style.textMensaje}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          necessitatibus recusandae accusantium facere ut. Laudantium nemo ullam
+          quo aliquid rem exercitationem, possimus atque magni impedit
+          assumenda, illo suscipit corrupti eius!
         </Text>
+
+        <Text style={style.textPresidente}>Tullio Bermeo Turchi</Text>
+        <Text style={style.textCargo}>Presidente</Text>
+        <Text style={style.textGestion}>Gestión 2023-2024.</Text>
       </View>
     </ImageBackground>
   );
@@ -94,7 +97,7 @@ const style = StyleSheet.create({
     width: '100%',
     height: 200,
     marginBottom: 30,
-    marginTop: -220
+    marginTop: -220,
   },
   imageSecundaria: {
     width: 100,
@@ -151,16 +154,32 @@ const style = StyleSheet.create({
   btnText: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 15,
+    fontSize: 14,
   },
-  mensaje:{
-    position:'absolute',
-    bottom:150,
-    margin:50,
-    borderRadius:5,
+  mensaje: {
+    position: 'absolute',
+    bottom: 150,
+    borderRadius: 5,
+    fontSize: 9,
+    padding: 30,
+    alignItems: 'center',
   },
-  mensajeText:{
-    color:'black',
-    textAlign:'justify',
-  }
+  textMensaje: {
+    color: 'black',
+    marginBottom: 5,
+    fontSize: 14,
+    textAlign:'center'
+  },
+  textPresidente: {
+    color: 'black',
+    fontWeight: 'bold',
+  },
+  textCargo: {
+    color: 'black',
+    fontWeight: 'bold',
+  },
+  textGestion: {
+    color: 'black',
+    fontWeight: 'bold',
+  },
 });

@@ -52,78 +52,75 @@ const JudicialesScreen = ({ navigation }: Props) => {
         opacity: 0.4
       }}
     >
-      <LogoComponent />
+      <LogoComponent/>
       <Text style={style.titulo}>SERVICIOS JUDICIALES</Text>
       <ScrollView
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
         style={style.containerBtn}
-
       >
-
         <View style={style.general}>
-
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('CEJ')}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/1.1-onsultadeexpediente.jpg')}
-              style={style.imgServicios}
+              style={{...style.imgServicios}}
             />
             <Text style={style.titleServicios}>CONSULTA DE EXPEDIENTES JUDICIALES</Text>
-            <Text style={style.titleServicios}>(No Penales)</Text>
-            <Text style={style.textButton}>Clic</Text>
+            <Text style={style.textButton}>(No Penales)</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('MAU')}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/modulo-atencion.png')}
               style={style.imgServicios}
             />
             <Text style={style.titleServicios}>MÓDULO DE ATENCIÓN AL USUARIO - MAU</Text>
-            <Text style={style.titleServicios}>(Todas las materias)</Text>
-            <Text style={style.textButton}>Clic</Text>
+            <Text style={style.textButton}>(Todas las materias)</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('MP')}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/3-1-mesadepartes.png')}
               style={style.imgServicios}
             />
             <Text style={style.titleServicios}>MESA DE PARTES VIRTUAL</Text>
-            <Text style={style.textButton}>Clic</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('ECCD')}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/4-emision-certificados.png')}
               style={style.imgServicios}
             />
             <Text style={style.titleServicios}>EMISIÓN DE CERTIFICADOS Y</Text>
-            <Text style={style.titleServicios}>CONSULTA DE DEPÓSITOS JUDICIALES</Text>
-            <Text style={style.textButton}>Clic</Text>
+            <Text style={style.textButton}>CONSULTA DE DEPÓSITOS JUDICIALES</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/5-demanda-alimentos.png')}
               style={style.imgServicios}
             />
             <Text style={style.titleServicios}>DEMANDA DE ALIMENTOS</Text>
-            <Text style={style.textButton}>Clic</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -135,7 +132,6 @@ const JudicialesScreen = ({ navigation }: Props) => {
               style={style.imgServicios}
             />
             <Text style={style.titleServicios}>ARCHIVO GENERAL DE EXPEDIENTES</Text>
-            <Text style={style.textButton}>Clic</Text>
           </TouchableOpacity>
 
         </View>
@@ -175,7 +171,7 @@ const style = StyleSheet.create({
   },
   viewServicios: {
     width: '85%',
-    height: 200,
+    height: 220,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'white',
@@ -196,19 +192,21 @@ const style = StyleSheet.create({
   imgServicios: {
     width: '80%',
     height: 130,
-    marginTop: 5,
+    margin:5,
     borderRadius: 10
   },
   titleServicios: {
     color: "#960B28",
     fontWeight: '700',
-    fontSize: 15
+    fontSize: 14,
+    marginTop:3
   },
   buttonServicios: {
     backgroundColor: 'red'
   },
   textButton: {
-
+    color: "#960B28",
+    fontWeight: '700',
   }
   /* principal: {
     marginBottom: 10,

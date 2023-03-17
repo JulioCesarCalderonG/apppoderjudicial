@@ -25,19 +25,18 @@ const styles = StyleSheet.create({
         width:'100%',
         height:50,
         padding:20,
-        marginTop:150,
-        marginBottom:35,
+        marginTop:160,
+        marginBottom:25,
         flexDirection:'row',
-        
+        alignItems:'center'        
     },
     logoPrincipal:{
-        width:'15%',
-        height:45
+        width:'12%',
+        height:40
     },
     viewText:{
         height:40,
         left:10,
-        justifyContent:'center'
     },
     title:{
         color:'black',
