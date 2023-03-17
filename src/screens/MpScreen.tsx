@@ -54,7 +54,7 @@ const MpScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://mpv.pj.gob.pe/mpvp/'})
             }}>
             <View 
              style={style.viewIcono}
@@ -73,7 +73,7 @@ const MpScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://casillas.pj.gob.pe/sinoe/login.xhtml'})
             }}>
             <View 
              style={style.viewIcono}
@@ -92,7 +92,7 @@ const MpScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://sgd.pj.gob.pe/mpea/inicio'})
             }}>
             <View 
              style={style.viewIcono}

@@ -76,6 +76,7 @@ const TransparenciaScreen = ({navigation}:Props) => {
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('LinkTransparencia',{link:'https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx'})}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/4-consulta-amigable.jpg')}
@@ -99,6 +100,7 @@ const TransparenciaScreen = ({navigation}:Props) => {
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('LinkTransparencia',{link:'https://www.gob.pe/institucion/csjucayali/normas-legales'})}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/5-resoluciones-administrativas.jpg')}
@@ -110,6 +112,7 @@ const TransparenciaScreen = ({navigation}:Props) => {
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('LinkTransparencia',{link:'https://www.facebook.com/CSJUC'})}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/6.1-facebook.jpg')}
@@ -121,6 +124,7 @@ const TransparenciaScreen = ({navigation}:Props) => {
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('LinkTransparencia',{link:'https://gestionsij.pj.gob.pe/sentidoFallo-web/#/busqueda'})}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/7-decisiones-judiciales.jpg')}
@@ -132,6 +136,7 @@ const TransparenciaScreen = ({navigation}:Props) => {
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('LinkTransparencia',{link:'https://apps.pj.gob.pe/guiaprogramacion/'})}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/8-programacionaudiencias.jpg')}
@@ -143,6 +148,7 @@ const TransparenciaScreen = ({navigation}:Props) => {
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('LinkTransparencia',{link:'https://serjus.pj.gob.pe/conocejuez'})}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/9-conoce-juez.jpg')}

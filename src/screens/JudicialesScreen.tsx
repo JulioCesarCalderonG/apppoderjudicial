@@ -126,6 +126,7 @@ const JudicialesScreen = ({ navigation }: Props) => {
           <TouchableOpacity
             style={style.viewServicios}
             activeOpacity={0.7}
+            onPress={()=>{navigation.navigate('LinkJudiciales',{link:'https://svsarchivisticos.pj.gob.pe/archi/#/'})}}
           >
             <Image
               source={require('../assets/img/icono-judiciales/archivo-general.jpg')}

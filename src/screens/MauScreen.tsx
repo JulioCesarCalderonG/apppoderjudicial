@@ -54,7 +54,7 @@ const MauScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/consultayorientacionjuridica/Ucayali'})
             }}>
             <View 
              style={style.viewIcono}
@@ -73,7 +73,7 @@ const MauScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/consultayorientacionjuridicapresencial/Ucayali'})
             }}>
             <View 
              style={style.viewIcono}
@@ -149,7 +149,7 @@ const MauScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/calificacionatencionalusuario/Ucayali'})
             }}>
             <View 
              style={style.viewIcono}

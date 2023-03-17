@@ -54,7 +54,7 @@ const EccdjScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/certificadohomonimia/Ucayali'})
             }}>
             <View 
              style={style.viewIcono}
@@ -73,7 +73,7 @@ const EccdjScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://casillas.pj.gob.pe/redam/#/'})
             }}>
             <View 
              style={style.viewIcono}
@@ -92,7 +92,7 @@ const EccdjScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://cape.pj.gob.pe/cape/'})
             }}>
             <View 
              style={style.viewIcono}
@@ -111,7 +111,7 @@ const EccdjScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/antecedentespe/Ucayali'})
             }}>
             <View 
              style={style.viewIcono}
@@ -130,7 +130,7 @@ const EccdjScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
+              navigation.navigate('LinkJudiciales',{link:'http://csjuc.gongalsoft.com/'})
             }}>
             <View 
              style={style.viewIcono}
