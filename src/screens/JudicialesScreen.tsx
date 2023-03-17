@@ -34,7 +34,7 @@ const JudicialesScreen = ({ navigation }: Props) => {
               }}
             />
           </TouchableOpacity>
-          <Text style={{ fontWeight: 'bold', fontSize: 16, color: 'white' }}>
+          <Text style={{ fontWeight: 'bold', fontSize: 18, color: 'white' }}>
             CSJ Ucayali
           </Text>
         </View>
@@ -57,8 +57,8 @@ const JudicialesScreen = ({ navigation }: Props) => {
       <ScrollView
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
-        style={style.containerBtn}
-      >
+        style={style.containerBtn}>
+          
         <View style={style.general}>
           <TouchableOpacity
             style={style.viewServicios}

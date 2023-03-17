@@ -26,7 +26,7 @@ const MauScreen = ({navigation}:Props) => {
               }}
             />
           </TouchableOpacity>
-          <Text style={{ fontWeight: 'bold', fontSize: 16, color: 'white' }}>
+          <Text style={{ fontWeight: 'bold', fontSize: 18, color: 'white' }}>
             CSJ Ucayali
           </Text>
         </View>

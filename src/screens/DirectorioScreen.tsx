@@ -37,7 +37,7 @@ const DirectorioScreen = ({navigation, route}: Props) => {
               }}
             />
           </TouchableOpacity>
-          <Text style={{fontWeight: 'bold', fontSize: 16, color: 'white'}}>
+          <Text style={{fontWeight: 'bold', fontSize: 18, color: 'white'}}>
             CSJ Ucayali
           </Text>
           <TouchableOpacity
@@ -60,7 +60,11 @@ const DirectorioScreen = ({navigation, route}: Props) => {
     <ImageBackground
       source={require('../assets/img/shipibo-2.png')}
       resizeMode="cover"
-      style={styles.container}>
+      style={styles.container}
+      imageStyle={{
+        opacity: 0.4
+      }}
+      >
       <LogoComponent />
       <Text style={styles.titulo}>DIRECTORIO TELEFONICO</Text>
       <Text style={styles.textCentral}>CENTRAL TELEF. N° {route.params.telefono}</Text>
@@ -106,8 +110,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: '700',
     color: 'black',
-    fontSize: 16,
-    marginTop: 20,
+    fontSize: 18,
+    /*marginTop: 20,*/
     marginBottom: 8,
     textDecorationLine: 'underline',
   },

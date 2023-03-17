@@ -38,7 +38,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               }}
             />
           </TouchableOpacity>
-          <Text style={{fontWeight: 'bold', fontSize: 16, color: 'white'}}>
+          <Text style={{fontWeight: 'bold', fontSize: 18, color: 'white'}}>
             CSJ Ucayali
           </Text>
         </View>
@@ -50,7 +50,11 @@ const GelocalizacionScreen = ({navigation}: Props) => {
     <ImageBackground
       source={require('../assets/img/shipibo-2.png')}
       resizeMode="cover"
-      style={style.container}>
+      style={style.container}
+      imageStyle={{
+        opacity: 0.4
+      }}
+      >
       <LogoComponent />
       <Text style={style.titulo}>UBICACION GENERAL</Text>
         <ScrollView
@@ -116,7 +120,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               source={require('../assets/img/iconos/juz.png')}
               style={style.imgIcon}
             />
-            <Text style={style.textBtn}>SEDE CHEROKE</Text>
+            <Text style={style.textBtn}>SEDE FAMILIA</Text>
           </TouchableOpacity>
           <TouchableOpacity
             activeOpacity={0.7}
@@ -268,15 +272,15 @@ const style = StyleSheet.create({
     textAlign: 'center',
     fontWeight: '700',
     color: 'black',
-    fontSize: 14,
-    marginTop: 20,
-    marginBottom: 20,
+    fontSize: 18,
+    /*marginTop: 20,*/
+    marginBottom: 17,
     textDecorationLine: 'underline',
   },
   textSubSedes:{
     textAlign:'center',
     color:'black',
-    fontSize:12,
+    fontSize:15,
     marginTop:15,
     marginBottom:15,
     fontWeight:'bold'
