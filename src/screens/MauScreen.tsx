@@ -1,14 +1,27 @@
-import { DrawerScreenProps } from '@react-navigation/drawer';
-import React,{useEffect} from 'react'
-import { View, Text, TouchableOpacity, ImageBackground, StyleSheet, Image, ScrollView } from 'react-native';
-import { RootDrawerParams } from '../navigation/DrawerJudicial';
-import { drawerStyle } from '../style/DrawerMenuStyle';
+import React, {useEffect, useState} from 'react';
+import {DrawerScreenProps} from '@react-navigation/drawer';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  ImageBackground,
+  StyleSheet,
+  Image,
+  ScrollView,
+  Linking,
+  Modal,
+  Alert,
+  Pressable,
+} from 'react-native';
+import {RootDrawerParams} from '../navigation/DrawerJudicial';
+import {drawerStyle} from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
 import LogoComponent from '../components/LogoComponent';
 
-interface Props extends DrawerScreenProps<RootDrawerParams, 'CEJ'> { }
+interface Props extends DrawerScreenProps<RootDrawerParams, 'MAU'> {}
 
-const MauScreen = ({navigation}:Props) => {
+const MauScreen = ({navigation}: Props) => {
+  const [modalVisible, setModalVisible] = useState(false);
   useEffect(() => {
     navigation.setOptions({
       header: () => (
@@ -26,7 +39,7 @@ const MauScreen = ({navigation}:Props) => {
               }}
             />
           </TouchableOpacity>
-          <Text style={{ fontWeight: 'bold', fontSize: 18, color: 'white' }}>
+          <Text style={{fontWeight: 'bold', fontSize: 18, color: 'white'}}>
             CSJ Ucayali
           </Text>
         </View>
@@ -41,133 +54,164 @@ const MauScreen = ({navigation}:Props) => {
       resizeMode="cover"
       style={style.container}
       imageStyle={{
-        opacity: 0.4
-      }}
-    >
-      <LogoComponent/>
+        opacity: 0.4,
+      }}>
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          Alert.alert('Modal has been closed.');
+          setModalVisible(!modalVisible);
+        }}>
+        <View style={style.centeredView}>
+          <View style={style.modalView}>
+            <Text style={style.modalText}>
+              Es un canal de atención presencial al usuario que consta de
+              computadoras instaladas en el Módulo de Atención al Usuario (MAU)
+              en las Cortes Superiores de Justicia, a través del cual podrá
+              acceder a los servicios digitales que brinda el Poder Judicial
+              guiados por un personal especializado por un tiempo de 15 minutos.
+            </Text>
+            <Text style={{color:'black', textAlign:'justify'}}>
+              Para cualquier consulta comunicarse al número:
+            </Text>
+            <TouchableOpacity
+              onPress={async()=>{
+                await Linking.openURL('tel:+51922459699');
+              }}
+            >
+                <Text style={{color:'blue', fontWeight:'bold'}}>922459699</Text>
+            </TouchableOpacity>
+            <Pressable
+              style={[style.button, style.buttonClose]}
+              onPress={() => setModalVisible(!modalVisible)}>
+              <Text style={style.textStyle}>Cerrar</Text>
+            </Pressable>
+          </View>
+          
+        </View>
+      </Modal>
+      <LogoComponent />
       <Text style={style.titulo}>MÓDULO DE ATENCIÓN AL USUARIO - MAU</Text>
       <ScrollView
-          showsHorizontalScrollIndicator={false}
-          showsVerticalScrollIndicator={false}
-          style={style.containerBtn}>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/consultayorientacionjuridica/Ucayali'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
+        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
+        style={style.containerBtn}>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
+          onPress={() => {
+            navigation.navigate('LinkJudiciales', {
+              link: 'https://serjus.pj.gob.pe/consultayorientacionjuridica/Ucayali',
+            });
+          }}>
+          <View style={style.viewIcono}>
             <Image
               source={require('../assets/img/iconos/orientacion-1.png')}
               style={style.imgIcon}
             />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>ORIENTACIÓN JUDICIAL VIRTUAL</Text>
-            </View>
-          </TouchableOpacity>
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>ORIENTACIÓN JUDICIAL VIRTUAL</Text>
+          </View>
+        </TouchableOpacity>
 
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/consultayorientacionjuridicapresencial/Ucayali'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
+          onPress={() => {
+            navigation.navigate('LinkJudiciales', {
+              link: 'https://serjus.pj.gob.pe/consultayorientacionjuridicapresencial/Ucayali',
+            });
+          }}>
+          <View style={style.viewIcono}>
             <Image
               source={require('../assets/img/iconos/solicita-cita.png')}
               style={style.imgIcon}
             />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>SOLICITA TU CITA PARA LA ORIENTACIÓN JUDICIAL</Text>
-            </View>
-          </TouchableOpacity>
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>
+              SOLICITA TU CITA PARA LA ORIENTACIÓN JUDICIAL
+            </Text>
+          </View>
+        </TouchableOpacity>
 
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
+          onPress={() => {
+            setModalVisible(true);
+          }}>
+          <View style={style.viewIcono}>
             <Image
               source={require('../assets/img/iconos/cabina.png')}
               style={style.imgIcon}
             />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>CABINA DE ACCESO A LA JUSTICIA</Text>
-            </View>
-          </TouchableOpacity>
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>CABINA DE ACCESO A LA JUSTICIA</Text>
+          </View>
+        </TouchableOpacity>
 
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
+          onPress={async () => {
+            /* await Linking.openURL("mailto:juliocesar.calderong@gmail.com") */
+            await Linking.openURL('https://wa.me/+51922459699');
+          }}>
+          <View style={style.viewIcono}>
             <Image
               source={require('../assets/img/iconos/whatsapp.png')}
               style={style.imgIcon}
             />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>CONSULTA POR WHATSAPP</Text>
-            </View>
-          </TouchableOpacity>
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>CONSULTA POR WHATSAPP</Text>
+          </View>
+        </TouchableOpacity>
 
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
+          onPress={async () => {
+            await Linking.openURL('tel:+51922459699');
+          }}>
+          <View style={style.viewIcono}>
             <Image
               source={require('../assets/img/iconos/consulta-telefonica.png')}
               style={style.imgIcon}
             />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>CONSULTA VÍA TELEFÓNICA</Text>
-            </View>
-          </TouchableOpacity>
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>CONSULTA VÍA TELEFÓNICA</Text>
+          </View>
+        </TouchableOpacity>
 
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://serjus.pj.gob.pe/calificacionatencionalusuario/Ucayali'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
+          onPress={() => {
+            navigation.navigate('LinkJudiciales', {
+              link: 'https://serjus.pj.gob.pe/calificacionatencionalusuario/Ucayali',
+            });
+          }}>
+          <View style={style.viewIcono}>
             <Image
               source={require('../assets/img/iconos/califica-atencion.png')}
               style={style.imgIcon}
             />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>CALIFICA MI ATENCIÓN</Text>
-            </View>
-          </TouchableOpacity>
-
-        </ScrollView>
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>CALIFICA MI ATENCIÓN</Text>
+          </View>
+        </TouchableOpacity>
+      </ScrollView>
     </ImageBackground>
-  )
-}
+  );
+};
 
 export default MauScreen;
 const style = StyleSheet.create({
@@ -184,16 +228,15 @@ const style = StyleSheet.create({
     fontSize: 18,
     /*marginTop: 20,*/
     marginBottom: 17,
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
   },
   containerBtn: {
-    marginLeft:30,
-    marginRight:30,
-    marginBottom:100,
-    
+    marginLeft: 30,
+    marginRight: 30,
+    marginBottom: 100,
   },
   btnCentral: {
-    flexDirection:'row',
+    flexDirection: 'row',
     backgroundColor: '#960b28',
     justifyContent: 'center',
     alignItems: 'center',
@@ -207,11 +250,11 @@ const style = StyleSheet.create({
     shadowOpacity: 0.23,
     shadowRadius: 2.62,
     elevation: 4,
-    marginBottom:10
+    marginBottom: 10,
   },
-  viewIcono:{
-    width:50,
-    left:-10
+  viewIcono: {
+    width: 50,
+    left: -10,
   },
   imgIcon: {
     width: '100%',
@@ -219,12 +262,56 @@ const style = StyleSheet.create({
     marginLeft: 3,
     marginRight: 5,
   },
-  viewText:{
-    width:200
+  viewText: {
+    width: 200,
   },
   textBtn: {
     color: 'white',
     fontSize: 14,
     fontWeight: 'bold',
+  },
+  /* Estilo de modal */
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 22,
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: 'white',
+    borderRadius: 20,
+    padding: 35,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  button: {
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+    marginTop:20
+  },
+  buttonOpen: {
+    backgroundColor: '#960b28',
+  },
+  buttonClose: {
+    backgroundColor: '#960b28',
+  },
+  textStyle: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  modalText: {
+    marginBottom: 15,
+    textAlign: 'justify',
+    color:'black',
   },
 });

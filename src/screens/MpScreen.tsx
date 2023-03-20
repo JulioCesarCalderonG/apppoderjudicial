@@ -6,7 +6,7 @@ import { drawerStyle } from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
 import LogoComponent from '../components/LogoComponent';
 
-interface Props extends DrawerScreenProps<RootDrawerParams, 'CEJ'> { }
+interface Props extends DrawerScreenProps<RootDrawerParams, 'MP'> { }
 
 const MpScreen = ({navigation}:Props) => {
   useEffect(() => {

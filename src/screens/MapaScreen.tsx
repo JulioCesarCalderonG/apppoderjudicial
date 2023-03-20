@@ -1,18 +1,16 @@
-import React, {useEffect} from 'react'
-import { DrawerScreenProps } from '@react-navigation/drawer';
-import { View, Text, TouchableOpacity } from 'react-native';
-import MapView,{Marker} from 'react-native-maps'
-import { RootDrawerTransparenciaParams } from '../navigation/DrawerTransparencia';
-import { drawerStyle } from '../style/DrawerMenuStyle';
+import React, {useEffect, useState} from 'react';
+import {DrawerScreenProps} from '@react-navigation/drawer';
+import {View, Text, TouchableOpacity, Image, FlatList} from 'react-native';
+import MapView, {Marker} from 'react-native-maps';
+import {RootDrawerTransparenciaParams} from '../navigation/DrawerTransparencia';
+import {drawerStyle} from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 interface Props
-  extends DrawerScreenProps<
-  RootDrawerTransparenciaParams,
-    'Mapa'
-  > {}
+  extends DrawerScreenProps<RootDrawerTransparenciaParams, 'Mapa'> {}
 
-const MapaScreen = ({navigation}:Props) => {
+const MapaScreen = ({  navigation, route}: Props) => {
+  
   useEffect(() => {
     navigation.setOptions({
       header: () => (
@@ -35,44 +33,54 @@ const MapaScreen = ({navigation}:Props) => {
           </Text>
 
           <TouchableOpacity
-          style={{ marginLeft:190, borderRadius:2, width:30, alignItems:'center'}}
-          onPress={()=>{navigation.navigate('Geolocalizacion')}}
-        >
-          <Icon
-            name='arrow-back-sharp'
-            size={25}
-            style={{color:'white'}}
-          />
-        </TouchableOpacity>
+            style={{
+              marginLeft: 190,
+              borderRadius: 2,
+              width: 30,
+              alignItems: 'center',
+            }}
+            onPress={() => {
+              navigation.navigate('Geolocalizacion');
+            }}>
+            <Icon name="arrow-back-sharp" size={25} style={{color: 'white'}} />
+          </TouchableOpacity>
         </View>
       ),
       drawerPosition: 'left',
     });
   }, []);
   return (
-    <View style={{flex:1}}>
-        <MapView
-        style={{flex:1}}
-          initialRegion={{
-            latitude: -8.389762,
-            longitude: -74.552193,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-
+    <View style={{flex: 1}}>
+      <MapView
+        style={{flex: 1}}
+        initialRegion={{
+          latitude: route.params.lat,
+          longitude: route.params.lng,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}>
+        <Marker
+          coordinate={{
+            latitude: route.params.lat,
+            longitude: route.params.lng,
           }}
-        >
-          <Marker
-            coordinate={{
-              latitude: -8.389762,
-              longitude: -74.552193,
-            }}
-            title='Esto es un ejemplo'
-            description='Esto es un ejemplo'
-        />
-        </MapView>
-        
-    </View>
-  )
-}
+          /* image={route.params.img} */
+          title={route.params.titulo}
+          description={route.params.direccion}>
 
-export default MapaScreen
+          <Image
+            source={route.params.img}
+            style={{
+              width:200,
+              height:150,
+              borderRadius:10
+            }}
+          />
+        </Marker>
+        
+      </MapView>
+    </View>
+  );
+};
+
+export default MapaScreen;

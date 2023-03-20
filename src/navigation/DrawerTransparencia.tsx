@@ -22,7 +22,10 @@ export type RootDrawerTransparenciaParams = {
     Geolocalizacion:undefined,
     Mapa:{
       lat:number,
-      lng:number
+      lng:number,
+      titulo:string,
+      direccion:string,
+      img:any
     }
   }
 

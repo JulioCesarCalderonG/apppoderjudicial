@@ -7,6 +7,7 @@ import {View, StyleSheet, Image} from 'react-native';
 import {Avatar, Title, Caption, Paragraph} from 'react-native-paper';
 
 import Icon from 'react-native-vector-icons/Ionicons';
+import DrawerJudiciales from './DrawerJudiciales';
 
 const MenuJudiciales = (props: DrawerContentComponentProps) => {
   return (
@@ -44,411 +45,63 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
           </View>
 
           <View style={styles.drawerSection}>
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="home-sharp" color={color} size={size} style={styles.Icon}/>
-              )}
+            <DrawerJudiciales
               label="Inicio"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
+              img={require('../assets/img/iconos-negro/home.png')}
               onPress={() => {
                 props.navigation.navigate('Home');
               }}
             />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="grid-sharp" color={color} size={size} style={styles.Icon}/>
-              )}
+            <DrawerJudiciales
               label="Menu Principal"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
+              img={require('../assets/img/iconos-negro/menu1.png')}
               onPress={() => {
                 props.navigation.navigate('Judiciales');
               }}
             />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Image
-                source={require('../assets/img/icono-transparencia/iconos_negros/consultante.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Consulta y orientacion virutal"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
+            <DrawerJudiciales
+              label="Consulta de expedientes judiciales"
+              img={require('../assets/img/iconos-negro/seguimiento.png')}
               onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/consultayorientacionjuridica/Ucayali',
-                });
+                props.navigation.navigate('CEJ');
               }}
             />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Image
-                source={require('../assets/img/icono-transparencia/iconos_negros/calendario.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Solicita tu cita presencial"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
+            <DrawerJudiciales
+              label="Modulo de atencion al usuario - MAU"
+              img={require('../assets/img/iconos-negro/consultante.png')}
               onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/consultayorientacionjuridicapresencial/Ucayali',
-                });
+                props.navigation.navigate('MAU');
               }}
             />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Image
-                source={require('../assets/img/icono-transparencia/iconos_negros/solicitud.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Registro de solicitudes judiciales"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
+            <DrawerJudiciales
+              label="Mesa de partes virtual"
+              img={require('../assets/img/iconos-negro/sitio-web.png')}
               onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/consultajudicialviaweb/Ucayali',
-                });
+                props.navigation.navigate('MP');
               }}
             />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Image
-                  source={require('../assets/img/iconos-negro/seguimiento.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Seguimiento de solicitudes judiciales"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
+            <DrawerJudiciales
+              label="Emision de certificado"
+              img={require('../assets/img/iconos-negro/homonimia.png')}
               onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/seguimientoconsultajudicialviaweb/Ucayali',
-                });
+                props.navigation.navigate('ECCD');
               }}
             />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Image
-                  source={require('../assets/img/icono-transparencia/iconos_negros/calificacion.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Calificacion de atencion al usuario"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/calificacionatencionalusuario/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Image
-                  source={require('../assets/img/iconos-negro/contrato.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Emision de Homonimia"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/certificadohomonimia/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/seguimiento.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Seguimiento de Homonimia"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/seguimientocertificadohomonimia/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/contrato.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Emision de Deudores Alimentarios"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/certificadodam/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/seguimiento.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Seguimiento de Deudores Alimentarios"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/seguimientocertificadodam/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/impuesto.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Habilitacion de Aranceles"
-              labelStyle={{
-                fontSize:13
-              }}
-              style={{
-                width:300,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/certificadohaj/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/seguimiento.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Seguimiento de Aranceles"
-              labelStyle={{
-                fontSize:13
-              }}
-              style={{
-                width:300,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/seguimientocertificadohaj/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/courthouse.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Emision de Antecendentes - E"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:300,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/antecedentespe/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/seguimiento.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Seguimiento de Antecendentes - E"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:310,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://serjus.pj.gob.pe/seguimientoantecedentespe/Ucayali',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/courthouse.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Emision de Antecendentes - N"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:310,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://cape.pj.gob.pe/cape/',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/npl.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Consulta de deudor Alimentario"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:310,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://casillas.pj.gob.pe/redam/#/',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/carpeta.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Verificacion de Certificados"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:310,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales',{link:'https://casillas.pj.gob.pe/cap/'});
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/celda.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Demanda de Alimentos"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:310,
-              }}
+            <DrawerJudiciales
+              label="Demanda de alimentos"
+              img={require('../assets/img/iconos-negro/npl.png')}
               onPress={() => {
                 props.navigation.navigate('LinkJudiciales', {
                   link: 'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda',
                 });
               }}
             />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/seguimiento.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Consulta de Expedientes J.Supremo"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:310,
-              }}
+            <DrawerJudiciales
+              label="Archivo general de expedientes"
+              img={require('../assets/img/iconos-negro/carpeta.png')}
               onPress={() => {
                 props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://apps.pj.gob.pe/cejSupremo/',
-                });
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-               <Image
-                  source={require('../assets/img/iconos-negro/seguimiento.png')}
-                  style={styles.Icon}
-                />
-              )}
-              label="Consulta de Expedientes J.Superior"
-              labelStyle={{
-                fontSize:12
-              }}
-              style={{
-                width:310,
-              }}
-              onPress={() => {
-                props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://cej.pj.gob.pe/cej/forms/busquedaform.html',
+                  link: 'https://svsarchivisticos.pj.gob.pe/archi/#/',
                 });
               }}
             />
@@ -463,7 +116,7 @@ export default MenuJudiciales;
 
 const styles = StyleSheet.create({
   drawerContent: {
-    flex: 1
+    flex: 1,
   },
   userInfoSection: {
     paddingLeft: 20,
@@ -491,9 +144,9 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 16,
   },
-  Icon:{
-    marginRight:-20,
-    width:25,
-    height:25
-  }
+  Icon: {
+    marginRight: -20,
+    width: 25,
+    height: 25,
+  },
 });

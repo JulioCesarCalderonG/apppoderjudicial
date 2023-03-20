@@ -97,7 +97,7 @@ const style = StyleSheet.create({
     width: '100%',
     height: 200,
     marginBottom: 30,
-    marginTop: -220,
+    marginTop: -250,
   },
   imageSecundaria: {
     width: 100,
