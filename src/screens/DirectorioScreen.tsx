@@ -87,7 +87,7 @@ const DirectorioScreen = ({navigation, route}: Props) => {
             <View>
               <Text style={styles.title}>{item.dependencia}</Text>
               {/* Descomentar la linea de abajo cuando hayas agregados los nombres en todas las apis */}
-              {/* <Text style={styles.textAnexo}>{item.nombre}</Text> */}
+              {<Text style={styles.textAnexo}>{item.nombre}</Text>}
               <Text style={styles.textAnexo}>Anexo: {item.anexo}</Text>
             </View>
           </View>

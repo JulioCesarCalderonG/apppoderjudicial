@@ -65,7 +65,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lat: -8.384213,
               lng: -74.53284,
               titulo: 'CORTE SUPERIOR DE JUSTICIA DE UCAYALI',
-              direccion: 'jr.comandante barrera 417',
+              direccion: 'Jr. Ucayali 499',
               img: require('../assets/img/icono-sedes/sede-central.jpg'),
             });
           }}>
@@ -83,8 +83,8 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.384431,
               lng: -74.529495,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
+              titulo: 'SEDE ADMINISTRATIVA',
+              direccion: 'Jr. Tarapaca 913-919',
               img: require('../assets/img/iconos-negro/protesta.png'),
             });
           }}>
@@ -101,9 +101,9 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.3799143,
               lng: -74.5368813,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              titulo: 'SEDE SAENZ PEÑA',
+              direccion: 'Av. Saenz Peña 360',
+              img: require('../assets/img/icono-sedes/saenzpeña.png'),
             });
           }}>
           <Image
@@ -119,8 +119,8 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.374954,
               lng: -74.528032,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
+              titulo: 'SEDE MANCO CAPAC',
+              direccion: 'Jr. Manco Capac 234',
               img: require('../assets/img/iconos-negro/protesta.png'),
             });
           }}>
@@ -137,8 +137,8 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.399883,
               lng: -74.541444,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
+              titulo: 'SEDE MANANTAY',
+              direccion: 'Av. Tupac Amaru 733',
               img: require('../assets/img/iconos-negro/protesta.png'),
             });
           }}>
@@ -155,8 +155,8 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.374024,
               lng: -74.541225,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
+              titulo: 'SEDE FAMILIA',
+              direccion: 'Jr. Sanchez Cerro 250',
               img: require('../assets/img/iconos-negro/protesta.png'),
             });
           }}>
@@ -173,8 +173,8 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.359325,
               lng: -74.571866,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
+              titulo: 'SEDE YARINACOCHA',
+              direccion: 'Av. Yarinacocha 900',
               img: require('../assets/img/iconos-negro/protesta.png'),
             });
           }}>
@@ -191,8 +191,8 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.2301,
               lng: -74.31513,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
+              titulo: 'SEDE ARCHIVO GENERAL',
+              direccion: 'Jr. Tarapaca 764',
               img: require('../assets/img/iconos-negro/protesta.png'),
             });
           }}>
@@ -209,9 +209,9 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -9.041336,
               lng: -75.510684,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              titulo: 'SEDE PADRE ABAD',
+              direccion: 'Esp. Calle 9 Rosales con calle 13',
+              img: require('../assets/img/icono-sedes/padreabad.png'),
             });
           }}>
           <Image
@@ -227,9 +227,9 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -10.730321,
               lng: -73.752993,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              titulo: 'SEDE ATALAYA',
+              direccion: 'Jr. Purus con Jr. Pangoa s/n',
+              img: require('../assets/img/icono-sedes/atalaya.png'),
             });
           }}>
           <Image
@@ -245,9 +245,9 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -9.771341,
               lng: -70.709628,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              titulo: 'SEDE PURUS',
+              direccion: 'Av. Luiz Muñoz Nadal s/n',
+              img: require('../assets/img/icono-sedes/purus.png'),
             });
           }}>
           <Image
@@ -263,9 +263,9 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -7.3475367,
               lng: -75.0012951,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              titulo: 'SEDE CONTAMANA',
+              direccion: 'Calle PetroPerú, II Etapa Mz. 94 Lt.10',
+              img: require('../assets/img/icono-sedes/contamana.png'),
             });
           }}>
           <Image
@@ -281,9 +281,9 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.606274,
               lng: -74.306288,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              titulo: 'SEDE MASISEA',
+              direccion: 'Jr. Padre Plaza Mz. 24 Lt. 16',
+              img: require('../assets/img/icono-sedes/masisea.png'),
             });
           }}>
           <Image
@@ -299,8 +299,8 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -9.380494,
               lng: -74.966924,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
+              titulo: 'SEDE PUERTO INCA',
+              direccion: 'Av. Sanchez Cerro s/n con Jr. 28 de julio s/n',
               img: require('../assets/img/iconos-negro/protesta.png'),
             });
           }}>
@@ -317,9 +317,9 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -6.393472,
               lng: -75.116838,
-              titulo: 'prueba',
-              direccion: 'jr.comandante barrera 417',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              titulo: 'SEDE SARAYACU',
+              direccion: 'Av. Celso Sotomarino s/n',
+              img: require('../assets/img/icono-sedes/sarayacu.png'),
             });
           }}>
           <Image

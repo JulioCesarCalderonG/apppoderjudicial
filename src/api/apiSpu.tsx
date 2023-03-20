@@ -8,23 +8,28 @@ const apiSpu = () => {
    const purus:Array<directorioInterface> = [
     {
         dependencia:'JUZGADO DE PAZ LETRADO - DESPACHO JUEZ',
-        anexo:'33623'
+        anexo:'33623',
+        nombre:'SADITH VELA TANANTA'
     },
     {
         dependencia:'SECRETARIO DEL JUZGADO DE PAZ LETRADO',
-        anexo:'33624'
+        anexo:'33624',
+        nombre:'FRANCO GARCIA NAVARRO'
     },
     {
         dependencia:'JUZGADO MIXTO DE PURUS - DESPACHO DE JUEZ',
-        anexo:'33621'
+        anexo:'33621',
+        nombre:'ROCIO DEL PILAR MIRANDA GARAY'
     },
     {
         dependencia:'SECRETARIO DEL JUZGADO MIXTO',
-        anexo:'33622'
+        anexo:'33622',
+        nombre:'MANUEL JESUS LOPEZ GONZALES'
     },
     {
         dependencia:'AUXILIAR DEL JUZGADO MIXTO',
-        anexo:'33620'
+        anexo:'33620',
+        nombre:'FERNANDEZ CANAYO CHARLY KANDY'
     },
         ]
         useEffect(() => {

@@ -8,11 +8,13 @@ const apiSage = () => {
    const archivo:Array<directorioInterface> = [
     {
         dependencia:'ARCHIVO GENERAL DE EXPEDIENTES',
-        anexo:'33680'
+        anexo:'33680',
+        nombre:'RAUL OSORES PEREZ'
     },
     {
         dependencia:'MESA DE PARTE',
-        anexo:'33682'
+        anexo:'33682',
+        nombre:'MEDALITH REBECA SANCHEZ TAPIA'
     },
     {
         dependencia:'PERSONAL DE SEGURIDAD',

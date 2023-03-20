@@ -110,6 +110,16 @@ const JudicialesScreen = ({navigation}: Props) => {
               });
             }}
           />
+          <GrupoJudicial
+            titulo="CUADROS Y FORMULARIOS JUDICIALES"
+            subTitulo=""
+            img={require('../assets/img/icono-judiciales/aranceles.jpg')}
+            onPress={() => {
+              navigation.navigate('LinkJudiciales', {
+                link: 'https://serjus.pj.gob.pe/formularios',
+              });
+            }}
+          />
         </View>
       </ScrollView>
     </ImageBackground>

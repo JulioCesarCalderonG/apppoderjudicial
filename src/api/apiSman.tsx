@@ -8,15 +8,18 @@ const apiSman = () => {
    const manantay:Array<directorioInterface> = [
     {
         dependencia:'MESA DE PARTES',
-        anexo:'33660'
+        anexo:'33660',
+        nombre:'GUIDO JACINTO BERAUN OSORIO'
     },
     {
         dependencia:'JUZGADO DE PAZ LETRADO - DESPACHO JUEZ',
-        anexo:'33662'
+        anexo:'33662',
+        nombre:'DERLINA VASQUEZ RUIZ'
     },
     {
         dependencia:'POOL DE ASISTENTES',
-        anexo:'33663'
+        anexo:'33663',
+        nombre:'VIRNA LIZET MORENO CHU'
     },
         ];
 

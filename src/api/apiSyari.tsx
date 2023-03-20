@@ -8,15 +8,18 @@ const apiSyari = () => {
    const yarinacocha:Array<directorioInterface> = [
     {
         dependencia:'JUZGADO MIXTO - DESPACHO JUEZ',
-        anexo:'33751'
+        anexo:'33751',
+        nombre:'CARLOS ENRIQUE DIAZ HERBOZO'
     },
     {
         dependencia:'JUZGADO PAZ LETRADO - DESPACHO JUEZ',
-        anexo:'33752'
+        anexo:'33752',
+        nombre:'RODRIGO CORDOVA ATIAJA'
     },
     {
         dependencia:'MESA PARTES',
-        anexo:'33750'
+        anexo:'33750',
+        nombre:'MARITZA AREVALO ROJAS'
     },
         ]
         useEffect(() => {

@@ -8,23 +8,28 @@ const apiSconta = () => {
    const contamana:Array<directorioInterface> = [
     {
         dependencia:'AREA DE INFORMATICA',
-        anexo:'30681'
+        anexo:'30681',
+        nombre:'TULIO CESAR OJEDA HUANCAS'
     },
     {
         dependencia:'JUZGADO DE PAZ LETRADO - DESPACHO JUEZ',
-        anexo:'30683'
+        anexo:'30683',
+        nombre:'WAGNER KARL VILLACREZ MORI'
     },
     {
         dependencia:'SECRETARIO DEL JUZGADO DE PAZ LETRADO',
-        anexo:'30682'
+        anexo:'30682',
+        nombre:'VICTOR YOSIMAR HERRERA MELENDEZ'
     },
     {
         dependencia:'JUZGADO MIXTO - DESPACHO DE JUEZ',
-        anexo:'30680'
+        anexo:'30680',
+        nombre:'CLAVELITO CUHELLO GUERRA'
     },
     {
         dependencia:'SECRETARIA DEL JUZGADO MIXTO',
-        anexo:'30684'
+        anexo:'30684',
+        nombre:'NOEMI FULCA ARAUJO'
     },
         ]
         useEffect(() => {

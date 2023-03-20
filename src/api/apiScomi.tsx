@@ -8,15 +8,18 @@ const apiScomi = () => {
    const comisaria:Array<directorioInterface> = [
     {
         dependencia:'JUZGADO DE PAZ LETRADO - DESPACHO JUEZ',
-        anexo:'33651'
+        anexo:'33651',
+        nombre:'DIANA MALPARTIDA LASTRA'
     },
     {
         dependencia:'MESA DE PARTES',
-        anexo:'33650'
+        anexo:'33650',
+        nombre:'SELVA DAVILA CARDENAS'
     },
     {
         dependencia:'ASISTENTE JUDICIAL',
-        anexo:'33652'
+        anexo:'33652',
+        nombre:'MITZY RICOPA SHERADER'
     },
         ]
         useEffect(() => {
