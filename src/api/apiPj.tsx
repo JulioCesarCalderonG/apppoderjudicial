@@ -8,7 +8,8 @@ const apiPj = () => {
    const presidencia:Array<directorioInterface> = [
     {
         dependencia:'PUERTA PRINCIPAL - CONTROL DE VIGILANCIA',
-        anexo:'33000'
+        anexo:'33000',
+        nombre:'julio cesar calderon  ó otro nombre aca modificar y agregar en todas las apis'
     },
     {
         dependencia:'PRESIDENCIA DE CORTE',
