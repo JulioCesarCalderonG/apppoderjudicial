@@ -62,7 +62,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
         <View style={style.general}>
           <GrupoTransparencia
             titulo="GEOCALIZACIÓN"
-            img={require('../assets/img/icono-judiciales/1-geocalizacion.jpg')}
+            img={require('../assets/img/icono-judiciales/geocalizacion.png')}
             onPress={() => {
               navigation.navigate('Geolocalizacion');
             }}
@@ -78,7 +78,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
           />
           <GrupoTransparencia
             titulo="DIRECTORIO TELEFÓNICO"
-            img={require('../assets/img/icono-judiciales/telefonia.jpg')}
+            img={require('../assets/img/icono-judiciales/telefonia.png')}
             onPress={() => {
               navigation.navigate('DirectorioGeneral');
             }}
@@ -94,7 +94,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
           />
           <GrupoTransparencia
             titulo="FACEBOOK NOTICIAS"
-            img={require('../assets/img/icono-judiciales/6.1-facebook.jpg')}
+            img={require('../assets/img/icono-judiciales/facebook.png')}
             onPress={() => {
               navigation.navigate('LinkTransparencia', {
                 link: 'https://www.facebook.com/CSJUC',
@@ -121,7 +121,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
           />
           <GrupoTransparencia
             titulo="CONOCE A TU JUEZ"
-            img={require('../assets/img/icono-judiciales/9-conoce-juez.jpg')}
+            img={require('../assets/img/icono-judiciales/conoce-juez.png')}
             onPress={() => {
               navigation.navigate('LinkTransparencia', {
                 link: 'https://serjus.pj.gob.pe/conocejuez',

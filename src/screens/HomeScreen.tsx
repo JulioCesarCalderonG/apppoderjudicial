@@ -19,7 +19,7 @@ export const Home = ({navigation}: Props) => {
       imageStyle={{opacity: 0.3}}>
       <View style={style.contentImage}>
         <Image
-          source={require('../assets/img/portada2.png')}
+          source={require('../assets/img/portadafinal.png')}
           style={style.imagePrincipal}
           resizeMode="stretch"
         />
@@ -97,7 +97,7 @@ const style = StyleSheet.create({
     width: '100%',
     height: 200,
     marginBottom: 30,
-    marginTop: -250,
+    marginTop: -180,
   },
   imageSecundaria: {
     width: 100,

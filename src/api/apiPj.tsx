@@ -9,35 +9,42 @@ const apiPj = () => {
     {
         dependencia:'PUERTA PRINCIPAL - CONTROL DE VIGILANCIA',
         anexo:'33000',
-        nombre:'julio cesar calderon  ó otro nombre aca modificar y agregar en todas las apis'
+        nombre:'ROLLY URIBE RIOS'
     },
     {
         dependencia:'PRESIDENCIA DE CORTE',
-        anexo:'33001'
+        anexo:'33001',
+        nombre: 'TULLIO DEIFILIO BERMEO TURCHI'
     },
     {
         dependencia:'PRESIDENCIA SALA PLENA',
-        anexo:'33002'
+        anexo:'33002',
+        nombre: 'RAQUEL ARCHELI AREVALO ARMAS'
     },
     {
         dependencia:'PRESIDENCIA DE CORTE - MESA DE PARTES',
-        anexo:'33003'
+        anexo:'33003',
+        nombre: 'RAQUEL ARCHELI AREVALO ARMAS'
     },
     {
         dependencia:'PRESIDENCIA DE CORTE - SECRETARIA ADMINISTRATIVA',
-        anexo:'33004'
+        anexo:'33004',
+        nombre: 'CINTHYA PATRICIA DIAZ MEZA'
     },
     {
-        dependencia:'1° SALA PENAL DE APELACIONES EN ADICION LIQUIDADORA -PRESIDENCIA',
-        anexo:'33005'
+        dependencia:'1° SALA PENAL DE APELACIONES EN ADICION LIQUIDADORA',
+        anexo:'33005',
+        nombre: 'FEDERICK RANDOLP RIVERA BERROSPI'
     },
     {
         dependencia:'1° SALA PENAL DE APELACIONES-JUEZ SUPERIOR',
-        anexo:'33006'
+        anexo:'33006',
+        nombre: 'HERMOGENES VICENTE LIMA CHAYÑA'
     },
     {
         dependencia:'1° SALA PENAL DE APELACIONES-JUEZ SUPERIOR',
-        anexo:'33007'
+        anexo:'33007',
+        nombre: 'JONATAN ORLANDO BASAGOITIA CARDENAS'
     },
     {
         dependencia:'1° SALA PENAL DE APELACIONES-ASIST. PRESIDENCIA',

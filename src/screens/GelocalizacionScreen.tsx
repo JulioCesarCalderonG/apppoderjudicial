@@ -52,7 +52,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
         opacity: 0.4,
       }}>
       <LogoComponent />
-      <Text style={style.titulo}>UBICACION GENERAL</Text>
+      <Text style={style.titulo}>SEDE PRINCIPAL</Text>
       <ScrollView
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
