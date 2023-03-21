@@ -110,54 +110,6 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
             activeOpacity={0.7}
             style={style.btnSecundario}
             onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSp});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE SAENZ PEÑA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataScomi});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE COMISARIA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSyari});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE YARINACOCHA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSchero});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE FAMILIA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
               navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSadm});
             }}>
             <Image
@@ -165,18 +117,6 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
               style={style.imgIcon}
             />
             <Text style={style.textBtn}>SEDE ADMINISTRACION</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSep});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE ESTABLECIMIENTO PENITENCIARIO</Text>
           </TouchableOpacity>
           <TouchableOpacity
             activeOpacity={0.7}
@@ -194,6 +134,18 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
             activeOpacity={0.7}
             style={style.btnSecundario}
             onPress={() => {
+              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSp});
+            }}>
+            <Image
+              source={require('../assets/img/iconos/juz.png')}
+              style={style.imgIcon}
+            />
+            <Text style={style.textBtn}>SEDE SAENZ PEÑA</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnSecundario}
+            onPress={() => {
               navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSmc});
             }}>
             <Image
@@ -206,37 +158,25 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
             activeOpacity={0.7}
             style={style.btnSecundario}
             onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSpa});
+              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSchero});
             }}>
             <Image
               source={require('../assets/img/iconos/juz.png')}
               style={style.imgIcon}
             />
-            <Text style={style.textBtn}>SEDE PADRE ABAD</Text>
+            <Text style={style.textBtn}>SEDE FAMILIA</Text>
           </TouchableOpacity>
           <TouchableOpacity
             activeOpacity={0.7}
             style={style.btnSecundario}
             onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSata});
+              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataScomi});
             }}>
             <Image
               source={require('../assets/img/iconos/juz.png')}
               style={style.imgIcon}
             />
-            <Text style={style.textBtn}>SEDE ATALAYA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataScampo});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE CAMPO VERDE</Text>
+            <Text style={style.textBtn}>SEDE JUZGADO DE PAZ LETRADO PENAL</Text>
           </TouchableOpacity>
           <TouchableOpacity
             activeOpacity={0.7}
@@ -254,6 +194,42 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
             activeOpacity={0.7}
             style={style.btnSecundario}
             onPress={() => {
+              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSyari});
+            }}>
+            <Image
+              source={require('../assets/img/iconos/juz.png')}
+              style={style.imgIcon}
+            />
+            <Text style={style.textBtn}>SEDE YARINACOCHA</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnSecundario}
+            onPress={() => {
+              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSep});
+            }}>
+            <Image
+              source={require('../assets/img/iconos/juz.png')}
+              style={style.imgIcon}
+            />
+            <Text style={style.textBtn}>SALA PENAL</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnSecundario}
+            onPress={() => {
+              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataScampo});
+            }}>
+            <Image
+              source={require('../assets/img/iconos/juz.png')}
+              style={style.imgIcon}
+            />
+            <Text style={style.textBtn}>SEDE CAMPO VERDE</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnSecundario}
+            onPress={() => {
               navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSpi});
             }}>
             <Image
@@ -261,6 +237,18 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
               style={style.imgIcon}
             />
             <Text style={style.textBtn}>SEDE PUERTO INCA</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnSecundario}
+            onPress={() => {
+              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSpa});
+            }}>
+            <Image
+              source={require('../assets/img/iconos/juz.png')}
+              style={style.imgIcon}
+            />
+            <Text style={style.textBtn}>SEDE PADRE ABAD</Text>
           </TouchableOpacity>
           <TouchableOpacity
             activeOpacity={0.7}
@@ -285,6 +273,18 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
               style={style.imgIcon}
             />
             <Text style={style.textBtn}>SEDE CONTAMANA</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={style.btnSecundario}
+            onPress={() => {
+              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSata});
+            }}>
+            <Image
+              source={require('../assets/img/iconos/juz.png')}
+              style={style.imgIcon}
+            />
+            <Text style={style.textBtn}>SEDE ATALAYA</Text>
           </TouchableOpacity>
         </ScrollView>
       

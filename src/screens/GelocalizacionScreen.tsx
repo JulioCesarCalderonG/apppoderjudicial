@@ -85,7 +85,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.529495,
               titulo: 'SEDE ADMINISTRATIVA',
               direccion: 'Jr. Tarapaca 913-919',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/administrativa.png'),
             });
           }}>
           <Image
@@ -93,6 +93,24 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             style={style.imgIcon}
           />
           <Text style={style.textBtn}>SEDE ADMINISTRACION</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnSecundario}
+          onPress={() => {
+            navigation.navigate('Mapa', {
+              lat: -8.2301,
+              lng: -74.31513,
+              titulo: 'SEDE ARCHIVO GENERAL DE EXPEDIENTES',
+              direccion: 'Jr. Tarapaca 764',
+              img: require('../assets/img/iconos-negro/oficina.png'),
+            });
+          }}>
+          <Image
+            source={require('../assets/img/iconos/juz.png')}
+            style={style.imgIcon}
+          />
+          <Text style={style.textBtn}>SEDE ARCHIVO GENERAL DE EXPEDIENTES</Text>
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.7}
@@ -135,24 +153,6 @@ const GelocalizacionScreen = ({navigation}: Props) => {
           style={style.btnSecundario}
           onPress={() => {
             navigation.navigate('Mapa', {
-              lat: -8.399883,
-              lng: -74.541444,
-              titulo: 'SEDE MANANTAY',
-              direccion: 'Av. Tupac Amaru 733',
-              img: require('../assets/img/iconos-negro/oficina.png'),
-            });
-          }}>
-          <Image
-            source={require('../assets/img/iconos/juz.png')}
-            style={style.imgIcon}
-          />
-          <Text style={style.textBtn}>SEDE MANANTAY</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          activeOpacity={0.7}
-          style={style.btnSecundario}
-          onPress={() => {
-            navigation.navigate('Mapa', {
               lat: -8.374024,
               lng: -74.541225,
               titulo: 'SEDE FAMILIA',
@@ -165,6 +165,42 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             style={style.imgIcon}
           />
           <Text style={style.textBtn}>SEDE FAMILIA</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnSecundario}
+          onPress={() => {
+            navigation.navigate('Mapa', {
+              lat: -8.383404,
+              lng: -74.533478,
+              titulo: 'SEDE JUZGADO DE PAZ LETRADO PENAL',
+              direccion: 'Psje. Lazaro Cohen 171',
+              img: require('../assets/img/iconos-negro/oficina.png'),
+            });
+          }}>
+          <Image
+            source={require('../assets/img/iconos/juz.png')}
+            style={style.imgIcon}
+          />
+          <Text style={style.textBtn}>SEDE JUZGADO DE PAZ LETRADO PENAL</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnSecundario}
+          onPress={() => {
+            navigation.navigate('Mapa', {
+              lat: -8.399883,
+              lng: -74.541444,
+              titulo: 'SEDE MANANTAY',
+              direccion: 'Av. Tupac Amaru 733',
+              img: require('../assets/img/iconos-negro/oficina.png'),
+            });
+          }}>
+          <Image
+            source={require('../assets/img/iconos/juz.png')}
+            style={style.imgIcon}
+          />
+          <Text style={style.textBtn}>SEDE MANANTAY</Text>
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.7}
@@ -189,10 +225,10 @@ const GelocalizacionScreen = ({navigation}: Props) => {
           style={style.btnSecundario}
           onPress={() => {
             navigation.navigate('Mapa', {
-              lat: -8.2301,
-              lng: -74.31513,
-              titulo: 'SEDE ARCHIVO GENERAL',
-              direccion: 'Jr. Tarapaca 764',
+              lat: -8.405408,
+              lng: -74.631298,
+              titulo: 'SALA PENAL',
+              direccion: 'C.F.B Km 12',
               img: require('../assets/img/iconos-negro/oficina.png'),
             });
           }}>
@@ -200,7 +236,61 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             source={require('../assets/img/iconos/juz.png')}
             style={style.imgIcon}
           />
-          <Text style={style.textBtn}>SEDE ARCHIVO GENERAL</Text>
+          <Text style={style.textBtn}>SALA PENAL</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnSecundario}
+          onPress={() => {
+            navigation.navigate('Mapa', {
+              lat: -8.606274,
+              lng: -74.306288,
+              titulo: 'SEDE MASISEA',
+              direccion: 'Jr. Padre Plaza Mz. 24 Lt. 16',
+              img: require('../assets/img/icono-sedes/masisea.png'),
+            });
+          }}>
+          <Image
+            source={require('../assets/img/iconos/juz.png')}
+            style={style.imgIcon}
+          />
+          <Text style={style.textBtn}>SEDE MASISEA</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnSecundario}
+          onPress={() => {
+            navigation.navigate('Mapa', {
+              lat: -8.383404,
+              lng: -74.533478,
+              titulo: 'MODULO BÁSICO DE JUSTICIA DE CAMPO VERDE',
+              direccion: 'Jr. Jose Pezo 285',
+              img: require('../assets/img/iconos-negro/oficina.png'),
+            });
+          }}>
+          <Image
+            source={require('../assets/img/iconos/juz.png')}
+            style={style.imgIcon}
+          />
+          <Text style={style.textBtn}>MODULO BÁSICO DE JUSTICIA DE CAMPO VERDE</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnSecundario}
+          onPress={() => {
+            navigation.navigate('Mapa', {
+              lat: -9.380494,
+              lng: -74.966924,
+              titulo: 'SEDE PUERTO INCA',
+              direccion: 'Av. Sanchez Cerro s/n con Jr. 28 de julio s/n',
+              img: require('../assets/img/iconos-negro/protesta.png'),
+            });
+          }}>
+          <Image
+            source={require('../assets/img/iconos/juz.png')}
+            style={style.imgIcon}
+          />
+          <Text style={style.textBtn}>SEDE PUERTO INCA</Text>
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.7}
@@ -219,24 +309,6 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             style={style.imgIcon}
           />
           <Text style={style.textBtn}>SEDE PADRE ABAD</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          activeOpacity={0.7}
-          style={style.btnSecundario}
-          onPress={() => {
-            navigation.navigate('Mapa', {
-              lat: -10.730321,
-              lng: -73.752993,
-              titulo: 'SEDE ATALAYA',
-              direccion: 'Jr. Purus con Jr. Pangoa s/n',
-              img: require('../assets/img/icono-sedes/atalaya.png'),
-            });
-          }}>
-          <Image
-            source={require('../assets/img/iconos/juz.png')}
-            style={style.imgIcon}
-          />
-          <Text style={style.textBtn}>SEDE ATALAYA</Text>
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.7}
@@ -279,36 +351,18 @@ const GelocalizacionScreen = ({navigation}: Props) => {
           style={style.btnSecundario}
           onPress={() => {
             navigation.navigate('Mapa', {
-              lat: -8.606274,
-              lng: -74.306288,
-              titulo: 'SEDE MASISEA',
-              direccion: 'Jr. Padre Plaza Mz. 24 Lt. 16',
-              img: require('../assets/img/icono-sedes/masisea.png'),
+              lat: -10.730321,
+              lng: -73.752993,
+              titulo: 'SEDE ATALAYA',
+              direccion: 'Jr. Purus con Jr. Pangoa s/n',
+              img: require('../assets/img/icono-sedes/atalaya.png'),
             });
           }}>
           <Image
             source={require('../assets/img/iconos/juz.png')}
             style={style.imgIcon}
           />
-          <Text style={style.textBtn}>SEDE MASISEA</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          activeOpacity={0.7}
-          style={style.btnSecundario}
-          onPress={() => {
-            navigation.navigate('Mapa', {
-              lat: -9.380494,
-              lng: -74.966924,
-              titulo: 'SEDE PUERTO INCA',
-              direccion: 'Av. Sanchez Cerro s/n con Jr. 28 de julio s/n',
-              img: require('../assets/img/iconos-negro/protesta.png'),
-            });
-          }}>
-          <Image
-            source={require('../assets/img/iconos/juz.png')}
-            style={style.imgIcon}
-          />
-          <Text style={style.textBtn}>SEDE PUERTO INCA</Text>
+          <Text style={style.textBtn}>SEDE ATALAYA</Text>
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.7}
