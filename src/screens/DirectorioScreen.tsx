@@ -40,16 +40,7 @@ const DirectorioScreen = ({navigation, route}: Props) => {
           <Text style={{fontWeight: 'bold', fontSize: 18, color: 'white'}}>
             CSJ Ucayali
           </Text>
-          <TouchableOpacity
-          style={{ marginLeft:190, borderRadius:2, width:30, alignItems:'center'}}
-          onPress={()=>{navigation.navigate('DirectorioGeneral')}}
-        >
-          <Icon
-           name='arrow-back-sharp'
-           size={25}
-           style={{color:'white'}}
-          />
-        </TouchableOpacity>
+          
         </View>
       ),
       drawerPosition: 'left',
@@ -76,8 +67,11 @@ const DirectorioScreen = ({navigation, route}: Props) => {
             <View style={{
               padding:8,
               backgroundColor:'white',
+              justifyContent:'center',
+              alignItems:'center',
               borderRadius:50,
-              marginRight:10
+              marginRight:10,
+              height:50
             }}>
               <Image
                 source={require('../assets/img/icono-transparencia/iconos_negros/telefono-fijo.png')}
@@ -113,7 +107,6 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     color: 'black',
     fontSize: 18,
-    /*marginTop: 20,*/
     marginBottom: 8,
     textDecorationLine: 'underline',
   },
@@ -127,6 +120,7 @@ const styles = StyleSheet.create({
   },
   containerSafe:{
     flex: 1,
+    marginBottom:100
   },
   item: {
     flexDirection:'row',

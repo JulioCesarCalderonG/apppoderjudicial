@@ -6,6 +6,7 @@ import CejScreen from "../screens/CejScreen";
 import MauScreen from "../screens/MauScreen";
 import MpScreen from "../screens/MpScreen";
 import EccdjScreen from "../screens/EccdjScreen";
+import Prueba from '../screens/Prueba';
 
 
 export type RootDrawerParams = {
@@ -16,7 +17,8 @@ export type RootDrawerParams = {
     CEJ:undefined,
     MAU:undefined,
     MP:undefined,
-    ECCD:undefined
+    ECCD:undefined,
+    Prueba:undefined
 }
 
 const Drawer = createDrawerNavigator<RootDrawerParams>();
@@ -29,11 +31,13 @@ const DrawerJudicial = () => {
     screenOptions={{
       unmountOnBlur:true
     }}
-    initialRouteName="Judiciales"
+    
+    backBehavior="history"
     >
       <Drawer.Screen name="Judiciales"  component={JudicialesScreen} />
       <Drawer.Screen name="LinkJudiciales" component={LinkJudicialesScreen} />
       <Drawer.Screen name="CEJ"  component={CejScreen} />
+      <Drawer.Screen name="Prueba"  component={Prueba} />
       <Drawer.Screen name="MAU"  component={MauScreen} />
       <Drawer.Screen name="MP"  component={MpScreen} />
       <Drawer.Screen name="ECCD"  component={EccdjScreen} />

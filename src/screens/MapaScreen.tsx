@@ -31,19 +31,6 @@ const MapaScreen = ({  navigation, route}: Props) => {
           <Text style={{fontWeight: 'bold', fontSize: 18, color: 'white'}}>
             CSJ Ucayali
           </Text>
-
-          <TouchableOpacity
-            style={{
-              marginLeft: 190,
-              borderRadius: 2,
-              width: 30,
-              alignItems: 'center',
-            }}
-            onPress={() => {
-              navigation.navigate('Geolocalizacion');
-            }}>
-            <Icon name="arrow-back-sharp" size={25} style={{color: 'white'}} />
-          </TouchableOpacity>
         </View>
       ),
       drawerPosition: 'left',

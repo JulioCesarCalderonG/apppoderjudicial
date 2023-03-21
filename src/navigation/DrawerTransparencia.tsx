@@ -38,7 +38,8 @@ const DrawerTransparencia = () => {
     screenOptions={{
       unmountOnBlur:true
     }}
-    initialRouteName="Transparencia"
+    
+    backBehavior="history"
     
     >
       <Drawer.Screen name="Transparencia" component={TransparenciaScreen} />
