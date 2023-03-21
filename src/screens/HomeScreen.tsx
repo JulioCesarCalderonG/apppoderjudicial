@@ -89,6 +89,7 @@ const style = StyleSheet.create({
   },
   opciones: {
     flexDirection: 'row',
+    marginBottom:0
   },
   contentImage: {
     width: '100%',
@@ -158,7 +159,7 @@ const style = StyleSheet.create({
   },
   mensaje: {
     position: 'absolute',
-    bottom: 150,
+    bottom: 120,
     borderRadius: 5,
     fontSize: 9,
     padding: 30,
