@@ -85,7 +85,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.529495,
               titulo: 'SEDE ADMINISTRATIVA',
               direccion: 'Jr. Tarapaca 913-919',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              img: require('../assets/img/iconos-negro/oficina.png'),
             });
           }}>
           <Image
@@ -121,7 +121,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.528032,
               titulo: 'SEDE MANCO CAPAC',
               direccion: 'Jr. Manco Capac 234',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              img: require('../assets/img/iconos-negro/oficina.png'),
             });
           }}>
           <Image
@@ -139,7 +139,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.541444,
               titulo: 'SEDE MANANTAY',
               direccion: 'Av. Tupac Amaru 733',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              img: require('../assets/img/iconos-negro/oficina.png'),
             });
           }}>
           <Image
@@ -157,7 +157,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.541225,
               titulo: 'SEDE FAMILIA',
               direccion: 'Jr. Sanchez Cerro 250',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              img: require('../assets/img/iconos-negro/oficina.png'),
             });
           }}>
           <Image
@@ -175,7 +175,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.571866,
               titulo: 'SEDE YARINACOCHA',
               direccion: 'Av. Yarinacocha 900',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              img: require('../assets/img/iconos-negro/oficina.png'),
             });
           }}>
           <Image
@@ -193,7 +193,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.31513,
               titulo: 'SEDE ARCHIVO GENERAL',
               direccion: 'Jr. Tarapaca 764',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              img: require('../assets/img/iconos-negro/oficina.png'),
             });
           }}>
           <Image
