@@ -45,9 +45,9 @@ const DirectorioScreen = ({navigation, route}: Props) => {
           onPress={()=>{navigation.navigate('DirectorioGeneral')}}
         >
           <Icon
-            name='arrow-back-sharp'
-            size={25}
-            style={{color:'white'}}
+           name='arrow-back-sharp'
+           size={25}
+           style={{color:'white'}}
           />
         </TouchableOpacity>
         </View>

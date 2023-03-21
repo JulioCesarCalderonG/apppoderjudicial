@@ -88,7 +88,7 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
       }}
       >
       <LogoComponent />
-      <Text style={style.titulo}>DIRECTORIO GENERAL</Text>
+      <Text style={style.titulo}>SEDE PRINCIPAL</Text>
         <ScrollView
           showsHorizontalScrollIndicator={false}
           showsVerticalScrollIndicator={false}
@@ -103,7 +103,7 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
               source={require('../assets/img/iconos/juz.png')}
               style={style.imgIcon}
             />
-            <Text style={style.textBtn}>SEDE PRINCIPAL UCAYALI</Text>
+            <Text style={style.textBtn}>SEDE CENTRAL</Text>
           </TouchableOpacity>
           <Text style={style.textSubSedes}>SUB SEDES</Text>
           <TouchableOpacity
