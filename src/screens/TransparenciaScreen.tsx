@@ -68,11 +68,11 @@ const TransparenciaScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoTransparencia
-            titulo="CONSULTA AMIGABLE"
-            img={require('../assets/img/icono-judiciales/4-consulta-amigable.jpg')}
+            titulo="PLAN ANUAL DE CONTRATACIONES"
+            img={require('../assets/img/icono-judiciales/Oscee.jpg')}
             onPress={() => {
               navigation.navigate('LinkTransparencia', {
-                link: 'https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx',
+                link: 'https://prodapp4.seace.gob.pe/pac3-publico/pages/buscadorPPpublico.xhtml',
               });
             }}
           />

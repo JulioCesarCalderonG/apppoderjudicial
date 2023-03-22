@@ -13,7 +13,7 @@ const GrupoTransparencia = ({titulo,img,onPress}:Props) => {
       style={style.viewServicios}
       activeOpacity={0.7}
       onPress={onPress}>
-      <Image source={img} style={{...style.imgServicios}} />
+      <Image source={img} style={{...style.imgServicios}}  resizeMode='stretch'/>
       <Text style={style.titleServicios}>{titulo}</Text>
     </TouchableOpacity>
   );

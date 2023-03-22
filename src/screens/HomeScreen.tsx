@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {
   Image,
   StyleSheet,
@@ -8,7 +8,8 @@ import {
   ImageBackground,
 } from 'react-native';
 import {StackScreenProps} from '@react-navigation/stack';
-import WebView from 'react-native-webview';
+
+
 interface Props extends StackScreenProps<any, any> {}
 export const Home = ({navigation}: Props) => {
   return (
@@ -17,7 +18,7 @@ export const Home = ({navigation}: Props) => {
       resizeMode="cover"
       style={style.container}
       imageStyle={{opacity: 0.3}}>
-      <View style={style.contentImage}>
+      <View style={{...style.contentImage, top:340}}>
         <Image
           source={require('../assets/img/portadanew2.png')}
           style={style.imagePrincipal}
@@ -93,6 +94,8 @@ const style = StyleSheet.create({
   },
   contentImage: {
     width: '100%',
+    position:'absolute',
+    zIndex:99999,
   },
   imagePrincipal: {
     width: '100%',

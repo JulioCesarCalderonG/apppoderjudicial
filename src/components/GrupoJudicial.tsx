@@ -18,6 +18,7 @@ const GrupoJudicial = ({titulo,subTitulo,img,onPress}:Props) => {
       <Image
         source={img}
         style={{...style.imgServicios}}
+        resizeMode='stretch'
       />
       <Text style={style.titleServicios}>
         {titulo}
