@@ -283,7 +283,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.966924,
               titulo: 'SEDE PUERTO INCA',
               direccion: 'Av. Sanchez Cerro s/n con Jr. 28 de julio s/n',
-              img: require('../assets/img/iconos-negro/protesta.png'),
+              img: require('../assets/img/icono-sedes/puertoinca.png'),
             });
           }}>
           <Image

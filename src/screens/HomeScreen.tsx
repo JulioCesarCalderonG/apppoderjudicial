@@ -57,7 +57,7 @@ export const Home = ({navigation}: Props) => {
 
         <Text style={style.textPresidente}>Tullio Bermeo Turchi</Text>
         <Text style={style.textCargo}>Presidente</Text>
-        <Text style={style.textGestion}>Gestión 2023-2024.</Text>
+        <Text style={style.textGestion}>Gestión 2023-2024</Text>
       </View>
     </ImageBackground>
   );

@@ -61,14 +61,14 @@ const TransparenciaScreen = ({navigation}: Props) => {
         style={style.containerBtn}>
         <View style={style.general}>
           <GrupoTransparencia
-            titulo="GEOCALIZACIÓN"
+            titulo="GEOLOCALIZACIÓN"
             img={require('../assets/img/icono-judiciales/geocalizacion.png')}
             onPress={() => {
               navigation.navigate('Geolocalizacion');
             }}
           />
           <GrupoTransparencia
-            titulo="PLAN ANUAL DE CONTRATACIONES"
+            titulo="PLAN ANUAL DE CONTRATACIONES - PAC"
             img={require('../assets/img/icono-judiciales/Oscee.jpg')}
             onPress={() => {
               navigation.navigate('LinkTransparencia', {
