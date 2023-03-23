@@ -106,25 +106,6 @@ const MpScreen = ({navigation}:Props) => {
              <Text style={style.textBtn}>MESA DE PARTES ELECTRÓNICA ADMINISTRATIVA</Text>
             </View>
           </TouchableOpacity>
-
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda'})
-            }}>
-            <View 
-             style={style.viewIcono}
-            >
-            <Image
-              source={require('../assets/img/iconos/correos.png')}
-              style={style.imgIcon}
-            />
-            </View>
-            <View style={style.viewText}>
-             <Text style={style.textBtn}>MESA DE PARTES DIFERENTES SEDES JURISDICCIONALES @GMAIL</Text>
-            </View>
-          </TouchableOpacity>
           
         </ScrollView>
     </ImageBackground>
