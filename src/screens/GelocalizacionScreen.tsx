@@ -99,11 +99,11 @@ const GelocalizacionScreen = ({navigation}: Props) => {
           style={style.btnSecundario}
           onPress={() => {
             navigation.navigate('Mapa', {
-              lat: -8.2301,
-              lng: -74.31513,
+              lat: -8.38348,
+              lng: -74.53109,
               titulo: 'SEDE ARCHIVO GENERAL DE EXPEDIENTES',
               direccion: 'Jr. Tarapaca 764',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/archivogeneral.jpeg'),
             });
           }}>
           <Image
@@ -139,7 +139,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.528032,
               titulo: 'SEDE MANCO CAPAC',
               direccion: 'Jr. Manco Capac 234',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/mancocapac.jpg'),
             });
           }}>
           <Image
@@ -157,7 +157,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.541225,
               titulo: 'SEDE FAMILIA',
               direccion: 'Jr. Sanchez Cerro 250',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/familia.jpg'),
             });
           }}>
           <Image
@@ -175,7 +175,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.533478,
               titulo: 'SEDE JUZGADO DE PAZ LETRADO PENAL',
               direccion: 'Psje. Lazaro Cohen 171',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/pazletradopenalcalleria.jpg'),
             });
           }}>
           <Image
@@ -193,7 +193,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.541444,
               titulo: 'SEDE MANANTAY',
               direccion: 'Av. Tupac Amaru 733',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/manantay.jpg'),
             });
           }}>
           <Image
@@ -229,7 +229,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.631298,
               titulo: 'SALA PENAL',
               direccion: 'C.F.B Km 12',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/salapenal.jpg'),
             });
           }}>
           <Image

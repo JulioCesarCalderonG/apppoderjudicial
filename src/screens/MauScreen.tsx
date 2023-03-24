@@ -106,7 +106,7 @@ const MauScreen = ({navigation}: Props) => {
             />
           </View>
           <View style={style.viewText}>
-            <Text style={style.textBtn}>SOLICITUDES JUDICIALES</Text>
+            <Text style={style.textBtn}>CONSULTA DIRECTA EN PLATAFORMA</Text>
             <View style={style.viewSubButton}>
               <TouchableOpacity 
                 style={style.btnSub}
@@ -178,9 +178,7 @@ const MauScreen = ({navigation}: Props) => {
             />
           </View>
           <View style={style.viewText}>
-            <Text style={style.textBtn}>
-              SOLICITA TU CITA PARA LA ORIENTACIÓN JUDICIAL
-            </Text>
+            <Text style={style.textBtn}>SOLICITA TU CITA PERSONALIZADA</Text>
           </View>
         </TouchableOpacity>
 
@@ -197,7 +195,7 @@ const MauScreen = ({navigation}: Props) => {
             />
           </View>
           <View style={style.viewText}>
-            <Text style={style.textBtn}>CABINA DE ACCESO A LA JUSTICIA</Text>
+            <Text style={style.textBtn}>CABINA - CONOCE NUESTROS SERVICIOS</Text>
           </View>
         </TouchableOpacity>
 
