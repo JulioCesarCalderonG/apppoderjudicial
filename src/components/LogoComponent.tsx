@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     },
     logoPrincipal:{
         width:'15%',
-        height:45
+        height:50
     },
     viewText:{
         height:40,
