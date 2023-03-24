@@ -98,6 +98,52 @@ const MauScreen = ({navigation}: Props) => {
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
         style={style.containerBtn}>
+          <View style={style.btnCentral}>
+          <View style={style.viewIcono}>
+            <Image
+              source={require('../assets/img/iconos/papellupa.png')}
+              style={style.imgIcon}
+            />
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>SOLICITUDES JUDICIALES</Text>
+            <View style={style.viewSubButton}>
+              <TouchableOpacity 
+                style={style.btnSub}
+                onPress={() => {
+                  navigation.navigate('LinkJudiciales', {
+                    link: 'https://serjus.pj.gob.pe/consultajudicialviaweb/Ucayali',
+                  });
+                }}
+              >
+                <Icon
+                  name="caret-forward-outline"
+                  style={{
+                    color: '#960b28',
+                  }}
+                />
+                <Text style={style.btnText}>Registrar</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity 
+                style={style.btnSub}
+                onPress={() => {
+                  navigation.navigate('LinkJudiciales', {
+                    link: 'https://serjus.pj.gob.pe/seguimientoconsultajudicialviaweb/Ucayali',
+                  });
+                }}
+              >
+                <Icon
+                  name="search"
+                  style={{
+                    color: '#960b28',
+                  }}
+                />
+                <Text style={style.btnText}>Seguimiento</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
         <TouchableOpacity
           activeOpacity={0.7}
           style={style.btnCentral}
@@ -314,4 +360,23 @@ const style = StyleSheet.create({
     textAlign: 'justify',
     color:'black',
   },
+  viewSubButton: {
+    flexDirection: 'row',
+    marginTop: 5,
+  },
+  btnSub: {
+    backgroundColor: 'white',
+    width: 105,
+    height: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 10,
+    borderRadius: 5,
+    flexDirection: 'row',
+  },
+  btnText: {
+    color: '#960b28',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  }
 });

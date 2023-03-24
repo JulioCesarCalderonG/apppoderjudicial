@@ -6,53 +6,24 @@ import {
   TouchableOpacity,
   StyleSheet,
   ImageBackground,
-  ScrollView,
   Image,
+  FlatList,
+  SafeAreaView
 } from 'react-native';
 import {RootDrawerTransparenciaParams} from '../navigation/DrawerTransparencia';
 import {drawerStyle} from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
 import LogoComponent from '../components/LogoComponent';
-import apiPj from '../api/apiPj';
-import apiSadm from '../api/apiSadm';
-import apiSage from '../api/apiSage';
-import apiSata from '../api/apiSata';
-import apiScampo from '../api/apiScampo';
-import apiSchero from '../api/apiSchero';
-import apiScomi from '../api/apiScomi';
-import apiSconta from '../api/apiSconta';
-import apiSep from '../api/apiSep';
-import apiSman from '../api/apiSman';
-import apiSmc from '../api/apiSmc';
-import apiSp from '../api/apiSp';
-import apiSpa from '../api/apiSpa';
-import apiSpi from '../api/apiSpi';
-import apiSpu from '../api/apiSpu';
-import apiSyari from '../api/apiSyari';
+import {apiGeneral} from '../api/apiGeneral';
 
 interface Props
   extends DrawerScreenProps<
-  RootDrawerTransparenciaParams,
+    RootDrawerTransparenciaParams,
     'DirectorioGeneral'
   > {}
 
 const DirectorioGeneralScreen = ({navigation}: Props) => {
-  const {dataPj} =apiPj();
-  const {dataSadm} =apiSadm();
-  const {dataSage} =apiSage();
-  const {dataSata} =apiSata();
-  const {dataScampo} =apiScampo();
-  const {dataSchero} =apiSchero();
-  const {dataScomi} =apiScomi();
-  const {dataSconta} =apiSconta();
-  const {dataSep} =apiSep();
-  const {dataSman} =apiSman();
-  const {dataSmc} =apiSmc();
-  const {dataSp} =apiSp();
-  const {dataSpa} =apiSpa();
-  const {dataSpi} =apiSpi();
-  const {dataSpu} =apiSpu();
-  const {dataSyari} =apiSyari();
+  const {dataGe} = apiGeneral();
   useEffect(() => {
     navigation.setOptions({
       header: () => (
@@ -84,210 +55,49 @@ const DirectorioGeneralScreen = ({navigation}: Props) => {
       resizeMode="cover"
       style={style.container}
       imageStyle={{
-        opacity: 0.4
-      }}
-      >
+        opacity: 0.2,
+      }}>
       <LogoComponent />
-      <Text style={style.titulo}>SEDE PRINCIPAL</Text>
-        <ScrollView
-          showsHorizontalScrollIndicator={false}
-          showsVerticalScrollIndicator={false}
-          style={style.containerBtn}>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnCentral}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataPj!});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE CENTRAL</Text>
-          </TouchableOpacity>
-          <Text style={style.textSubSedes}>SUB SEDES</Text>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSadm});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE ADMINISTRACION</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSage});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE ARCHIVO GENERAL DE EXPEDIENTES</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSp});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE SAENZ PEÑA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSmc});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE MANCO CAPAC</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSchero});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE FAMILIA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataScomi});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE JUZGADO DE PAZ LETRADO PENAL</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSman});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE MANANTAY</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSyari});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE YARINACOCHA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSep});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SALA PENAL</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataScampo});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE CAMPO VERDE</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSpi});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE PUERTO INCA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio',{telefono:'061-58-6369',dato:dataSpa});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE PADRE ABAD</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSpu});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE PURUS</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSconta});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE CONTAMANA</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={style.btnSecundario}
-            onPress={() => {
-              navigation.navigate('Directorio', {telefono:'061-58-6369',dato:dataSata});
-            }}>
-            <Image
-              source={require('../assets/img/iconos/juz.png')}
-              style={style.imgIcon}
-            />
-            <Text style={style.textBtn}>SEDE ATALAYA</Text>
-          </TouchableOpacity>
-        </ScrollView>
-      
+      <Text style={style.titulo}>DIRECTORIO TELEFONICO</Text>
+      <Text style={style.subTitulo}>Telefono: 061-58 6369</Text>
+      <SafeAreaView
+        style={style.containerBtn}>
+        <FlatList
+          data={dataGe}
+          renderItem={(item) =>
+            (item.index % 2 === 0) ? 
+              <View style={{...style.viewDirectorio,backgroundColor:'white'}}>
+                <View style={style.viewImage}>
+                  <Image
+                    source={require('../assets/img/icono-transparencia/iconos_negros/telefono-fijo.png')}
+                    style={style.imgTelefono}
+                  />
+                </View>
+                <View style={style.viewSedes}>
+                  <Text style={style.textSede}>{item.item.sede}</Text>
+                  <Text style={style.textRepresentante}>{item.item.representante}</Text>
+                  <Text style={style.textAnexo}>Anexo: {item.item.anexo}</Text>
+                </View>
+              </View>
+             : 
+              <View style={{...style.viewDirectorio, backgroundColor:'#ccc'}}>
+                <View style={style.viewImage}>
+                  <Image
+                    source={require('../assets/img/icono-transparencia/iconos_negros/telefono-fijo.png')}
+                    style={style.imgTelefono}
+                  />
+                </View>
+                <View style={style.viewSedes}>
+                  <Text style={style.textSede}>{item.item.sede}</Text>
+                  <Text style={style.textRepresentante}>{item.item.representante}</Text>
+                  <Text style={style.textAnexo}>Anexo: {item.item.anexo}</Text>
+                </View>
+              </View>
+            
+          }
+          keyExtractor={item => item.anexo}
+        />
+      </SafeAreaView>
     </ImageBackground>
   );
 };
@@ -307,10 +117,57 @@ const style = StyleSheet.create({
     color: 'black',
     fontSize: 18,
     /*marginTop: 20,*/
-    marginBottom: 17,
-    textDecorationLine: 'underline',
+    marginBottom: 5,
   },
-  textSubSedes:{
+  subTitulo: {
+    textAlign: 'center',
+    color: 'black',
+    fontWeight: '700',
+    marginBottom: 30,
+  },
+  containerBtn: {
+    flex:1,
+    marginBottom: 100,
+  },
+  viewDirectorio: {
+    width: '100%',
+    flexDirection: 'row',
+    textAlign: 'center',
+    height: 80,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  viewImage: {
+    width: '20%',
+    height: 80,
+    alignItems: 'center',
+    justifyContent: 'center',
+    left: 10,
+  },
+  imgTelefono: {
+    width: '75%',
+    height: '70%',
+  },
+  viewSedes: {
+    width: '80%',
+    left: 15,
+  },
+  textSede: {
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 13,
+  },
+  textRepresentante: {
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 12,
+  },
+  textAnexo: {
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 12,
+  },
+  /*  textSubSedes:{
     textAlign:'center',
     color:'black',
     fontSize:15,
@@ -318,11 +175,7 @@ const style = StyleSheet.create({
     marginBottom:15,
     fontWeight:'bold'
   },
-  containerBtn: {
-    marginLeft:30,
-    marginRight:30,
-    marginBottom:100
-  },
+ 
   btnCentral: {
     backgroundColor: '#960b28',
     justifyContent: 'center',
@@ -364,5 +217,5 @@ const style = StyleSheet.create({
     color: 'white',
     fontSize: 10,
     fontWeight: 'bold',
-  },
+  }, */
 });

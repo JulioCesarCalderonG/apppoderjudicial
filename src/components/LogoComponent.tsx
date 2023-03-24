@@ -31,12 +31,13 @@ const styles = StyleSheet.create({
         alignItems:'center'        
     },
     logoPrincipal:{
-        width:'12%',
-        height:40
+        width:'15%',
+        height:45
     },
     viewText:{
         height:40,
         left:10,
+        top:-6
     },
     title:{
         color:'black',
