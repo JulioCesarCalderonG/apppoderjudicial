@@ -6,52 +6,76 @@ export const apiGeneral = () => {
 
  const general:Array<DirectorioGeneral> = [
     {
-        sede:'PRESIDENCIA',
-        representante:'Presidente',
-        anexo:'3300'
+        sede:'SEDE CENTRAL',
+        representante:'Presidencia - Mesa de Partes',
+        anexo:'33003'
     },
     {
-        sede:'PRESIDENCIA',
-        representante:'Secretaria de Presidencia',
-        anexo:'3301'
+        sede:'SEDE CENTRAL',
+        representante:'ODECMA - Mesa de Partes',
+        anexo:'33030'
     },
     {
-        sede:'PRESIDENCIA',
-        representante:'Coordinadora de de Presidencia',
-        anexo:'3302'
+        sede:'SEDE CENTRAL',
+        representante:'Presidencia - Mesa de Partes NCPP',
+        anexo:'33070'
     },
     {
-        sede:'PRESIDENCIA',
-        representante:'Coordinadora de de Presidencia',
-        anexo:'3303'
+        sede:'SEDE SAENZ PEÑA',
+        representante:'Mesa de Partes',
+        anexo:'33177'
     },
     {
-        sede:'PRESIDENCIA',
-        representante:'Coordinadora de de Presidencia',
-        anexo:'3304'
+        sede:'SEDE JUZGADO DE PAZ LETRADO',
+        representante:'Mesa de Partes',
+        anexo:'33650'
     },
     {
-        sede:'PRESIDENCIA',
-        representante:'Coordinadora de de Presidencia',
-        anexo:'3305'
+        sede:'SEDE YARINACOCHA',
+        representante:'Mesa de Partes',
+        anexo:'33750'
     },
     {
-        sede:'PRESIDENCIA',
-        representante:'Coordinadora de de Presidencia',
-        anexo:'3306'
+        sede:'SEDE DE FAMILIA',
+        representante:'Mesa de Partes',
+        anexo:'33760'
     },
     {
-        sede:'PRESIDENCIA',
-        representante:'Coordinadora de de Presidencia',
-        anexo:'3307'
+        sede:'SEDE ARCHIVO GENERAL DE EXPEDIENTES',
+        representante:'Mesa de Partes',
+        anexo:'33682'
     },
     {
-        sede:'PRESIDENCIA',
-        representante:'Coordinadora de de Presidencia',
-        anexo:'3308'
+        sede:'SEDE MANCO CAPAC',
+        representante:'Mesa de Partes NLPT ',
+        anexo:'33526'
+    },
+    {
+        sede:'SEDE MANCO CAPAC',
+        representante:'Mesa de Partes Tradicional',
+        anexo:'33523'
+    },
+    {
+        sede:'SEDE PADRE ABAD',
+        representante:'Mesa de Partes',
+        anexo:'33601'
+    },
+    {
+        sede:'SEDE ATALAYA',
+        representante:'Mesa de Partes',
+        anexo:'33610'
+    },{
+        sede:'SEDE MANANTAY',
+        representante:'Juzgado de Paz Letrado - Mesa de Partes',
+        anexo:'33662'
+    },
+    {
+        sede:'SEDE PUERTO INCA',
+        representante:'Juzgado de Paz Letrado - Mesa de Partes',
+        anexo:'33721'
     }
  ]
-
+ 
  useEffect(() => {
     setDataGe(general)
   }, [])

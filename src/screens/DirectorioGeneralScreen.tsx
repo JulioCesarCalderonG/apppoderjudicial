@@ -123,7 +123,7 @@ const style = StyleSheet.create({
     textAlign: 'center',
     color: 'black',
     fontWeight: '700',
-    marginBottom: 30,
+    marginBottom: 15,
   },
   containerBtn: {
     flex:1,

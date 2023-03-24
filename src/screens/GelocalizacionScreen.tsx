@@ -265,7 +265,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.533478,
               titulo: 'MODULO BÁSICO DE JUSTICIA DE CAMPO VERDE',
               direccion: 'Jr. Jose Pezo 285',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/modulocampo.jpg'),
             });
           }}>
           <Image
