@@ -39,7 +39,6 @@ const style = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 4.65,
-
     elevation: 5,
   },
   imgServicios: {
