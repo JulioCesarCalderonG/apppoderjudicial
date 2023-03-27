@@ -7,52 +7,62 @@ import {
   TouchableOpacity,
   ImageBackground,
 } from 'react-native';
-import {StackScreenProps} from '@react-navigation/stack';
+import { StackScreenProps } from '@react-navigation/stack';
 
 
-interface Props extends StackScreenProps<any, any> {}
-export const Home = ({navigation}: Props) => {
+interface Props extends StackScreenProps<any, any> { }
+export const Home = ({ navigation }: Props) => {
   return (
     <ImageBackground
       source={require('../assets/img/shipibo-2.png')}
       resizeMode="cover"
       style={style.container}
-      imageStyle={{opacity: 0.3}}>
-      <View style={{...style.contentImage, top:340}}>
+      imageStyle={{ opacity: 0.3 }}>
+      <View style={{ ...style.contentImage, top: 340 }}>
         <Image
           source={require('../assets/img/portadanew2.png')}
           style={style.imagePrincipal}
           resizeMode="stretch"
         />
       </View>
-      <Image
-        source={require('../assets/img/pj2.png')}
-        style={style.imageSecundaria}
-      />
-      <Text style={style.titulo}>PODER JUDICIAL</Text>
-      <Text style={style.subTitulo}>Corte Superior de Justicia de Ucayali</Text>
-      <View style={style.opciones}>
-        {/*  Modifica el primer botonm */}
-        <TouchableOpacity
-          style={style.btnJudiciales}
-          activeOpacity={0.7}
-          onPress={() => navigation.navigate('DrawerJudicial')}>
-          <Text style={style.btnText}>Servicios Judiciales</Text>
-        </TouchableOpacity>
-        {/* Modifica el segundo boton */}
-        <TouchableOpacity
-          style={style.btnTransparencia}
-          activeOpacity={0.7}
-          onPress={() => navigation.navigate('DrawerTransparencia')}>
-          <Text style={style.btnText}>Transparencia</Text>
-        </TouchableOpacity>
+      <View
+        style={{
+          flex:1,
+          justifyContent:'center',
+          alignItems:'center',
+          position:'absolute',
+          zIndex:99
+        }}
+      >
+        <Image
+          source={require('../assets/img/pj2.png')}
+          style={style.imageSecundaria}
+        />
+        <Text style={style.titulo}>PODER JUDICIAL</Text>
+        <Text style={style.subTitulo}>Corte Superior de Justicia de Ucayali</Text>
+        <View style={style.opciones}>
+          {/*  Modifica el primer botonm */}
+          <TouchableOpacity
+            style={style.btnJudiciales}
+            activeOpacity={0.7}
+            onPress={() => navigation.navigate('DrawerJudicial')}>
+            <Text style={style.btnText}>Servicios Judiciales</Text>
+          </TouchableOpacity>
+          {/* Modifica el segundo boton */}
+          <TouchableOpacity
+            style={style.btnTransparencia}
+            activeOpacity={0.7}
+            onPress={() => navigation.navigate('DrawerTransparencia')}>
+            <Text style={style.btnText}>Transparencia</Text>
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={style.mensaje}>
         <Text style={style.textMensaje}>
           La Corte Superior de Justicia de Ucayali genera cercania de nuestros servicios
           a la población, siendo esto un compromiso de la gestión 2023-2024 para promover
           canales de acceso hacia los ciudadanos que contribuyan a la mejora en la
-          administracion de la justicia.
+          administración de la justicia.
         </Text>
 
         <Text style={style.textPresidente}>Tullio Bermeo Turchi</Text>
@@ -90,12 +100,12 @@ const style = StyleSheet.create({
   },
   opciones: {
     flexDirection: 'row',
-    marginBottom:0
+    marginBottom: 0,
   },
   contentImage: {
     width: '100%',
-    position:'absolute',
-    zIndex:99999,
+    position: 'absolute',
+    zIndex: 99999,
   },
   imagePrincipal: {
     width: '100%',
@@ -172,7 +182,7 @@ const style = StyleSheet.create({
     color: 'black',
     marginBottom: 8,
     fontSize: 14,
-    textAlign:'center'
+    textAlign: 'justify'
   },
   textPresidente: {
     color: 'black',

@@ -83,8 +83,8 @@ const JudicialesScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoJudicial
-            titulo="EMISIÓN DE CERTIFICADOS Y"
-            subTitulo="CONSULTA DE DEPÓSITOS JUDICIALES"
+            titulo="EMISIÓN DE CERTIFICADOS Y CONSULTA DE DEPÓSITOS JUDICIALES"
+            subTitulo=""
             img={require('../assets/img/icono-judiciales/4-emision-certificados.png')}
             onPress={() => {
               navigation.navigate('ECCD');
