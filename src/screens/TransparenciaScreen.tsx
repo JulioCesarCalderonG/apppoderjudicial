@@ -124,7 +124,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
             img={require('../assets/img/icono-judiciales/conoce-juez.png')}
             onPress={() => {
               navigation.navigate('LinkTransparencia', {
-                link: 'https://serjus.pj.gob.pe/conocejuez',
+                link: 'https://sap.pj.gob.pe/casillero-digital-web/#/conoce-tu-juez',
               });
             }}
           />

@@ -211,7 +211,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
               lng: -74.571866,
               titulo: 'SEDE YARINACOCHA',
               direccion: 'Av. Yarinacocha 900',
-              img: require('../assets/img/iconos-negro/oficina.png'),
+              img: require('../assets/img/icono-sedes/sedeyarinacocha.png'),
             });
           }}>
           <Image

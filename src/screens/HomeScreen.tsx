@@ -49,10 +49,10 @@ export const Home = ({navigation}: Props) => {
       </View>
       <View style={style.mensaje}>
         <Text style={style.textMensaje}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          necessitatibus recusandae accusantium facere ut. Laudantium nemo ullam
-          quo aliquid rem exercitationem, possimus atque magni impedit
-          assumenda, illo suscipit corrupti eius!
+          La Corte Superior de Justicia de Ucayali genera cercania de nuestros servicios
+          a la población, siendo esto un compromiso de la gestión 2023-2024 para promover
+          canales de acceso hacia los ciudadanos que contribuyan a la mejora en la
+          administracion de la justicia.
         </Text>
 
         <Text style={style.textPresidente}>Tullio Bermeo Turchi</Text>
@@ -170,7 +170,7 @@ const style = StyleSheet.create({
   },
   textMensaje: {
     color: 'black',
-    marginBottom: 5,
+    marginBottom: 8,
     fontSize: 14,
     textAlign:'center'
   },
