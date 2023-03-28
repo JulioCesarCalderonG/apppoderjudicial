@@ -106,14 +106,7 @@ const EccdjScreen = ({navigation}: Props) => {
           </View>
         </View>
 
-        <TouchableOpacity
-          activeOpacity={0.7}
-          style={style.btnCentral}
-          onPress={() => {
-            navigation.navigate('LinkJudiciales', {
-              link: 'https://casillas.pj.gob.pe/redam/#/',
-            });
-          }}>
+        <View style={style.btnCentral}>
           <View style={style.viewIcono}>
             <Image
               source={require('../assets/img/iconos/deudo.png')}
@@ -122,9 +115,44 @@ const EccdjScreen = ({navigation}: Props) => {
           </View>
           <View style={style.viewText}>
             <Text style={style.textBtn}>DEUDOR ALIMENTARIO MOROSO</Text>
-          </View>
-        </TouchableOpacity>
+            <View style={style.viewSubButton}>
+              <TouchableOpacity 
+                style={style.btnSub}
+                onPress={() => {
+                  navigation.navigate('LinkJudiciales', {
+                    link: 'https://serjus.pj.gob.pe/certificadodam/Ucayali',
+                  });
+                }}
+              >
+                <Icon
+                  name="caret-forward-outline"
+                  style={{
+                    color: '#960b28',
+                  }}
+                />
+                <Text style={style.btnText}>Registrar</Text>
+              </TouchableOpacity>
 
+              <TouchableOpacity 
+                style={style.btnSub}
+                onPress={() => {
+                  navigation.navigate('LinkJudiciales', {
+                    link: 'https://serjus.pj.gob.pe/seguimientocertificadodam/Ucayali',
+                  });
+                }}
+              >
+                <Icon
+                  name="search"
+                  style={{
+                    color: '#960b28',
+                  }}
+                />
+                <Text style={style.btnText}>Seguimiento</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+        
         <TouchableOpacity
           activeOpacity={0.7}
           style={style.btnCentral}
