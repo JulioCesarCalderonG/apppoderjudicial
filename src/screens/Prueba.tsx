@@ -60,7 +60,7 @@ const Prueba = ({navigation}:Props) => {
       :
       <WebView
       originWhitelist={['*']}
-      source={{html:'<h5 style="color:black; font-size:20px">hola mundo<h5>'}}
+      source={{uri:''}}
         />
     }
 </View>

@@ -79,12 +79,11 @@ export const Home = ({ navigation }: Props) => {
           a la población, siendo esto un compromiso de la gestión 2023-2024 para promover
           canales de acceso hacia los ciudadanos que contribuyan a la mejora en la
           administración de la justicia.`+'</h2>'
-          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px">Tullio Bermeo Turchi</h2>' 
-          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px">Presidente</h2>' 
-          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px">Gestión 2023-2024</h2>'}}
+          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px;">Tullio Bermeo Turchi</h2>' 
+          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px;">Presidente</h2>' 
+          +'<h2 style="text-align:center; font-size:40px;">Gestión 2023-2024</h2>'}}
           style={{
-            backgroundColor:'rgba(0,0,0,0)',
-            marginBottom:-50
+            backgroundColor:'rgba(0,0,0,0)'
           }}
         />
       <Text style={{color:'rgba(0,0,0,0.0)'}}>aasasasasasasaaaaaaaaaaaaaaaaaaaaaaa</Text>

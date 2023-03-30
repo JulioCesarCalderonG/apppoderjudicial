@@ -87,8 +87,53 @@ const MpScreen = ({navigation}:Props) => {
              <Text style={style.textBtn}>MESA DE PARTES ELECTRÓNICA (No penales)</Text>
             </View>
           </TouchableOpacity>
+          <View style={style.btnCentral}>
+          <View style={style.viewIcono}>
+            <Image
+              source={require('../assets/img/iconos/papellupa.png')}
+              style={style.imgIcon}
+            />
+          </View>
+          <View style={style.viewText}>
+            <Text style={{...style.textBtn, fontSize:11}}>MESA DE PARTES ELECTRÓNICA ADMINISTRATIVA</Text>
+            <View style={style.viewSubButton}>
+              <TouchableOpacity 
+                style={style.btnSub}
+                onPress={() => {
+                  navigation.navigate('LinkJudiciales', {
+                    link: 'https://sgd.pj.gob.pe/mpea/inicio',
+                  });
+                }}
+              >
+                <Icon
+                  name="caret-forward-outline"
+                  style={{
+                    color: '#960b28',
+                  }}
+                />
+                <Text style={style.btnText}>Registrar</Text>
+              </TouchableOpacity>
 
-          <TouchableOpacity
+              <TouchableOpacity 
+                style={style.btnSub}
+                onPress={() => {
+                  navigation.navigate('LinkJudiciales', {
+                    link: 'https://sgd.pj.gob.pe/mpea/inicio-seguimiento',
+                  });
+                }}
+              >
+                <Icon
+                  name="search"
+                  style={{
+                    color: '#960b28',
+                  }}
+                />
+                <Text style={style.btnText}>Seguimiento</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+          {/* <TouchableOpacity
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
@@ -105,7 +150,7 @@ const MpScreen = ({navigation}:Props) => {
             <View style={style.viewText}>
              <Text style={style.textBtn}>MESA DE PARTES ELECTRÓNICA ADMINISTRATIVA</Text>
             </View>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           
         </ScrollView>
     </ImageBackground>
@@ -171,4 +216,24 @@ const style = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
   },
+  viewSubButton: {
+    flexDirection: 'row',
+    marginTop: 5,
+  },
+  btnSub: {
+    backgroundColor: 'white',
+    width: 100,
+    height: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 10,
+    borderRadius: 5,
+    flexDirection: 'row',
+  },
+  btnText: {
+    color: '#960b28',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    fontSize:12
+  }
 });

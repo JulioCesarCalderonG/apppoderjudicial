@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { drawerStyle } from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -63,8 +63,8 @@ const LinkJudicialesScreen = ({navigation,route}:Props) => {
               </View>
             :
               <WebView 
-              source={{ uri: route.params.link }} 
-              onLoad={()=>console.log('load')}
+              source={{ uri: route.params.link }}
+              originWhitelist={['http://*', 'https://*', 'intent://*', 'meet://']}
               />
           }
     </View>
