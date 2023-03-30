@@ -231,7 +231,7 @@ const EccdjScreen = ({navigation}: Props) => {
           style={style.btnCentral}
           onPress={() => {
             navigation.navigate('LinkJudiciales', {
-              link: 'http://csjuc.gongalsoft.com/',
+              link: 'https://csjuc.gongalsoft.com/',
             });
           }}>
           <View style={style.viewIcono}>
