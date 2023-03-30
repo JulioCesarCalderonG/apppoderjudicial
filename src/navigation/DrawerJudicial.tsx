@@ -18,7 +18,6 @@ export type RootDrawerParams = {
     MAU:undefined,
     MP:undefined,
     ECCD:undefined,
-    Prueba:undefined
 }
 
 const Drawer = createDrawerNavigator<RootDrawerParams>();
@@ -37,7 +36,7 @@ const DrawerJudicial = () => {
       <Drawer.Screen name="Judiciales"  component={JudicialesScreen} />
       <Drawer.Screen name="LinkJudiciales" component={LinkJudicialesScreen} />
       <Drawer.Screen name="CEJ"  component={CejScreen} />
-      <Drawer.Screen name="Prueba"  component={Prueba} />
+      
       <Drawer.Screen name="MAU"  component={MauScreen} />
       <Drawer.Screen name="MP"  component={MpScreen} />
       <Drawer.Screen name="ECCD"  component={EccdjScreen} />

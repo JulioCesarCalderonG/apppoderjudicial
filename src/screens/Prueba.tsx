@@ -7,7 +7,7 @@ import { drawerStyle } from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
 import WebView from 'react-native-webview';
 
-interface Props extends DrawerScreenProps<RootDrawerParams, 'Prueba'> {};
+interface Props extends DrawerScreenProps<any, any> {};
 
 const Prueba = ({navigation}:Props) => {
     
@@ -58,9 +58,9 @@ const Prueba = ({navigation}:Props) => {
           <Text style={style.textNetworkSubtitle}>Conéctese a una señal Wifi o habilite sus datos moviles</Text>
         </View>
       :
-        <WebView
-        source={{ uri: 'https://cej.pj.gob.pe/cej/forms/busquedaform.htm' }} 
-        onLoad={()=>console.log('load')}
+      <WebView
+      originWhitelist={['*']}
+      source={{html:'<h5 style="color:black; font-size:20px">hola mundo<h5>'}}
         />
     }
 </View>

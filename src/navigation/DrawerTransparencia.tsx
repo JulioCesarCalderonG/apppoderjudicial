@@ -7,6 +7,7 @@ import GelocalizacionScreen from "../screens/GelocalizacionScreen";
 import MapaScreen from "../screens/MapaScreen";
 import DirectorioGeneralScreen from '../screens/DirectorioGeneralScreen';
 import { directorioInterface } from "../interface/directorioInterface";
+import Prueba from "../screens/Prueba";
 
 
 export type RootDrawerTransparenciaParams = {
@@ -26,7 +27,8 @@ export type RootDrawerTransparenciaParams = {
       titulo:string,
       direccion:string,
       img:any
-    }
+    },
+    Prueba:undefined
   }
 
 const Drawer = createDrawerNavigator<RootDrawerTransparenciaParams>();
@@ -48,6 +50,7 @@ const DrawerTransparencia = () => {
       <Drawer.Screen name="Directorio" component={DirectorioScreen} />
       <Drawer.Screen name="Geolocalizacion" component={GelocalizacionScreen} />
       <Drawer.Screen name="Mapa" component={MapaScreen} />
+      <Drawer.Screen name="Prueba"  component={Prueba} />
     </Drawer.Navigator>
   );
 }

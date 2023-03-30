@@ -6,19 +6,34 @@ import {
   View,
   TouchableOpacity,
   ImageBackground,
+  SafeAreaView,
+  useWindowDimensions
 } from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
+import {WebView} from 'react-native-webview';
 
 
 interface Props extends StackScreenProps<any, any> { }
 export const Home = ({ navigation }: Props) => {
+  const {height, width} = useWindowDimensions();
   return (
-    <ImageBackground
+    <SafeAreaView style={{width:width, height:height,...style.container}}>
+      <Image
+        source={require('../assets/img/shipibo-2.png')}
+        style={{width:'100%',height:height+200, marginTop:-120, position:'absolute',opacity:0.3}}
+        resizeMode="cover"
+        
+      />
+    {/* <ImageBackground
       source={require('../assets/img/shipibo-2.png')}
       resizeMode="cover"
-      style={style.container}
+      style={{...style.container, width:'100%',height:height, backgroundColor:'black'}}
       imageStyle={{ opacity: 0.3 }}>
-      <View style={{ ...style.contentImage, top: 340 }}>
+    
+      
+    
+    </ImageBackground> */}
+    <View style={{ ...style.contentImage, top: 180 }}>
         <Image
           source={require('../assets/img/portadanew2.png')}
           style={style.imagePrincipal}
@@ -57,19 +72,24 @@ export const Home = ({ navigation }: Props) => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={style.mensaje}>
-        <Text style={style.textMensaje}>
-          La Corte Superior de Justicia de Ucayali genera cercania de nuestros servicios
+    <View style={{marginTop:height-240}}>
+      <WebView
+          originWhitelist={['*']}
+          source={{html:'<h2 style="font-size:42px;text-align:justify">'+` La Corte Superior de Justicia de Ucayali genera cercania de nuestros servicios
           a la población, siendo esto un compromiso de la gestión 2023-2024 para promover
           canales de acceso hacia los ciudadanos que contribuyan a la mejora en la
-          administración de la justicia.
-        </Text>
-
-        <Text style={style.textPresidente}>Tullio Bermeo Turchi</Text>
-        <Text style={style.textCargo}>Presidente</Text>
-        <Text style={style.textGestion}>Gestión 2023-2024</Text>
-      </View>
-    </ImageBackground>
+          administración de la justicia.`+'</h2>'
+          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px">Tullio Bermeo Turchi</h2>' 
+          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px">Presidente</h2>' 
+          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px">Gestión 2023-2024</h2>'}}
+          style={{
+            backgroundColor:'rgba(0,0,0,0)',
+            marginBottom:-50
+          }}
+        />
+      <Text style={{color:'rgba(0,0,0,0.0)'}}>aasasasasasasaaaaaaaaaaaaaaaaaaaaaaa</Text>
+    </View>
+    </SafeAreaView>
   );
 };
 
@@ -78,9 +98,6 @@ const style = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'white',
-    marginBottom: -120,
-    marginTop: -160,
   },
   barra: {
     width: '100%',

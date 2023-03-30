@@ -63,7 +63,6 @@ const LinkTransparenciaScreen = ({navigation, route}: Props) => {
       ) : (
         <WebView
           source={{uri: route.params.link}}
-          onLoad={() => console.log('load')}
         />
       )}
     </View>

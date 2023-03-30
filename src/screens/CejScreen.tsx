@@ -56,7 +56,7 @@ const CejScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('Prueba')
+              navigation.navigate('LinkJudiciales',{link:'https://cej.pj.gob.pe/cej/forms/busquedaform.html'})
             }}>
             <View 
              style={style.viewIcono}
