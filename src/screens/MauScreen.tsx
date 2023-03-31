@@ -148,9 +148,10 @@ const MauScreen = ({navigation}: Props) => {
           activeOpacity={0.7}
           style={style.btnCentral}
           onPress={() => {
-            navigation.navigate('LinkJudiciales', {
+            /* navigation.navigate('LinkJudiciales', {
               link: 'https://serjus.pj.gob.pe/consultayorientacionjuridica/Ucayali',
-            });
+            }); */
+            navigation.navigate('Prueba')
           }}>
           <View style={style.viewIcono}>
             <Image

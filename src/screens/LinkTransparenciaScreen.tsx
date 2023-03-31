@@ -1,18 +1,18 @@
-import React, {useEffect, useState} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import {WebView} from 'react-native-webview';
-import {drawerStyle} from '../style/DrawerMenuStyle';
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import { WebView } from 'react-native-webview';
+import { drawerStyle } from '../style/DrawerMenuStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {DrawerScreenProps} from '@react-navigation/drawer';
+import { DrawerScreenProps } from '@react-navigation/drawer';
 import NetInfo from '@react-native-community/netinfo';
-import {RootDrawerTransparenciaParams} from '../navigation/DrawerTransparencia';
+import { RootDrawerTransparenciaParams } from '../navigation/DrawerTransparencia';
 interface Props
   extends DrawerScreenProps<
     RootDrawerTransparenciaParams,
     'LinkTransparencia'
-  > {}
+  > { }
 
-const LinkTransparenciaScreen = ({navigation, route}: Props) => {
+const LinkTransparenciaScreen = ({ navigation, route }: Props) => {
   const [datos, setDatos] = useState<boolean>(false);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const LinkTransparenciaScreen = ({navigation, route}: Props) => {
               }}
             />
           </TouchableOpacity>
-          <Text style={{fontWeight: 'bold', fontSize: 16, color: 'white'}}>
+          <Text style={{ fontWeight: 'bold', fontSize: 16, color: 'white' }}>
             {' '}
             CSJ Ucayali
           </Text>
@@ -62,10 +62,20 @@ const LinkTransparenciaScreen = ({navigation, route}: Props) => {
         </View>
       ) : (
         <WebView
-          source={{uri: route.params.link}}
-          originWhitelist={['http://*', 'https://*', 'intent://*', 'meet://','facebook://','m://']}
+          
+          originWhitelist={['http://', 'https://', 'intent://','applink://']}
+          source={{ uri: route.params.link }}
           javaScriptEnabled={true}
           domStorageEnabled={true}
+          //setSupportMultipleWindows={true}
+          
+          /* allowFileAccess={true}
+          domStorageEnabled={true}
+          javaScriptEnabled={true}
+          geolocationEnabled={true}
+          saveFormDataDisabled={true}
+          allowFileAccessFromFileURLS={true}
+          allowUniversalAccessFromFileURLs={true} */
         />
       )}
     </View>

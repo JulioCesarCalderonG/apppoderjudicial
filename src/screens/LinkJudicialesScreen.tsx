@@ -64,7 +64,7 @@ const LinkJudicialesScreen = ({navigation,route}:Props) => {
             :
               <WebView 
               source={{ uri: route.params.link }}
-              originWhitelist={['http://*', 'https://*', 'intent://*', 'meet://']}
+              originWhitelist={['http://', 'https://', 'intent://', 'meet://','applink://']}
               javaScriptEnabled={true}
               domStorageEnabled={true}
               />
