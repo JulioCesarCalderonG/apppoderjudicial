@@ -7,6 +7,7 @@ import {
   ScrollView,
   Image,
   ImageBackground,
+  Linking
 } from 'react-native';
 import {DrawerScreenProps} from '@react-navigation/drawer';
 import {drawerStyle} from '../style/DrawerMenuStyle';
@@ -99,6 +100,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
               navigation.navigate('LinkTransparencia', {
                 link: 'https://www.facebook.com/CSJUC',
               });
+              //Linking.openURL('https://www.facebook.com/CSJDELIMANORTE')
             }}
           />
           <GrupoTransparencia

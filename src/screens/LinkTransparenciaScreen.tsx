@@ -63,7 +63,7 @@ const LinkTransparenciaScreen = ({navigation, route}: Props) => {
       ) : (
         <WebView
           source={{uri: route.params.link}}
-          originWhitelist={['http://*', 'https://*', 'intent://*', 'meet://']}
+          originWhitelist={['http://*', 'https://*', 'intent://*', 'meet://','facebook://','m://']}
           javaScriptEnabled={true}
           domStorageEnabled={true}
         />
