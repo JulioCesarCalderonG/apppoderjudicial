@@ -97,10 +97,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
             titulo="FACEBOOK NOTICIAS"
             img={require('../assets/img/icono-judiciales/facebook.png')}
             onPress={() => {
-              navigation.navigate('LinkTransparencia', {
-                link: 'https://www.facebook.com/CSJUC',
-              });
-              //Linking.openURL('https://www.facebook.com/CSJDELIMANORTE')
+              Linking.openURL('https://m.facebook.com/p/100063533649794/')
             }}
           />
           <GrupoTransparencia
