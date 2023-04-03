@@ -83,7 +83,7 @@ const JudicialesScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoJudicial
-            titulo="EMISIÓN DE CERTIFICADOS Y CONSULTA DE DEPÓSITOS JUDICIALES"
+            titulo="EMISION DE CERTIFICADOS DE ANTECEDENTES PENALES NACIONALES"
             subTitulo=""
             img={require('../assets/img/icono-judiciales/4-emision-certificados.png')}
             onPress={() => {
