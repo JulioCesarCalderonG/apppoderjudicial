@@ -87,7 +87,9 @@ const JudicialesScreen = ({navigation}: Props) => {
             subTitulo=""
             img={require('../assets/img/icono-judiciales/4-emision-certificados.png')}
             onPress={() => {
-              navigation.navigate('ECCD');
+              navigation.navigate('LinkJudiciales', {
+                link: 'https://cape.pj.gob.pe/cape/',
+              });
             }}
           />
           <GrupoJudicial
@@ -111,13 +113,11 @@ const JudicialesScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoJudicial
-            titulo="CUADROS Y FORMULARIOS JUDICIALES"
+            titulo="ARANCELES JUDICIALES"
             subTitulo=""
             img={require('../assets/img/icono-judiciales/aranceles.jpg')}
             onPress={() => {
-              navigation.navigate('LinkJudiciales', {
-                link: 'https://serjus.pj.gob.pe/formularios',
-              });
+              navigation.navigate('PDF');
             }}
           />
         </View>
