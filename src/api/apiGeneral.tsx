@@ -17,7 +17,7 @@ export const apiGeneral = () => {
     },
     {
         sede:'SEDE CENTRAL',
-        representante:'Presidencia - Mesa de Partes NCPP',
+        representante:'Mesa de Partes NCPP',
         anexo:'33070'
     },
     {

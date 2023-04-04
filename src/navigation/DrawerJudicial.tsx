@@ -8,6 +8,7 @@ import MpScreen from "../screens/MpScreen";
 import EccdjScreen from "../screens/EccdjScreen";
 import Prueba from '../screens/Prueba';
 import PdfScreen from "../screens/PdfScreen";
+import PenalesScreen from "../screens/PenalesScreen";
 
 
 export type RootDrawerParams = {
@@ -20,7 +21,10 @@ export type RootDrawerParams = {
     MP:undefined,
     ECCD:undefined,
     Prueba:undefined,
-    PDF:undefined
+    PDF:undefined,
+    Penales:{
+      link:string
+  },
 }
 
 const Drawer = createDrawerNavigator<RootDrawerParams>();
@@ -45,6 +49,7 @@ const DrawerJudicial = () => {
       <Drawer.Screen name="ECCD"  component={EccdjScreen} />
       <Drawer.Screen name="Prueba"  component={Prueba} />
       <Drawer.Screen name="PDF"  component={PdfScreen} />
+      <Drawer.Screen name="Penales"  component={PenalesScreen} />
     </Drawer.Navigator>
   );
 }

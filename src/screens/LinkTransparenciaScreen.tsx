@@ -67,15 +67,6 @@ const LinkTransparenciaScreen = ({ navigation, route }: Props) => {
           source={{ uri: route.params.link }}
           javaScriptEnabled={true}
           domStorageEnabled={true}
-          //setSupportMultipleWindows={true}
-          
-          /* allowFileAccess={true}
-          domStorageEnabled={true}
-          javaScriptEnabled={true}
-          geolocationEnabled={true}
-          saveFormDataDisabled={true}
-          allowFileAccessFromFileURLS={true}
-          allowUniversalAccessFromFileURLs={true} */
         />
       )}
     </View>

@@ -65,7 +65,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
             titulo="PLAN ANUAL DE CONTRATACIONES - PAC"
             img={require('../assets/img/icono-judiciales/Oscee.jpg')}
             onPress={() => {
-              navigation.navigate('LinkTransparencia', {
+              navigation.navigate('Osce', {
                 link: 'https://prodapp4.seace.gob.pe/pac3-publico/pages/buscadorPPpublico.xhtml',
               });
             }}
