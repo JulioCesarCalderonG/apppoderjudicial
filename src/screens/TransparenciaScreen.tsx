@@ -61,20 +61,29 @@ const TransparenciaScreen = ({navigation}: Props) => {
         showsVerticalScrollIndicator={false}
         style={style.containerBtn}>
         <View style={style.general}>
-          <GrupoTransparencia
-            titulo="GEOLOCALIZACIÓN"
-            img={require('../assets/img/icono-judiciales/geocalizacion.png')}
-            onPress={() => {
-              navigation.navigate('Geolocalizacion');
-            }}
-          />
-          <GrupoTransparencia
+        <GrupoTransparencia
             titulo="PLAN ANUAL DE CONTRATACIONES - PAC"
             img={require('../assets/img/icono-judiciales/Oscee.jpg')}
             onPress={() => {
               navigation.navigate('LinkTransparencia', {
                 link: 'https://prodapp4.seace.gob.pe/pac3-publico/pages/buscadorPPpublico.xhtml',
               });
+            }}
+          />
+          <GrupoTransparencia
+            titulo="CONSULTA AMIGABLE - MEF"
+            img={require('../assets/img/icono-judiciales/amigable2.png')}
+            onPress={() => {
+              navigation.navigate('LinkTransparencia', {
+                link: 'https://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx',
+              });
+            }}
+          />
+          <GrupoTransparencia
+            titulo="GEOLOCALIZACIÓN"
+            img={require('../assets/img/icono-judiciales/geocalizacion.png')}
+            onPress={() => {
+              navigation.navigate('Geolocalizacion');
             }}
           />
           <GrupoTransparencia
@@ -85,15 +94,6 @@ const TransparenciaScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoTransparencia
-            titulo="RESOLUCIONES ADMINISTRATIVAS"
-            img={require('../assets/img/icono-judiciales/5-resoluciones-administrativas.jpg')}
-            onPress={() => {
-              navigation.navigate('LinkTransparencia', {
-                link: 'https://www.gob.pe/institucion/csjucayali/normas-legales',
-              });
-            }}
-          />
-          <GrupoTransparencia
             titulo="FACEBOOK NOTICIAS"
             img={require('../assets/img/icono-judiciales/facebook.png')}
             onPress={() => {
@@ -101,6 +101,15 @@ const TransparenciaScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoTransparencia
+            titulo="RESOLUCIONES ADMINISTRATIVAS"
+            img={require('../assets/img/icono-judiciales/5-resoluciones-administrativas.jpg')}
+            onPress={() => {
+              navigation.navigate('LinkTransparencia', {
+                link: 'https://www.gob.pe/csjucayali',
+              });
+            }}
+          />
+          {/* <GrupoTransparencia
             titulo="DECISIONES JUDICIALES"
             img={require('../assets/img/icono-judiciales/7-decisiones-judiciales.jpg')}
             onPress={() => {
@@ -108,8 +117,8 @@ const TransparenciaScreen = ({navigation}: Props) => {
                 link: 'https://gestionsij.pj.gob.pe/sentidoFallo-web/#/busqueda',
               });
             }}
-          />
-          <GrupoTransparencia
+          /> */}
+          {/* <GrupoTransparencia
             titulo="PROGRAMACIÓN DE AUDIENCIAS"
             img={require('../assets/img/icono-judiciales/8-programacionaudiencias.jpg')}
             onPress={() => {
@@ -117,8 +126,8 @@ const TransparenciaScreen = ({navigation}: Props) => {
                 link: 'https://apps.pj.gob.pe/guiaprogramacion/',
               });
             }}
-          />
-          <GrupoTransparencia
+          /> */}
+          {/* <GrupoTransparencia
             titulo="CONOCE A TU JUEZ"
             img={require('../assets/img/icono-judiciales/conoce-juez.png')}
             onPress={() => {
@@ -126,7 +135,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
                 link: 'https://sap.pj.gob.pe/casillero-digital-web/#/conoce-tu-juez',
               });
             }}
-          />
+          /> */}
         </View>
       </ScrollView>
     </ImageBackground>

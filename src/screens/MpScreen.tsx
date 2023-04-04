@@ -60,7 +60,7 @@ const MpScreen = ({navigation}:Props) => {
              style={style.viewIcono}
             >
             <Image
-              source={require('../assets/img/iconos/consulta.png')}
+              source={require('../assets/img/iconos/correo1.png')}
               style={style.imgIcon}
             />
             </View>
@@ -79,7 +79,7 @@ const MpScreen = ({navigation}:Props) => {
              style={style.viewIcono}
             >
             <Image
-              source={require('../assets/img/iconos/consulta.png')}
+              source={require('../assets/img/iconos/correo2.png')}
               style={style.imgIcon}
             />
             </View>
@@ -90,7 +90,7 @@ const MpScreen = ({navigation}:Props) => {
           <View style={style.btnCentral}>
           <View style={style.viewIcono}>
             <Image
-              source={require('../assets/img/iconos/papellupa.png')}
+              source={require('../assets/img/iconos/consulta.png')}
               style={style.imgIcon}
             />
           </View>

@@ -99,7 +99,7 @@ const MauScreen = ({navigation}: Props) => {
         <View style={style.btnCentral}>
           <View style={style.viewIcono}>
             <Image
-              source={require('../assets/img/iconos/papellupa.png')}
+              source={require('../assets/img/iconos/computadora.png')}
               style={style.imgIcon}
             />
           </View>
@@ -184,12 +184,12 @@ const MauScreen = ({navigation}: Props) => {
           }}>
           <View style={style.viewIcono}>
             <Image
-              source={require('../assets/img/iconos/orientacion-1.png')}
+              source={require('../assets/img/iconos/meet.png')}
               style={style.imgIcon}
             />
           </View>
           <View style={style.viewText}>
-            <Text style={style.textBtn}>ORIENTACIÓN JUDICIAL VIRTUAL</Text>
+            <Text style={style.textBtn}>CONSULTA VIRTUAL - GOOGLE MEET</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity
@@ -202,12 +202,12 @@ const MauScreen = ({navigation}: Props) => {
           }}>
           <View style={style.viewIcono}>
             <Image
-              source={require('../assets/img/iconos/solicita-cita.png')}
+              source={require('../assets/img/iconos/cita.png')}
               style={style.imgIcon}
             />
           </View>
           <View style={style.viewText}>
-            <Text style={style.textBtn}>SOLICITA TU CITA PERSONALIZADA</Text>
+            <Text style={style.textBtn}>SOLICITA TU CITA CON EL ABOGADO ORIENTADOR</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity

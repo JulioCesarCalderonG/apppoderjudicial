@@ -83,9 +83,10 @@ const JudicialesScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoJudicial
-            titulo="EMISION DE CERTIFICADOS DE ANTECEDENTES PENALES NACIONALES"
+            titulo="CERTIFICADO ELECTRÓNICO DE ANTECEDENTE PENAL NACIONAL"
+            /* titulo="EMISIÓN DE CERTIFICADOS ELECTRÓNICOS DE ANTECEDENTES PENALES" */
             subTitulo=""
-            img={require('../assets/img/icono-judiciales/4-emision-certificados.png')}
+            img={require('../assets/img/icono-judiciales/antecedentes.png')}
             onPress={() => {
               navigation.navigate('LinkJudiciales', {
                 link: 'https://cape.pj.gob.pe/cape/',
