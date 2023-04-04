@@ -80,6 +80,15 @@ const TransparenciaScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoTransparencia
+            titulo="RESOLUCIONES ADMINISTRATIVAS"
+            img={require('../assets/img/icono-judiciales/5-resoluciones-administrativas.jpg')}
+            onPress={() => {
+              navigation.navigate('LinkTransparencia', {
+                link: 'https://www.gob.pe/csjucayali',
+              });
+            }}
+          />
+          <GrupoTransparencia
             titulo="GEOLOCALIZACIÓN"
             img={require('../assets/img/icono-judiciales/geocalizacion.png')}
             onPress={() => {
@@ -98,15 +107,6 @@ const TransparenciaScreen = ({navigation}: Props) => {
             img={require('../assets/img/icono-judiciales/facebook.png')}
             onPress={() => {
               Linking.openURL('https://m.facebook.com/p/100063533649794/')
-            }}
-          />
-          <GrupoTransparencia
-            titulo="RESOLUCIONES ADMINISTRATIVAS"
-            img={require('../assets/img/icono-judiciales/5-resoluciones-administrativas.jpg')}
-            onPress={() => {
-              navigation.navigate('LinkTransparencia', {
-                link: 'https://www.gob.pe/csjucayali',
-              });
             }}
           />
           {/* <GrupoTransparencia
