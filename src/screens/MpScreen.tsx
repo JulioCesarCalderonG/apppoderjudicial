@@ -90,7 +90,7 @@ const MpScreen = ({navigation}:Props) => {
           <View style={style.btnCentral}>
           <View style={style.viewIcono}>
             <Image
-              source={require('../assets/img/iconos/consulta.png')}
+              source={require('../assets/img/iconos/correo3.png')}
               style={style.imgIcon}
             />
           </View>
