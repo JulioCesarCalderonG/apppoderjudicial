@@ -73,15 +73,14 @@ const MauScreen = ({navigation}: Props) => {
               acceder a los servicios digitales que brinda el Poder Judicial
               guiados por un personal especializado por un tiempo de 15 minutos.
             </Text>
-            <Text style={{color:'black', textAlign:'justify'}}>
+            <Text style={{color: 'black', textAlign: 'justify'}}>
               Para cualquier consulta comunicarse al número:
             </Text>
             <TouchableOpacity
-              onPress={async()=>{
+              onPress={async () => {
                 await Linking.openURL('tel:+51922459699');
-              }}
-            >
-                <Text style={{color:'blue', fontWeight:'bold'}}>922459699</Text>
+              }}>
+              <Text style={{color: 'blue', fontWeight: 'bold'}}>922459699</Text>
             </TouchableOpacity>
             <Pressable
               style={[style.button, style.buttonClose]}
@@ -89,7 +88,6 @@ const MauScreen = ({navigation}: Props) => {
               <Text style={style.textStyle}>Cerrar</Text>
             </Pressable>
           </View>
-          
         </View>
       </Modal>
       <LogoComponent />
@@ -98,7 +96,7 @@ const MauScreen = ({navigation}: Props) => {
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
         style={style.containerBtn}>
-          <View style={style.btnCentral}>
+        <View style={style.btnCentral}>
           <View style={style.viewIcono}>
             <Image
               source={require('../assets/img/iconos/papellupa.png')}
@@ -108,14 +106,13 @@ const MauScreen = ({navigation}: Props) => {
           <View style={style.viewText}>
             <Text style={style.textBtn}>CONSULTA DIRECTA EN PLATAFORMA</Text>
             <View style={style.viewSubButton}>
-              <TouchableOpacity 
+              <TouchableOpacity
                 style={style.btnSub}
                 onPress={() => {
                   navigation.navigate('LinkJudiciales', {
                     link: 'https://serjus.pj.gob.pe/consultajudicialviaweb/Ucayali',
                   });
-                }}
-              >
+                }}>
                 <Icon
                   name="caret-forward-outline"
                   style={{
@@ -125,14 +122,13 @@ const MauScreen = ({navigation}: Props) => {
                 <Text style={style.btnText}>Registrar</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity 
+              <TouchableOpacity
                 style={style.btnSub}
                 onPress={() => {
                   navigation.navigate('LinkJudiciales', {
                     link: 'https://serjus.pj.gob.pe/seguimientoconsultajudicialviaweb/Ucayali',
                   });
-                }}
-              >
+                }}>
                 <Icon
                   name="search"
                   style={{
@@ -147,11 +143,44 @@ const MauScreen = ({navigation}: Props) => {
         <TouchableOpacity
           activeOpacity={0.7}
           style={style.btnCentral}
+          onPress={async () => {
+            await Linking.openURL('tel:+51922459699');
+          }}>
+          <View style={style.viewIcono}>
+            <Image
+              source={require('../assets/img/iconos/consulta-telefonica.png')}
+              style={style.imgIcon}
+            />
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>CONSULTA VÍA TELEFÓNICA</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
+          onPress={async () => {
+            /* await Linking.openURL("mailto:juliocesar.calderong@gmail.com") */
+            await Linking.openURL('https://wa.me/+51922459699');
+          }}>
+          <View style={style.viewIcono}>
+            <Image
+              source={require('../assets/img/iconos/whatsapp.png')}
+              style={style.imgIcon}
+            />
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>CONSULTA POR WHATSAPP</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
           onPress={() => {
             /* navigation.navigate('LinkJudiciales', {
               link: 'https://serjus.pj.gob.pe/consultayorientacionjuridica/Ucayali',
             }); */
-            navigation.navigate('Prueba')
+            navigation.navigate('Prueba');
           }}>
           <View style={style.viewIcono}>
             <Image
@@ -163,7 +192,6 @@ const MauScreen = ({navigation}: Props) => {
             <Text style={style.textBtn}>ORIENTACIÓN JUDICIAL VIRTUAL</Text>
           </View>
         </TouchableOpacity>
-
         <TouchableOpacity
           activeOpacity={0.7}
           style={style.btnCentral}
@@ -182,7 +210,6 @@ const MauScreen = ({navigation}: Props) => {
             <Text style={style.textBtn}>SOLICITA TU CITA PERSONALIZADA</Text>
           </View>
         </TouchableOpacity>
-
         <TouchableOpacity
           activeOpacity={0.7}
           style={style.btnCentral}
@@ -196,45 +223,11 @@ const MauScreen = ({navigation}: Props) => {
             />
           </View>
           <View style={style.viewText}>
-            <Text style={style.textBtn}>CABINA - CONOCE NUESTROS SERVICIOS</Text>
+            <Text style={style.textBtn}>
+              CABINA - CONOCE NUESTROS SERVICIOS
+            </Text>
           </View>
         </TouchableOpacity>
-
-        <TouchableOpacity
-          activeOpacity={0.7}
-          style={style.btnCentral}
-          onPress={async () => {
-            /* await Linking.openURL("mailto:juliocesar.calderong@gmail.com") */
-            await Linking.openURL('https://wa.me/+51922459699');
-          }}>
-          <View style={style.viewIcono}>
-            <Image
-              source={require('../assets/img/iconos/whatsapp.png')}
-              style={style.imgIcon}
-            />
-          </View>
-          <View style={style.viewText}>
-            <Text style={style.textBtn}>CONSULTA POR WHATSAPP</Text>
-          </View>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          activeOpacity={0.7}
-          style={style.btnCentral}
-          onPress={async () => {
-            await Linking.openURL('tel:+51922459699');
-          }}>
-          <View style={style.viewIcono}>
-            <Image
-              source={require('../assets/img/iconos/consulta-telefonica.png')}
-              style={style.imgIcon}
-            />
-          </View>
-          <View style={style.viewText}>
-            <Text style={style.textBtn}>CONSULTA VÍA TELEFÓNICA</Text>
-          </View>
-        </TouchableOpacity>
-
         <TouchableOpacity
           activeOpacity={0.7}
           style={style.btnCentral}
@@ -341,7 +334,7 @@ const style = StyleSheet.create({
     borderRadius: 20,
     padding: 10,
     elevation: 2,
-    marginTop:20
+    marginTop: 20,
   },
   buttonOpen: {
     backgroundColor: '#960b28',
@@ -357,7 +350,7 @@ const style = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: 'justify',
-    color:'black',
+    color: 'black',
   },
   viewSubButton: {
     flexDirection: 'row',
@@ -377,5 +370,5 @@ const style = StyleSheet.create({
     color: '#960b28',
     fontWeight: 'bold',
     textAlign: 'center',
-  }
+  },
 });

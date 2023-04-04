@@ -54,7 +54,7 @@ const MpScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://mpv.pj.gob.pe/mpvp/'})
+              navigation.navigate('LinkJudiciales',{link:'https://mpv.pj.gob.pe/'})
             }}>
             <View 
              style={style.viewIcono}
