@@ -86,7 +86,7 @@ const JudicialesScreen = ({navigation}: Props) => {
             titulo="CERTIFICADO ELECTRÓNICO DE ANTECEDENTES PENALES"
             /* titulo="EMISIÓN DE CERTIFICADOS ELECTRÓNICOS DE ANTECEDENTES PENALES" */
             subTitulo=""
-            img={require('../assets/img/icono-judiciales/antecedentes.png')}
+            img={require('../assets/img/icono-judiciales/antecedentespenales.png')}
             onPress={() => {
               navigation.navigate('Penales', {
                 link: 'https://cape.pj.gob.pe/cape/',
@@ -94,9 +94,17 @@ const JudicialesScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoJudicial
+            titulo="ARANCELES JUDICIALES"
+            subTitulo=""
+            img={require('../assets/img/icono-judiciales/aranceles.jpg')}
+            onPress={() => {
+              navigation.navigate('PDF');
+            }}
+          />
+          <GrupoJudicial
             titulo="DEMANDA DE ALIMENTOS"
             subTitulo=""
-            img={require('../assets/img/icono-judiciales/5-demanda-alimentos.png')}
+            img={require('../assets/img/icono-judiciales/demanda2.jpg')}
             onPress={() => {
               navigation.navigate('LinkJudiciales', {
                 link: 'https://dalimentos.pj.gob.pe/cortes/ucayali/links_demanda',
@@ -114,11 +122,13 @@ const JudicialesScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoJudicial
-            titulo="ARANCELES JUDICIALES"
+            titulo="ESCUCHA A TU JUEZ - PROGRAMA TU CITA"
             subTitulo=""
-            img={require('../assets/img/icono-judiciales/aranceles.jpg')}
+            img={require('../assets/img/icono-judiciales/conoce-juez.png')}
             onPress={() => {
-              navigation.navigate('PDF');
+              navigation.navigate('LinkJudiciales', {
+                link: 'https://cej.pj.gob.pe/citas/pages/seguridad/login.xhtml',
+              });
             }}
           />
         </View>

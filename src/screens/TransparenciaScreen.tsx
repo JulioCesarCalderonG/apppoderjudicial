@@ -109,6 +109,24 @@ const TransparenciaScreen = ({navigation}: Props) => {
               Linking.openURL('https://m.facebook.com/p/100063533649794/')
             }}
           />
+          <GrupoTransparencia
+            titulo="LIBRO DE RECLAMACIONES"
+            img={require('../assets/img/icono-judiciales/libroreclamo.png')}
+            onPress={() => {
+              navigation.navigate('LinkTransparencia', {
+                link: 'https://www.pj.gob.pe/wps/wcm/connect/cortesuprema/s_cortes_suprema_home/as_servicios/as_enlaces_de_interes/as_libro_de_reclamaciones/libro_reclamaciones_url',
+              });
+            }}
+          />
+          <GrupoTransparencia
+            titulo="BUZÓN DE SUGERENCIAS"
+            img={require('../assets/img/icono-judiciales/buzonsugerencias.png')}
+            onPress={() => {
+              navigation.navigate('LinkTransparencia', {
+                link: 'https://www.pj.gob.pe/wps/wcm/connect/cortesuprema/s_cortes_suprema_home/as_servicios/as_enlaces_de_interes/as_buzon_sugerencias',
+              });
+            }}
+          />
           {/* <GrupoTransparencia
             titulo="DECISIONES JUDICIALES"
             img={require('../assets/img/icono-judiciales/7-decisiones-judiciales.jpg')}
