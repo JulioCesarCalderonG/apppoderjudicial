@@ -3,7 +3,7 @@ import {
   DrawerContentComponentProps,
   DrawerItem,
 } from '@react-navigation/drawer';
-import {View, StyleSheet, Image} from 'react-native';
+import {View, StyleSheet, Image, Linking} from 'react-native';
 import {Avatar, Title, Caption, Paragraph} from 'react-native-paper';
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -103,9 +103,7 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               label="Facebook noticias"
               img={require('../assets/img/icono-transparencia/iconos_negros/facebook.png')}
               onPress={() => {
-                props.navigation.navigate('LinkTransparencia', {
-                  link: 'https://www.facebook.com/CSJUC',
-                });
+                  Linking.openURL('https://m.facebook.com/p/100063533649794/');
               }}
             />
             <DrawerTransparencia

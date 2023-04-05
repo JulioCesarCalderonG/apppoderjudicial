@@ -246,6 +246,23 @@ const MauScreen = ({navigation}: Props) => {
             <Text style={style.textBtn}>CALIFICA MI ATENCIÓN</Text>
           </View>
         </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={style.btnCentral}
+          onPress={async () => {
+            /* await Linking.openURL("mailto:juliocesar.calderong@gmail.com") */
+            await Linking.openURL('https://wa.me/+51922484147');
+          }}>
+          <View style={style.viewIcono}>
+            <Image
+              source={require('../assets/img/robot.png')}
+              style={style.imgIcon}
+            />
+          </View>
+          <View style={style.viewText}>
+            <Text style={style.textBtn}>CHATBOT</Text>
+          </View>
+        </TouchableOpacity>
       </ScrollView>
     </ImageBackground>
   );
