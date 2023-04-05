@@ -59,10 +59,12 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Geocalización"
-              img={require('../assets/img/icono-transparencia/iconos_negros/geolocalizacion.png')}
+              label="Plan anual de contrataciones - PAC"
+              img={require('../assets/img/iconos-negro/contrato.png')}
               onPress={() => {
-                props.navigation.navigate('Geolocalizacion');
+                props.navigation.navigate('LinkTransparencia', {
+                  link: 'https://prodapp4.seace.gob.pe/pac3-publico/pages/buscadorPPpublico.xhtml',
+                });
               }}
             />
             <DrawerTransparencia
@@ -75,19 +77,26 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Directorio Telefónico"
-              img={require('../assets/img/icono-transparencia/iconos_negros/directorio.png')}
-              onPress={() => {
-                props.navigation.navigate('DirectorioGeneral');
-              }}
-            />
-            <DrawerTransparencia
               label="Resoluciones Administrativas"
               img={require('../assets/img/icono-transparencia/iconos_negros/documento.png')}
               onPress={() => {
                 props.navigation.navigate('LinkTransparencia', {
-                  link: 'https://www.gob.pe/institucion/csjucayali/normas-legales',
+                  link: 'https://www.gob.pe/csjucayali',
                 });
+              }}
+            />
+            <DrawerTransparencia
+              label="Geocalización"
+              img={require('../assets/img/icono-transparencia/iconos_negros/geolocalizacion.png')}
+              onPress={() => {
+                props.navigation.navigate('Geolocalizacion');
+              }}
+            />            
+            <DrawerTransparencia
+              label="Directorio Telefónico"
+              img={require('../assets/img/icono-transparencia/iconos_negros/directorio.png')}
+              onPress={() => {
+                props.navigation.navigate('DirectorioGeneral');
               }}
             />
             <DrawerTransparencia
@@ -100,33 +109,23 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Decisiones judiciales"
-              img={require('../assets/img/icono-transparencia/iconos_negros/desiciones.png')}
+              label="Libro de reclamaciones"
+              img={require('../assets/img/iconos-negro/libro-abierto.png')}
               onPress={() => {
                 props.navigation.navigate('LinkTransparencia', {
-                  link: 'https://gestionsij.pj.gob.pe/sentidoFallo-web/#/busqueda',
+                  link: 'https://www.pj.gob.pe/wps/wcm/connect/cortesuprema/s_cortes_suprema_home/as_servicios/as_enlaces_de_interes/as_libro_de_reclamaciones/libro_reclamaciones_url',
                 });
               }}
             />
             <DrawerTransparencia
-              label="FProgramación de audiencias"
-              img={require('../assets/img/icono-transparencia/iconos_negros/publico.png')}
+              label="Buzón de sugerencias"
+              img={require('../assets/img/iconos-negro/buzon.png')}
               onPress={() => {
                 props.navigation.navigate('LinkTransparencia', {
-                  link: 'https://apps.pj.gob.pe/guiaprogramacion/',
+                  link: 'https://www.pj.gob.pe/wps/wcm/connect/cortesuprema/s_cortes_suprema_home/as_servicios/as_enlaces_de_interes/as_buzon_sugerencias',
                 });
               }}
             />
-            <DrawerTransparencia
-              label="Conoce a tu juez"
-              img={require('../assets/img/icono-transparencia/iconos_negros/calendario.png')}
-              onPress={() => {
-                props.navigation.navigate('LinkTransparencia', {
-                  link: 'https://serjus.pj.gob.pe/conocejuez',
-                });
-              }}
-            />
-
         </View>
       </DrawerContentScrollView>
     </View>

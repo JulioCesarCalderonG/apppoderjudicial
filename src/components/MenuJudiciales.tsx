@@ -75,16 +75,23 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerJudiciales
               label="Mesa de partes virtual"
-              img={require('../assets/img/iconos-negro/sitio-web.png')}
+              img={require('../assets/img/iconos-negro/correo.png')}
               onPress={() => {
                 props.navigation.navigate('MP');
               }}
             />
             <DrawerJudiciales
-              label="Emision de certificado"
+              label="Certificado electrónico de antecedentes penales"
               img={require('../assets/img/iconos-negro/homonimia.png')}
               onPress={() => {
                 props.navigation.navigate('ECCD');
+              }}
+            />
+            <DrawerJudiciales
+              label="Aranceles judiciales"
+              img={require('../assets/img/iconos-negro/escala.png')}
+              onPress={() => {
+                props.navigation.navigate('PDF');
               }}
             />
             <DrawerJudiciales
@@ -99,6 +106,15 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             <DrawerJudiciales
               label="Archivo general de expedientes"
               img={require('../assets/img/iconos-negro/carpeta.png')}
+              onPress={() => {
+                props.navigation.navigate('LinkJudiciales', {
+                  link: 'https://svsarchivisticos.pj.gob.pe/archi/#/',
+                });
+              }}
+            />
+            <DrawerJudiciales
+              label="Conoce a tu juez - Programa tu cita"
+              img={require('../assets/img/iconos-negro/subasta.png')}
               onPress={() => {
                 props.navigation.navigate('LinkJudiciales', {
                   link: 'https://svsarchivisticos.pj.gob.pe/archi/#/',
