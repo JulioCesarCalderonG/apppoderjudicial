@@ -100,13 +100,6 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Redes Sociales"
-              img={require('../assets/img/icono-transparencia/iconos_negros/facebook.png')}
-              onPress={() => {
-                props.navigation.navigate('Redes');
-              }}
-            />
-            <DrawerTransparencia
               label="Libro de reclamaciones"
               img={require('../assets/img/iconos-negro/libro-abierto.png')}
               onPress={() => {
@@ -116,12 +109,26 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Buzón de sugerencias"
+              label="Buzon de Sugerencias"
               img={require('../assets/img/iconos-negro/buzon.png')}
               onPress={() => {
                 props.navigation.navigate('LinkTransparencia', {
                   link: 'https://www.pj.gob.pe/wps/wcm/connect/cortesuprema/s_cortes_suprema_home/as_servicios/as_enlaces_de_interes/as_buzon_sugerencias',
                 });
+              }}
+            />
+            <DrawerTransparencia
+              label="ODECMA"
+              img={require('../assets/img/icono-transparencia/iconos_negros/iconoodecma.png')}
+              onPress={() => {
+                props.navigation.navigate('Odecma');
+              }}
+            />
+            <DrawerTransparencia
+              label="Redes Sociales"
+              img={require('../assets/img/icono-transparencia/iconos_negros/redessociales.png')}
+              onPress={() => {
+                props.navigation.navigate('Redes');
               }}
             />
         </View>
