@@ -103,13 +103,6 @@ const TransparenciaScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoTransparencia
-            titulo="FACEBOOK NOTICIAS"
-            img={require('../assets/img/icono-judiciales/facebook.png')}
-            onPress={() => {
-              Linking.openURL('https://m.facebook.com/p/100063533649794/')
-            }}
-          />
-          <GrupoTransparencia
             titulo="LIBRO DE RECLAMACIONES"
             img={require('../assets/img/icono-judiciales/libroreclamo.png')}
             onPress={() => {
@@ -125,6 +118,20 @@ const TransparenciaScreen = ({navigation}: Props) => {
               navigation.navigate('LinkTransparencia', {
                 link: 'https://www.pj.gob.pe/wps/wcm/connect/cortesuprema/s_cortes_suprema_home/as_servicios/as_enlaces_de_interes/as_buzon_sugerencias',
               });
+            }}
+          />
+          <GrupoTransparencia
+            titulo="ODECMA - UCAYALI"
+            img={require('../assets/img/icono-judiciales/geocalizacion.png')}
+            onPress={() => {
+              navigation.navigate('Geolocalizacion');
+            }}
+          />
+          <GrupoTransparencia
+            titulo="REDES SOCIALES"
+            img={require('../assets/img/icono-judiciales/facebook.png')}
+            onPress={() => {
+              Linking.openURL('https://m.facebook.com/p/100063533649794/')
             }}
           />
           {/* <GrupoTransparencia
