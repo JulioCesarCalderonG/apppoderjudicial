@@ -75,13 +75,12 @@ export const Home = ({ navigation }: Props) => {
     <View style={{marginTop:height-240}}>
       <WebView
           originWhitelist={['*']}
-          source={{html:'<h2 style="font-size:42px;text-align:justify">'+` La Corte Superior de Justicia de Ucayali genera cercania de nuestros servicios
-          a la población, siendo esto un compromiso de la gestión 2023-2024 para promover
-          canales de acceso hacia los ciudadanos que contribuyan a la mejora en la
-          administración de la justicia.`+'</h2>'
-          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px;">Tullio Bermeo Turchi</h2>' 
+          source={{html:'<h2 style="font-size:42px;text-align:justify">'+` La Corte Superior de Justicia de Ucayali, tienne el firme compromiso
+          de acercar los servicios de justicia a la población. Por ello, hemos desarrollado este aplicativo, como herramienta tecnológica
+          que permita a los usuarios el acceso a la información de nuestros diversos servicios de justicia y transparencia de nuestra corte.`+'</h2>'
+          +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px;">Dr. Tullio Bermeo Turchi</h2>' 
           +'<h2 style="text-align:center; font-size:40px;margin-bottom:-32px;">Presidente</h2>' 
-          +'<h2 style="text-align:center; font-size:40px;">Gestión 2023-2024</h2>'}}
+          +'<h2 style="text-align:center; font-size:40px;">Gestión 2023 - 2024</h2>'}}
           style={{
             backgroundColor:'rgba(0,0,0,0)'
           }}
