@@ -122,7 +122,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
           />
           <GrupoTransparencia
             titulo="ODECMA - UCAYALI"
-            img={require('../assets/img/icono-judiciales/geocalizacion.png')}
+            img={require('../assets/img/icono-judiciales/odecma.png')}
             onPress={() => {
               navigation.navigate('Odecma');
             }}

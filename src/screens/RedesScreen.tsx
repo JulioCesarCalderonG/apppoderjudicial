@@ -79,7 +79,7 @@ const RedesScreen = ({navigation}: Props) => {
         activeOpacity={0.7}
         style={style.btnCentral}
         onPress={async() => {
-           await Linking.openURL('https://m.facebook.com/p/100063533649794/')
+           await Linking.openURL('https://www.youtube.com/@CSJUcayali')
         }}>
         <View style={style.viewIcono}>
           <Image
@@ -97,7 +97,7 @@ const RedesScreen = ({navigation}: Props) => {
         activeOpacity={0.7}
         style={style.btnCentral}
         onPress={async() => {
-           await Linking.openURL('https://m.facebook.com/p/100063533649794/')
+           await Linking.openURL('https://www.tiktok.com/@csjucayali')
         }}>
         <View style={style.viewIcono}>
           <Image

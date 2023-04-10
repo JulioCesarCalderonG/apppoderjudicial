@@ -62,7 +62,7 @@ const OdecmaScreen = ({navigation}: Props) => {
           activeOpacity={0.7}
           style={style.btnCentral}
           onPress={async() => {
-            await Linking.openURL('tel:+51922459699');
+            await Linking.openURL('tel:+51970808041');
           }}>
           <View style={style.viewIcono}>
             <Image
@@ -80,7 +80,7 @@ const OdecmaScreen = ({navigation}: Props) => {
           activeOpacity={0.7}
           style={style.btnCentral}
           onPress={() => {
-            Linking.openURL('mailto:juliocesar.calderong@gmail.com')
+            Linking.openURL('mailto:mp.adecma.csju@gmail.com')
           }}>
           <View style={style.viewIcono}>
             <Image
