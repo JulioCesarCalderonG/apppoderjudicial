@@ -96,10 +96,13 @@ const MauScreen = ({navigation}: Props) => {
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
         style={style.containerBtn}>
-        <View style={style.btnCentral}>
+          
+          {/* Cambiar el color en backgroudcolor, cambiar imagen  */}
+
+        <View style={{...style.btnCentral,backgroundColor:'#1b1464'}}>
           <View style={style.viewIcono}>
             <Image
-              source={require('../assets/img/iconos/computadora.png')}
+              source={require('../assets/img/iconos/consultaazul.png')}
               style={style.imgIcon}
             />
           </View>
@@ -116,10 +119,10 @@ const MauScreen = ({navigation}: Props) => {
                 <Icon
                   name="caret-forward-outline"
                   style={{
-                    color: '#960b28',
+                    color: '#1b1464',
                   }}
                 />
-                <Text style={style.btnText}>Registrar</Text>
+                <Text style={{...style.btnText,color:'#1b1464'}}>Registrar</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
@@ -132,10 +135,10 @@ const MauScreen = ({navigation}: Props) => {
                 <Icon
                   name="search"
                   style={{
-                    color: '#960b28',
+                    color: '#1b1464',
                   }}
                 />
-                <Text style={style.btnText}>Seguimiento</Text>
+                <Text style={{...style.btnText,color:'#1b1464'}}>Seguimiento</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -246,16 +249,19 @@ const MauScreen = ({navigation}: Props) => {
             <Text style={style.textBtn}>CALIFICA MI ATENCIÓN</Text>
           </View>
         </TouchableOpacity>
+
+        {/* Cambiar el color en backgroudcolor y la imagen */}
+
         <TouchableOpacity
           activeOpacity={0.7}
-          style={style.btnCentral}
+          style={{...style.btnCentral,backgroundColor:'#333333'}}
           onPress={async () => {
             /* await Linking.openURL("mailto:juliocesar.calderong@gmail.com") */
             await Linking.openURL('https://wa.me/+51922484147');
           }}>
           <View style={style.viewIcono}>
             <Image
-              source={require('../assets/img/robot.png')}
+              source={require('../assets/img/iconos/chatbotgris.png')}
               style={style.imgIcon}
             />
           </View>

@@ -124,14 +124,14 @@ const TransparenciaScreen = ({navigation}: Props) => {
             titulo="ODECMA - UCAYALI"
             img={require('../assets/img/icono-judiciales/geocalizacion.png')}
             onPress={() => {
-              navigation.navigate('Geolocalizacion');
+              navigation.navigate('Odecma');
             }}
           />
           <GrupoTransparencia
             titulo="REDES SOCIALES"
-            img={require('../assets/img/icono-judiciales/facebook.png')}
+            img={require('../assets/img/redes/redes2.jpg')}
             onPress={() => {
-              Linking.openURL('https://m.facebook.com/p/100063533649794/')
+              navigation.navigate('Redes');
             }}
           />
           {/* <GrupoTransparencia

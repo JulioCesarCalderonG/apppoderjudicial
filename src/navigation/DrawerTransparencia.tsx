@@ -9,6 +9,8 @@ import DirectorioGeneralScreen from '../screens/DirectorioGeneralScreen';
 import { directorioInterface } from "../interface/directorioInterface";
 import Prueba from "../screens/Prueba";
 import OsceScreen from "../screens/OsceScreen";
+import OdecmaScreen from "../screens/OdecmaScreen";
+import RedesScreen from "../screens/RedesScreen";
 
 
 export type RootDrawerTransparenciaParams = {
@@ -32,6 +34,8 @@ export type RootDrawerTransparenciaParams = {
     Osce:{
         link:string
     },
+    Odecma:undefined,
+    Redes:undefined
   }
 
 const Drawer = createDrawerNavigator<RootDrawerTransparenciaParams>();
@@ -54,6 +58,8 @@ const DrawerTransparencia = () => {
       <Drawer.Screen name="Geolocalizacion" component={GelocalizacionScreen} />
       <Drawer.Screen name="Mapa" component={MapaScreen} />
       <Drawer.Screen name="Osce" component={OsceScreen} />
+      <Drawer.Screen name="Odecma" component={OdecmaScreen} />
+      <Drawer.Screen name="Redes" component={RedesScreen} />
     </Drawer.Navigator>
   );
 }

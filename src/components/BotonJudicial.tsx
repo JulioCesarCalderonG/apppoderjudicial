@@ -10,7 +10,6 @@ interface Props{
 
 const BotonJudicial = ({titulo,icono, onPress}:Props) => {
   return (
-    <Col xs="6" sm="6" style={style.principal}>
       <TouchableOpacity 
         activeOpacity={0.7}
         style={style.btnCategoria}
@@ -22,7 +21,6 @@ const BotonJudicial = ({titulo,icono, onPress}:Props) => {
         />
         <Text style={style.textBtn}>{titulo}</Text>
       </TouchableOpacity>
-    </Col>
   );
 };
 
