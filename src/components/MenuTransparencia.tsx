@@ -100,10 +100,10 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Facebook noticias"
+              label="Redes Sociales"
               img={require('../assets/img/icono-transparencia/iconos_negros/facebook.png')}
               onPress={() => {
-                  Linking.openURL('https://m.facebook.com/p/100063533649794/');
+                props.navigation.navigate('Redes');
               }}
             />
             <DrawerTransparencia

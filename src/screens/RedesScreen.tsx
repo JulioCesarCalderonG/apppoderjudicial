@@ -52,7 +52,7 @@ const RedesScreen = ({navigation}: Props) => {
       opacity: 0.4,
     }}>
     <LogoComponent />
-    <Text style={style.titulo}>ODECMA</Text>
+    <Text style={style.titulo}>REDES SOCIALES</Text>
     <ScrollView
       showsHorizontalScrollIndicator={false}
       showsVerticalScrollIndicator={false}
