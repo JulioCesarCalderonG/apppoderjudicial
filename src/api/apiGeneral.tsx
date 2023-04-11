@@ -12,7 +12,7 @@ export const apiGeneral = () => {
     },
     {
         sede:'SEDE GERENCIA DE ADMINISTRACIÓN',
-        representante:'Secretaria Gerencia Administracion Distrital',
+        representante:'Secretaria Gerencia Administración Distrital',
         anexo:'33672'
     },
     {

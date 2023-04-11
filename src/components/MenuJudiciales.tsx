@@ -67,7 +67,7 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerJudiciales
-              label="Modulo de atencion al usuario - MAU"
+              label="Módulo de atención al usuario - MAU"
               img={require('../assets/img/iconos-negro/consultante.png')}
               onPress={() => {
                 props.navigation.navigate('MAU');
@@ -84,7 +84,9 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
               label="Certificado electrónico de antecedentes penales"
               img={require('../assets/img/iconos-negro/homonimia.png')}
               onPress={() => {
-                props.navigation.navigate('ECCD');
+                props.navigation.navigate('LinkJudiciales', {
+                  link: 'https://cape.pj.gob.pe/cape/',
+                });
               }}
             />
             <DrawerJudiciales
@@ -113,11 +115,11 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerJudiciales
-              label="Conoce a tu juez - Programa tu cita"
+              label="Escucha a tu juez - Programa tu cita"
               img={require('../assets/img/iconos-negro/subasta.png')}
               onPress={() => {
                 props.navigation.navigate('LinkJudiciales', {
-                  link: 'https://svsarchivisticos.pj.gob.pe/archi/#/',
+                  link: 'https://cej.pj.gob.pe/citas/pages/seguridad/login.xhtml',
                 });
               }}
             />

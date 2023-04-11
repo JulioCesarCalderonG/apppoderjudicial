@@ -68,7 +68,7 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Consulta amigable"
+              label="Consulta amigable - MEF"
               img={require('../assets/img/icono-transparencia/iconos_negros/consultante.png')}
               onPress={() => {
                 props.navigation.navigate('LinkTransparencia', {
@@ -77,7 +77,7 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Resoluciones Administrativas"
+              label="Resoluciones administrativas"
               img={require('../assets/img/icono-transparencia/iconos_negros/documento.png')}
               onPress={() => {
                 props.navigation.navigate('LinkTransparencia', {
@@ -86,14 +86,14 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Geocalización"
+              label="Geolocalización"
               img={require('../assets/img/icono-transparencia/iconos_negros/geolocalizacion.png')}
               onPress={() => {
                 props.navigation.navigate('Geolocalizacion');
               }}
             />            
             <DrawerTransparencia
-              label="Directorio Telefónico"
+              label="Directorio telefónico"
               img={require('../assets/img/icono-transparencia/iconos_negros/directorio.png')}
               onPress={() => {
                 props.navigation.navigate('DirectorioGeneral');
@@ -109,7 +109,7 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="Buzon de Sugerencias"
+              label="Buzón de sugerencias"
               img={require('../assets/img/iconos-negro/buzon.png')}
               onPress={() => {
                 props.navigation.navigate('LinkTransparencia', {
@@ -118,14 +118,14 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="ODECMA"
+              label="ODECMA - UCAYALI"
               img={require('../assets/img/icono-transparencia/iconos_negros/iconoodecma.png')}
               onPress={() => {
                 props.navigation.navigate('Odecma');
               }}
             />
             <DrawerTransparencia
-              label="Redes Sociales"
+              label="Redes sociales"
               img={require('../assets/img/icono-transparencia/iconos_negros/redessociales.png')}
               onPress={() => {
                 props.navigation.navigate('Redes');
