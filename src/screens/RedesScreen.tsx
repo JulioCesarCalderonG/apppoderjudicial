@@ -65,7 +65,7 @@ const RedesScreen = ({navigation}: Props) => {
         }}>
         <View style={style.viewIcono}>
           <Image
-            source={require('../assets/img/redes/facebook.png')}
+            source={require('../assets/img/iconos/facebook.png')}
             style={style.imgIcon}
           />
         </View>
@@ -83,7 +83,7 @@ const RedesScreen = ({navigation}: Props) => {
         }}>
         <View style={style.viewIcono}>
           <Image
-            source={require('../assets/img/redes/youtube.png')}
+            source={require('../assets/img/iconos/youtube.png')}
             style={style.imgIcon}
           />
         </View>
@@ -101,7 +101,7 @@ const RedesScreen = ({navigation}: Props) => {
         }}>
         <View style={style.viewIcono}>
           <Image
-            source={require('../assets/img/redes/tiktok.png')}
+            source={require('../assets/img/iconos/tiktokk.png')}
             style={style.imgIcon}
           />
         </View>
