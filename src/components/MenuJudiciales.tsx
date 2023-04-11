@@ -89,7 +89,7 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
             />
             <DrawerJudiciales
               label="Aranceles judiciales"
-              img={require('../assets/img/iconos-negro/escala.png')}
+              img={require('../assets/img/iconos-negro/impuesto.png')}
               onPress={() => {
                 props.navigation.navigate('PDF');
               }}

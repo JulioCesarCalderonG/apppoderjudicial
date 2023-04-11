@@ -11,7 +11,7 @@ export const apiGeneral = () => {
         anexo:'33003'
     },
     {
-        sede:'SEDE ADMINISTRACION',
+        sede:'SEDE GERENCIA DE ADMINISTRACIÓN',
         representante:'Secretaria Gerencia Administracion Distrital',
         anexo:'33672'
     },

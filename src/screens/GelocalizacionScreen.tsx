@@ -83,7 +83,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             navigation.navigate('Mapa', {
               lat: -8.384431,
               lng: -74.529495,
-              titulo: 'SEDE ADMINISTRATIVA',
+              titulo: 'SEDE GERENCIA DE ADMINISTRACIÓN',
               direccion: 'Jr. Tarapaca 913-919',
               img: require('../assets/img/icono-sedes/administrativa.png'),
             });
@@ -92,7 +92,7 @@ const GelocalizacionScreen = ({navigation}: Props) => {
             source={require('../assets/img/iconos/juz.png')}
             style={style.imgIcon}
           />
-          <Text style={style.textBtn}>SEDE ADMINISTRACION</Text>
+          <Text style={style.textBtn}>SEDE GERENCIA DE ADMINISTRACIÓN</Text>
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.7}
