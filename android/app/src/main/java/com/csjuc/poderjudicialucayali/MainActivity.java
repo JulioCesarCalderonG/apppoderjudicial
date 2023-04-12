@@ -1,4 +1,5 @@
-package com.poderjudicial;
+//package com.poderjudicial;
+package com.csjuc.poderjudicialucayali;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

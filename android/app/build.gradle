@@ -99,13 +99,13 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.poderjudicial"
+    namespace "com.csjuc.poderjudicialucayali"
     defaultConfig {
-        applicationId "com.poderjudicial"
+        applicationId "com.csjuc.poderjudicialucayali"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "2.1"
     }
 
     splits {
