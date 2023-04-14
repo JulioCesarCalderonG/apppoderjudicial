@@ -9,6 +9,7 @@ import EccdjScreen from "../screens/EccdjScreen";
 import Prueba from '../screens/Prueba';
 import PdfScreen from "../screens/PdfScreen";
 import PenalesScreen from "../screens/PenalesScreen";
+import LinkCejScreen from "../screens/LinkCejScreen";
 
 
 export type RootDrawerParams = {
@@ -25,6 +26,9 @@ export type RootDrawerParams = {
     Penales:{
       link:string
   },
+  LinkCej:{
+    link:string
+  }
 }
 
 const Drawer = createDrawerNavigator<RootDrawerParams>();
@@ -50,6 +54,7 @@ const DrawerJudicial = () => {
       <Drawer.Screen name="Prueba"  component={Prueba} />
       <Drawer.Screen name="PDF"  component={PdfScreen} />
       <Drawer.Screen name="Penales"  component={PenalesScreen} />
+      <Drawer.Screen name="LinkCej"  component={LinkCejScreen} />
     </Drawer.Navigator>
   );
 }

@@ -56,7 +56,7 @@ const CejScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{
+              navigation.navigate('LinkCej',{
                 link:'https://cej.pj.gob.pe/cej/forms/busquedaform.html'
               })
             }}>
@@ -77,7 +77,7 @@ const CejScreen = ({navigation}:Props) => {
             activeOpacity={0.7}
             style={style.btnCentral}
             onPress={() => {
-              navigation.navigate('LinkJudiciales',{link:'https://apps.pj.gob.pe/cejSupremo/'})
+              navigation.navigate('LinkCej',{link:'https://apps.pj.gob.pe/cejSupremo/'})
             }}>
             <View 
              style={style.viewIcono}

@@ -67,6 +67,7 @@ const LinkJudicialesScreen = ({navigation,route}:Props) => {
               originWhitelist={['http://*', 'https://*']}
               javaScriptEnabled={true}
               domStorageEnabled={true}
+              
               />
           }
     </View>
