@@ -122,7 +122,7 @@ const JudicialesScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoJudicial
-            titulo="ESCUCHA A TU JUEZ - PROGRAMA TU CITA"
+            titulo="EL JUEZ TE ESCUCHA - PROGRAMA TU CITA"
             subTitulo=""
             img={require('../assets/img/icono-judiciales/conoce-juez.png')}
             onPress={() => {
