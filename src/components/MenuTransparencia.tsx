@@ -44,7 +44,7 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
             </View>
           </View>
 
-          <DrawerTransparencia
+            <DrawerTransparencia
               label="Inicio"
               img={require('../assets/img/iconos-negro/home.png')}
               onPress={() => {
@@ -56,6 +56,22 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               img={require('../assets/img/iconos-negro/menu1.png')}
               onPress={() => {
                 props.navigation.navigate('Transparencia');
+              }}
+            />
+            <DrawerTransparencia
+              label="Terminos Juridicos"
+              img={require('../assets/img/icono-transparencia/iconos_negros/icon-termino.png')}
+              onPress={() => {
+                props.navigation.navigate('Terminos');
+              }}
+            />
+            <DrawerTransparencia
+              label="Convocatoria CAS"
+              img={require('../assets/img/icono-transparencia/iconos_negros/icon-trabajo.png')}
+              onPress={() => {
+                props.navigation.navigate('Convocatoria', {
+                  link: 'https://aplicativo.pj.gob.pe/psep/wfrmConvocatoriasV.aspx?TCon=C',
+                });
               }}
             />
             <DrawerTransparencia

@@ -61,6 +61,13 @@ const TransparenciaScreen = ({navigation}: Props) => {
         showsVerticalScrollIndicator={false}
         style={style.containerBtn}>
         <View style={style.general}>
+        <GrupoTransparencia
+            titulo="TERMINOS JURIDICOS"
+            img={require('../assets/img/icono-judiciales/terminos-juridicos.png')}
+            onPress={() => {
+              navigation.navigate('Terminos');
+            }}
+          />
           <GrupoTransparencia
             titulo="CONVOCATORIAS CAS"
             img={require('../assets/img/icono-judiciales/convocatorias-pj.png')}

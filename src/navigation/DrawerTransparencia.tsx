@@ -12,6 +12,7 @@ import OsceScreen from "../screens/OsceScreen";
 import OdecmaScreen from "../screens/OdecmaScreen";
 import RedesScreen from "../screens/RedesScreen";
 import ConvocatoriaScreen from "../screens/ConvocatoriaScreen";
+import TerminosScreen from "../screens/TerminosScreen";
 
 
 export type RootDrawerTransparenciaParams = {
@@ -40,6 +41,7 @@ export type RootDrawerTransparenciaParams = {
     Convocatoria:{
       link:string
     },
+    Terminos:undefined,
   }
 
 const Drawer = createDrawerNavigator<RootDrawerTransparenciaParams>();
@@ -65,6 +67,7 @@ const DrawerTransparencia = () => {
       <Drawer.Screen name="Odecma" component={OdecmaScreen} />
       <Drawer.Screen name="Redes" component={RedesScreen} />
       <Drawer.Screen name="Convocatoria" component={ConvocatoriaScreen} />
+      <Drawer.Screen name="Terminos" component={TerminosScreen} />
     </Drawer.Navigator>
   );
 }
