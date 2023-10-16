@@ -61,7 +61,16 @@ const TransparenciaScreen = ({navigation}: Props) => {
         showsVerticalScrollIndicator={false}
         style={style.containerBtn}>
         <View style={style.general}>
-        <GrupoTransparencia
+          <GrupoTransparencia
+            titulo="CONVOCATORIAS CAS"
+            img={require('../assets/img/icono-judiciales/convocatorias-pj.png')}
+            onPress={() => {
+              navigation.navigate('Convocatoria', {
+                link: 'https://aplicativo.pj.gob.pe/psep/wfrmConvocatoriasV.aspx?TCon=C',
+              });
+            }}
+          />
+          <GrupoTransparencia
             titulo="PLAN ANUAL DE CONTRATACIONES - PAC"
             img={require('../assets/img/icono-judiciales/Oscee.jpg')}
             onPress={() => {

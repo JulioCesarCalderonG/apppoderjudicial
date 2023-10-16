@@ -11,6 +11,7 @@ import Prueba from "../screens/Prueba";
 import OsceScreen from "../screens/OsceScreen";
 import OdecmaScreen from "../screens/OdecmaScreen";
 import RedesScreen from "../screens/RedesScreen";
+import ConvocatoriaScreen from "../screens/ConvocatoriaScreen";
 
 
 export type RootDrawerTransparenciaParams = {
@@ -35,7 +36,10 @@ export type RootDrawerTransparenciaParams = {
         link:string
     },
     Odecma:undefined,
-    Redes:undefined
+    Redes:undefined,
+    Convocatoria:{
+      link:string
+    },
   }
 
 const Drawer = createDrawerNavigator<RootDrawerTransparenciaParams>();
@@ -60,6 +64,7 @@ const DrawerTransparencia = () => {
       <Drawer.Screen name="Osce" component={OsceScreen} />
       <Drawer.Screen name="Odecma" component={OdecmaScreen} />
       <Drawer.Screen name="Redes" component={RedesScreen} />
+      <Drawer.Screen name="Convocatoria" component={ConvocatoriaScreen} />
     </Drawer.Navigator>
   );
 }
