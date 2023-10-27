@@ -137,7 +137,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoTransparencia
-            titulo="ODECMA - UCAYALI"
+            titulo="ODANC"
             img={require('../assets/img/icono-judiciales/odecma.png')}
             onPress={() => {
               navigation.navigate('Odecma');

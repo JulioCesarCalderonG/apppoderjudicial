@@ -134,7 +134,7 @@ const MenuTransparencia = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerTransparencia
-              label="ODECMA - UCAYALI"
+              label="ODANC"
               img={require('../assets/img/icono-transparencia/iconos_negros/iconoodecma.png')}
               onPress={() => {
                 props.navigation.navigate('Odecma');
