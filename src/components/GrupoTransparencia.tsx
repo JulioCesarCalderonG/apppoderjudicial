@@ -4,10 +4,11 @@ import {Image, StyleSheet, Text, TouchableOpacity} from 'react-native';
 interface Props{
     titulo:string;
     img:any,
-    onPress: ()=>void
+    onPress: ()=>void,
+    subtitulo?:string
 }
 
-const GrupoTransparencia = ({titulo,img,onPress}:Props) => {
+const GrupoTransparencia = ({titulo,img,onPress,subtitulo}:Props) => {
   return (
     <TouchableOpacity
       style={style.viewServicios}
@@ -15,6 +16,9 @@ const GrupoTransparencia = ({titulo,img,onPress}:Props) => {
       onPress={onPress}>
       <Image source={img} style={{...style.imgServicios}}  resizeMode='stretch'/>
       <Text style={style.titleServicios}>{titulo}</Text>
+      {
+        (subtitulo)?<Text style={style.titleServicios}>{subtitulo}</Text>:''
+      }
     </TouchableOpacity>
   );
 };

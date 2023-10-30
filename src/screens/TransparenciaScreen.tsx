@@ -63,6 +63,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
         <View style={style.general}>
         <GrupoTransparencia
             titulo="TERMINOS JURIDICOS"
+            subtitulo='(Español - Shipibo)'
             img={require('../assets/img/icono-judiciales/terminos-juridicos.png')}
             onPress={() => {
               navigation.navigate('Terminos');
