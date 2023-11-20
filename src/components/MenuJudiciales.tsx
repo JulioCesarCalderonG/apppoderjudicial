@@ -90,6 +90,15 @@ const MenuJudiciales = (props: DrawerContentComponentProps) => {
               }}
             />
             <DrawerJudiciales
+              label="Depositos Judiciales Electronicos"
+              img={require('../assets/img/iconos/app-deposito.png')}
+              onPress={() => {
+                props.navigation.navigate('LinkJudiciales', {
+                  link: 'https://apps.pj.gob.pe/cdj/',
+                });
+              }}
+            />
+            <DrawerJudiciales
               label="Aranceles judiciales"
               img={require('../assets/img/iconos-negro/impuesto.png')}
               onPress={() => {

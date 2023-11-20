@@ -139,7 +139,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
           />
           <GrupoTransparencia
             titulo="ODANC"
-            img={require('../assets/img/icono-judiciales/odecma.png')}
+            img={require('../assets/img/icono-judiciales/odanc.png')}
             onPress={() => {
               navigation.navigate('Odecma');
             }}

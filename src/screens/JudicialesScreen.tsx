@@ -94,6 +94,17 @@ const JudicialesScreen = ({navigation}: Props) => {
             }}
           />
           <GrupoJudicial
+            titulo="DEPOSITOS JUDICIALES ELECTRONICOS"
+            /* titulo="EMISIÓN DE CERTIFICADOS ELECTRÓNICOS DE ANTECEDENTES PENALES" */
+            subTitulo=""
+            img={require('../assets/img/icono-judiciales/depositos-judiciales.png')}
+            onPress={() => {
+              navigation.navigate('Penales', {
+                link: 'https://apps.pj.gob.pe/cdj/',
+              });
+            }}
+          />
+          <GrupoJudicial
             titulo="ARANCELES JUDICIALES"
             subTitulo=""
             img={require('../assets/img/icono-judiciales/aranceles.jpg')}
