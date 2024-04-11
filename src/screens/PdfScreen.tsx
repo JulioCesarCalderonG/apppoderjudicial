@@ -50,7 +50,7 @@ const PdfScreen = ({ navigation }: Props) => {
                 <Pdf    
                     trustAllCerts={false}
                     source={{
-                      uri: 'https://gongalsoft.com/api/politicaprivacidad/poderjudicial',
+                      uri: 'https://backendmuni.gongalsoft.com/api/politicaprivacidad/poderjudicial',
                       cache: true,
                     }}
                     onLoadComplete={(numberOfPages, filePath) => {
