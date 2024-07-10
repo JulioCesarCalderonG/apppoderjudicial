@@ -62,6 +62,13 @@ const TransparenciaScreen = ({navigation}: Props) => {
         style={style.containerBtn}>
         <View style={style.general}>
         <GrupoTransparencia
+            titulo="REDES SOCIALES"
+            img={require('../assets/img/redes/redes2.jpg')}
+            onPress={() => {
+              navigation.navigate('Redes');
+            }}
+          />
+        <GrupoTransparencia
             titulo="TERMINOS JURIDICOS"
             subtitulo='(Español - Shipibo)'
             img={require('../assets/img/icono-judiciales/terminos-juridicos.png')}
@@ -144,13 +151,7 @@ const TransparenciaScreen = ({navigation}: Props) => {
               navigation.navigate('Odecma');
             }}
           />
-          <GrupoTransparencia
-            titulo="REDES SOCIALES"
-            img={require('../assets/img/redes/redes2.jpg')}
-            onPress={() => {
-              navigation.navigate('Redes');
-            }}
-          />
+          
           {/* <GrupoTransparencia
             titulo="DECISIONES JUDICIALES"
             img={require('../assets/img/icono-judiciales/7-decisiones-judiciales.jpg')}
